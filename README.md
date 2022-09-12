@@ -9,8 +9,7 @@ npm start
 
 **when you pull do make sure Material Ui is installed in yours. else run the command 
 ```
- npm install @material-ui/core
- npm install @material-ui/icons
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
  
 ```
 ---
