@@ -11,4 +11,4 @@ npm start
 # sprint 1 plan details
 Checkout our project plan in : <a href = "https://github.com/orgs/ualbany-software-engineering/projects/1"> Project Details </a>
 
-<img src = "https://raw.githubusercontent.com/ualbany-software-engineering/mustang-StudyEasy/main/StudyEasyApp/Sprint1_planbuild.png?token=GHSAT0AAAAAABX72O2F4O2OQWDJS6AHVKSKYY7PHCA" />
+<img src = "/StudyEasyApp/Sprint1_planbuild.png" />
