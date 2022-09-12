@@ -22,7 +22,7 @@ export const University = (data) =>{
         <div>
           <h1>Welcome to China</h1>
           <College collegeName="Peking University" city ="Beijing" zipCode={443211} url= "https://reactjs.org/docs/conditional-rendering.html"/>
-          <College collegeName="Han-Wu" city ="Beijing" zipCode={443200} url= "https://reactjs.org/docs/conditional-rendering.html"/>
+          <College collegeName="Ming university" city ="Beijing" zipCode={443200} url= "https://reactjs.org/docs/conditional-rendering.html"/>
 
         </div>)
     }

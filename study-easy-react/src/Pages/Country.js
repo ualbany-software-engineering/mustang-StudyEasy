@@ -18,7 +18,7 @@ export const Country = () => {
             <Select options={countryOptions} value={selectedCountry} onChange={update} /> 
             {/* {countryOptions.map((country) => (<option value = {country.value}>{country.label}</option>))} */}
             {/* </Select> */}
-           {selectedCountry==='None'? <h1>{selectedCountry}</h1>: <h1>Country Name:{selectedCountry}</h1>}
+           {selectedCountry==='None'? <h1>{selectedCountry}</h1>: <h1>Country Code Name:{selectedCountry} (remove me)</h1>}
                 
             <University country = {selectedCountry}/>
         </div>);
