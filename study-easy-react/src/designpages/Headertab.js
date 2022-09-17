@@ -1,14 +1,13 @@
 import React from 'react';
 
 import './Headertab.css';
-import logo from '../images/logo.gif';
+import logo from '../images/logo/latest1.png';
 
 import HomeIcon from '@mui/icons-material/Home';
-import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
-import Person2Icon from '@mui/icons-material/Person2';
-import PublicIcon from '@mui/icons-material/Public';
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-
+import PageviewIcon from '@mui/icons-material/Pageview';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import FlashOnIcon from '@mui/icons-material/FlashOn';
 
 function Headertab() {
   return (
@@ -21,29 +20,29 @@ function Headertab() {
           </div>
 
           <div className='header_icon'>
-          <PublicIcon />
-          <p>List of Countries</p>
+          <PageviewIcon />
+          <p>Search</p>
           </div>
 
           <div className='header_icon'>
-          <LibraryBooksIcon />
-          <p>List of Courses</p>
+          <FlashOnIcon/>
+          <p>Trending</p>
           </div>
 
           <div className='header_icon'>
-          <DocumentScannerIcon />
+          <AutoStoriesIcon/>
           <p>Resources</p>
           </div>
-
+          
           <div className='header_icon'>
-          <Person2Icon />
+          <AccountBoxIcon/>
           <p>Profile</p>
           </div>
-         
-          
-         
         </div>
-          <img src = {logo} alt = ""/>
+
+        
+        <img src = {logo} alt = ""/>
+          
            
     </div>
   )

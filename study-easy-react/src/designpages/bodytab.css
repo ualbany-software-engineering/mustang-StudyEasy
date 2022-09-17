@@ -1,0 +1,12 @@
+.bodystyle
+{
+  padding-top: 10px;   
+  background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%);
+}
+
+.bodystyle>video
+{
+    position:fixed;
+    z-index: -1;
+    width: 100%;
+}
