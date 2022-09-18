@@ -6,6 +6,8 @@ import Home from "./Pages/Home"
 import Extra from './Pages/Extra';
 import {Country} from "./Pages/Country";
 import {University} from './Pages/University';
+import {Majors}from './components/Majors';
+import {Courses}from './components/Courses';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         <Route path ="/Extra" exact element = {<Extra/>} />
         <Route path ="/Country" exact element = {<Country/>}/>
         <Route path="/Univ" exact element = {<University/>} />
+        <Route path ="/Majors" exact element ={<Majors/>}/>
+        <Route path ="Courses" exact element={<Courses/>}/>
         
       </Routes>
     </BrowserRouter>
