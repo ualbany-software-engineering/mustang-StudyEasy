@@ -10,7 +10,7 @@ npm start
 **when you pull do make sure Material Ui is installed in yours. else run the command 
 ```
 npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
- 
+npm install @steveeeie/react-page-transition
 ```
 ---
 # sprint 1 plan details
