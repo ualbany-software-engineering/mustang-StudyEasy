@@ -11,6 +11,7 @@ npm start
 ```
 npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 npm install @steveeeie/react-page-transition
+npm install react-router react-router-dom react-transition-group styled-components
 ```
 ---
 # sprint 1 plan details
