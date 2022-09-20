@@ -1,9 +1,15 @@
 html
 {
-    background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%);
+    /* background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%);
+     */
+
+     background-image: linear-gradient(to left, #262d2f 50%, #727776 100%);
+     overflow: hidden;
 }
 .App
 {
     width: 100vw; 
-    background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%);
+    /* background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%); */
+    background-image: linear-gradient(to left, #262d2f 50%, #727776 100%);
 }
+

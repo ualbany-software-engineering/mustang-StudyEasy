@@ -1,12 +1,32 @@
-.bodystyle
-{
-  padding-top: 10px;   
-  background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%);
+.bodystyle {
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
-.bodystyle>video
+.bodystyle::-webkit-scrollbar
 {
-    position:fixed;
-    z-index: -1;
-    width: 100%;
+    display: none;
+}
+
+.video
+{
+    position: fixed;
+    width: 150%;
+    z-index: 0;
+    align-items: center;
+}
+
+.button 
+{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 450px;
+    bottom: 0;
+    left: 800px;
+    right: 0;
+    height: fit-content;
+    margin: 110px;
 }
