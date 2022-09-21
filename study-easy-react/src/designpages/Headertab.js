@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Headertab.css';
+import '../styling/Headertab.css';
 import logo from '../images/logo/latest_logo.png';
 
 import HomeIcon from '@mui/icons-material/Home';
