@@ -60,6 +60,6 @@
 
 
 .headertab > img{
-    object-fit: contain;
+    object-fit: cover;
     height: 70px;
 }

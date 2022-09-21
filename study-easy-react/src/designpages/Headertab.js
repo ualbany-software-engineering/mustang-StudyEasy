@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../styling/Headertab.css';
-import logo from '../images/logo/latest_logo.png';
+import logo from '../images/logo/lastcopy.png';
 
 import HomeIcon from '@mui/icons-material/Home';
 import PageviewIcon from '@mui/icons-material/Pageview';
