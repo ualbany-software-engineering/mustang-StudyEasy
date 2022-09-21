@@ -18,12 +18,19 @@
     cursor: pointer;
     font-size: 10px;
     color: white;
+    font: bolder;
     text-align: center;
     position:fixed;
     top: 350px;
     bottom: 0px;
-    left: 788px;
-    right: 0;
+    left: 772px;
+    right: 650px;
     height: fit-content;
     margin: 110px;
+    margin-left: 200px;
+}
+
+.link:hover
+{
+
 }
