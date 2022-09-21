@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Editing from './designpages/editingcheck';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

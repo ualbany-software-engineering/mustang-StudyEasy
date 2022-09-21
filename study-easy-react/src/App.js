@@ -7,7 +7,6 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { PageTransition } from "@steveeeie/react-page-transition";
 import React from 'react';
-import Editing from '../src/designpages/editingcheck.js';
 import {Country} from "./Pages/Country";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
