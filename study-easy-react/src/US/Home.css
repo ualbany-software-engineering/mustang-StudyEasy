@@ -1,0 +1,27 @@
+h1,h2{
+  font-family: Chalkduster, fantasy;
+}
+p{
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+}
+button{
+  font-weight: bolder;
+  font-family: "Lucida Handwriting", cursive;
+  background-color: gray;
+  width: 400px;
+  border: none;
+  color: white;
+  padding: 20px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  min-width:100px;
+  display: block;
+  margin: auto;
+}
+button:hover{
+  background-color: #111;
+}

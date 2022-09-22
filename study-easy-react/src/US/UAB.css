@@ -1,0 +1,22 @@
+img{
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    margin: auto;
+
+}
+.img{
+    text-align: center;
+}
+p{
+    
+    width: 1000px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}

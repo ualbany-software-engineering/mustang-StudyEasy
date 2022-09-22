@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
+import Home from "./US/Home";
+import Ualbany from "./US/UAB"
+import Ustony from "./US/SBU"
+import Ubuffalo from "./US/SB"
+import Ulos from "./US/ULA"
+import { Req } from "./US/Requirements/Req"
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles.app}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ualbany" element={<Ualbany />} />
+          <Route path="/Ustony" element={<Ustony />}/>
+          <Route path="/Ubuffalo" element={<Ubuffalo />}/>
+          <Route path="/Ulos" element={<Ulos />}/>
+          <Route path ="/Req" exact element={<Req/>}/>
+        </Routes>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
+
+const styles = {
+  app: {
+    padding: 50,
+  },
+};
