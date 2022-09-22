@@ -7,8 +7,13 @@ npm start
 ```
 "npm i" will install all the dependencies from package.json
 
+**when you pull do make sure Material Ui is installed in yours. else run the command 
+```
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+ 
+```
 ---
 # sprint 1 plan details
 Checkout our project plan in : <a href = "https://github.com/orgs/ualbany-software-engineering/projects/1"> Project Details </a>
 
-<img src = "https://raw.githubusercontent.com/ualbany-software-engineering/mustang-StudyEasy/main/StudyEasyApp/Sprint1_planbuild.png?token=GHSAT0AAAAAABX72O2FEKZOGI5LVEN2VIYQYY6OYWA" />
+<img src = "/StudyEasyApp/Sprint1_planbuild.png" />
