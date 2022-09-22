@@ -15,24 +15,24 @@
     font-weight: bold;
     font-size: 18px;
 }
-.usalistitems1{
+.chinalistitems1{
     
     margin: 10px;
-    margin-right: 10px;
-    margin-left: 30px;
+    margin-right: 20px;
+    margin-left: 25px;
     float: left;
     justify-content: left;
-   height: 350px;
+    height: 430px;
 }
-
-.usalistitems2{
+.chinalistitems2{
     
     margin: 10px;
-    margin-right: 10px;
-    margin-left: 30px;
+    margin-right: 20px;
+    margin-left: 25px;
     float: left;
     justify-content: left;
-   height: 510px;
+    height: 300px;
+    margin-bottom: 10px;
 }
 .h3tag{
     margin-top: 3px;
@@ -41,11 +41,10 @@
     width: 400px;
     text-align: justify;
 }
-.usainfopane{
- margin-left: 10px;
-  margin-bottom: 0%;
-  float: left;
-}
+.chinainfopane{
+    margin-right: 50%;
+    margin-top: 10px;
+  }
 .h2tag{
     background-color: black;
     color: white;

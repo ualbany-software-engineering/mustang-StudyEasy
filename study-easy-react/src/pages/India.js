@@ -8,7 +8,7 @@ export const INDIA= () => {
             <div>
                 <h1 class="h1tag unselectable">Indian Visa Information</h1>     
                 <h2 class="h2tag unselectable">Three Step Visa Application Process</h2>
-                    <div class="listitems unselectable">
+                    <div class="indialistitems unselectable">
                         <span class="number ">1</span>
                         <h3 class="h3tag ">Apply Online </h3>
                         <p class="para">The Applicants must Apply Online for India's Student Visa.
@@ -18,7 +18,7 @@ export const INDIA= () => {
                         and then can click on "Regular/Paper Visa Application".                       
                         </p>
                     </div>
-                    <div class="listitems unselectable">
+                    <div class="indialistitems unselectable">
                         <span class="number">2</span>
                         <h3 class="h3tag">Submit Documents</h3> 
                         <p class="para">Once the form is filled and submitted, the applicant should 
@@ -31,7 +31,7 @@ export const INDIA= () => {
                         at <a href="https://indianvisaonline.gov.in/visa/instruction.html">
                         Instructions Page </a></p>
                     </div>
-                    <div class="listitems unselectable">
+                    <div class="indialistitems unselectable">
                         <span class="number">3</span>
                         <h3 class="h3tag">Receive Passport/Visa</h3> 
                         <p class="para">The Applicant can Collect/Receive their Passport/Visa from 
@@ -43,7 +43,7 @@ export const INDIA= () => {
                         </p>
                     </div>  
                    
-                    <div class="infopane unselectable">For More Information related to Indian Visa visit 
+                    <div class="indiainfopane unselectable">For More Information related to Indian Visa visit 
                         <a href="https://indianvisaonline.gov.in/"> Government of India's </a> Website</div>            
             </div>
            

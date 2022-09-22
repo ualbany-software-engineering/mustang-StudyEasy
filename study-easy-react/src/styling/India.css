@@ -15,7 +15,7 @@
     font-weight: bold;
     font-size: 18px;
 }
-.listitems{
+.indialistitems{
     
     margin: 10px;
     margin-right: 20px;
@@ -32,8 +32,9 @@
     width: 400px;
     text-align: justify;
 }
-.infopane{
-  margin-left: 0%;
+.indiainfopane{
+  
+  margin-right: 55%;
 }
 .h2tag{
     background-color: black;
