@@ -1,26 +1,34 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Visa from "./Visa";
 import '../styling/Usa.css';
-export const USA= () => {
-    return (
+function Usa(){
+    return(
+        <>
         <div>
-    <h1 class="h1tag unselectable">USA Visa Information</h1>
-    <h2 class="h2tag unselectable">Six Step Visa Application Process</h2>
-                    <div class="usalistitems1 unselectable">
-                        <span class="number ">1</span>
-                        <h3 class="h3tag ">Complete the Online Visa Application</h3>
+          <Visa/>
+          </div>
+           <div>
+            
+           <h1 class="h1tag unselectable">Usa Visa Information</h1>
+           <h2 class="h2tag unselectable">Six Step Visa Application Process</h2>
+           
+           <div class='usacontent'>
+            <span class="number">1</span>
+            <h3 class="h3tag ">Complete the Online Visa Application</h3>
                         <p class="para">The Applicants must complete the <a href="https://ceac.state.gov/genniv/"> Form DS160 </a> and the online visa application. 
                         And print the application form confirmation page and carry it to your interview.
                         </p>
-                    </div>
-                    <div class="usalistitems1 unselectable">
-                        <span class="number">2</span>
-                        <h3 class="h3tag">Schedule an interview</h3> 
+           </div>
+           <div class='usacontent'>
+            <span class="number">2</span>
+            <h3 class="h3tag">Schedule an interview</h3> 
                         <p class="para">You should schedule an appointment for your visa interview at the <a href="https://www.usembassy.gov/">U.S. Embassy or Consulate</a>
                         in the country of your residence. You may schedule your interview at another U.S. Embassy or Consulate, 
                         but be aware that it may be more difficult to qualify for a visa outside of the country where you live.
                         </p>
-                    </div>
-                    <div class="usalistitems1 unselectable">
+           </div>
+           <div class="usacontent unselectable">
                         <span class="number">3</span>
                         <h3 class="h3tag">New Students/Continuing Students</h3> 
                         <p class="para">
@@ -32,7 +40,7 @@ export const USA= () => {
                         Continuing students may enter the United States at any time before classes start.
                         </p>
                     </div>  
-                    <div class="usalistitems2 unselectable">
+                    <div class="usacontent unselectable">
                         <span class="number">4</span>
                         <h3 class="h3tag">Fees-pay the visa application fee</h3> 
                         <p class="para">
@@ -41,7 +49,7 @@ export const USA= () => {
                         <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html">All Fees</a> 
                         </p>
                     </div>  
-                    <div class="usalistitems2 unselectable">
+                    <div class="usacontent unselectable">
                         <span class="number">5</span>
                         <h3 class="h3tag">Gather Required Documentation</h3> 
                         <p class="para">
@@ -59,7 +67,7 @@ export const USA= () => {
                         </ul>
                         </p>
                     </div>  
-                    <div class="usalistitems2 unselectable">
+                    <div class="usacontent unselectable">
                         <span class="number">6</span>
                         <h3 class="h3tag">Attend your Visa Interview</h3> 
                         <p class="para">
@@ -75,8 +83,9 @@ export const USA= () => {
                     <div class="usainfopane unselectable">For More Information related to USA Visa, visit 
                     <a href="https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html"> U.S Department 
                     </a> Website
-                    </div>            
-            </div>
- 
+                    </div>
+           </div>
+            </> 
     )
-};
+}
+export default Usa;

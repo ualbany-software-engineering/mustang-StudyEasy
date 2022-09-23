@@ -1,13 +1,21 @@
 import React from "react";
-import '../styling/China.css';
-export const CHINA= () => {
-    return (
+import { BrowserRouter } from "react-router-dom";
+import Visa from "./Visa";
+import '../styling/China.css'
+function China(){
+    return(
+        <>
         <div>
-        <h1 class="h1tag unselectable">China Visa Information</h1>     
-        <h2 class="h2tag unselectable"> Five Step Visa Application Process</h2>
-            <div class="chinalistitems1 unselectable">
-                <span class="number ">1</span>
-                <h3 class="h3tag ">Passport and Photograph</h3>
+          <Visa/>
+          </div>
+           <div>
+            
+           <h1 class="h1tag unselectable">China Visa Information</h1>
+           <h2 class="h2tag unselectable">Five Step Visa Application Process</h2>
+           
+           <div class='chinacontent unselectable'>
+            <span class="number">1</span>
+            <h3 class="h3tag ">Passport and Photograph</h3>
                 <p class="para">  
                 You must provide your actual signed passport, including one copy of the personal information page of your passport.
                 <br />
@@ -22,7 +30,7 @@ export const CHINA= () => {
 
                 </p>
             </div>
-            <div class="chinalistitems1 unselectable">
+            <div class="chinacontent unselectable">
                 <span class="number">2</span>
                 <h3 class="h3tag">JW202 FORM</h3> 
                 <p class="para">
@@ -37,7 +45,7 @@ export const CHINA= () => {
                 </p>
             </div>
             
-            <div class="chinalistitems1 unselectable">
+            <div class="chinacontent unselectable">
                 <span class="number">3</span>
                 <h3 class="h3tag">Student Visa Support Letter</h3> 
                 <p class="para">
@@ -50,7 +58,7 @@ export const CHINA= () => {
                     </ul>
                 </p>
             </div>
-            <div class="chinalistitems2 unselectable">
+            <div class="chinacontent unselectable">
                 <span class="number">4</span>
                 <h3 class="h3tag">Visa Application Form</h3> 
                 <p class="para">
@@ -72,7 +80,7 @@ export const CHINA= () => {
                 </p>
             </div>  
            
-            <div class="chinalistitems2 unselectable">
+            <div class="chinacontent unselectable">
                 <span class="number">5</span>
                 <h3 class="h3tag">Travel Record</h3> 
                 <p class="para">
@@ -88,6 +96,7 @@ export const CHINA= () => {
             <div class="chinainfopane unselectable">For More Information related to China's Visa visit 
                 <a href="https://mychinavisa.com/china-visas/student-visa/#:~:text=This%20visa%20is%20issued%20to,and%20a%20visa%20application%20form."> China Visa Service Center's </a> official website.</div>            
     </div>
-
+            </> 
     )
-};
+}
+export default China;

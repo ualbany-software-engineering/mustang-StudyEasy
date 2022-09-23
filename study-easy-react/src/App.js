@@ -1,46 +1,55 @@
-import logo from './logo.svg';
 import './App.css';
-import { INDIA } from './pages/India';
-import { USA } from './pages/Usa';
-import { CANADA } from './pages/Canada';
-import { CHINA } from './pages/China';
-import indiaflag from '../src/images/indian_flag.png';
-import usaflag from '../src/images/usa_flag.png';
-import canadaflag from '../src/images/canada_flag.png';
-import chinaflag from '../src/images/china_flag.png';
-import {BrowserRouter as Router, Switch, Routes, Route,Redirect, Link, BrowserRouter} from 'react-router-dom';
+// import ReactDOM from 'react-dom/client'
+import {BrowserRouter,Route,Routes,Link} from "react-router-dom"
+import About from "./Pages/About"
+import Home from "./Pages/Home"
+import Extra from './Pages/Extra';
+import {Country} from "./Pages/Country";
+import Visa from "./Pages/Visa";
+import {University} from './Pages/University';
+import {Majors}from './components/Majors';
+import {Courses}from './components/Courses';
+import India  from './Pages/India';
+import Usa from './Pages/Usa';
+import Canada from './Pages/Canada';
+import China from './Pages/China';
+import Uk from './Pages/Uk';
+
+
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    
+    <BrowserRouter>
+      <ul>
+        <li><Link to ="/">Home</Link></li>
+        <li><Link to = "/About">About</Link></li>
+        <li><Link to = "/Extra">Extra</Link></li>
+        <li><Link to = "/Country">Country</Link></li>
+        <li><Link to = "/Univ">University (Only testing (remove me later))</Link></li>
+        <li><Link to="/Visa">Visa Information</Link></li>
       
-      <div className='container'>  
-      <Link to ="/INDIA" className='links linkindia'><img className='img' src={indiaflag}></img>
-      <div className='overlay unselectable'>INDIA</div></Link></div>
-
-      <div className='container'>  
-      <Link to = "/USA" className='links linkusa'><img className='img' src={usaflag}></img>
-      <div className='overlay unselectable'>USA</div>
-      </Link>
-      </div>
-      <div className='container'>
-        <Link to = "/CANADA" className='links linkcanada'><img className='img' src={canadaflag}></img>
-        <div className='overlay unselectable'> CANADA</div>
-        </Link></div>
-        <div className='container'>
-        <Link to = "/CHINA" className='links linkchina'><img className='img' src={chinaflag}></img>
-        <div className='overlay unselectable'>CHINA</div>
-        </Link></div>
         
-      
+      </ul>
+ 
+    
       <Routes>
-        <Route path="/INDIA" exact element={<INDIA/>} />
-        <Route path = "/USA" exact element={<USA/>}/>
-        <Route path ="/CANADA" exact element = {<CANADA/>} />
-        <Route path ="/CHINA" exact element = {<CHINA/>}/>
+        <Route path="/" exact element={<Home/>} />
+        <Route path = "/About" exact element={<About/>}/>
+        <Route path ="/Extra" exact element = {<Extra/>} />
+        <Route path ="/Country" exact element = {<Country/>}/>
+        <Route path ="/Visa" element={<Visa/>} />
+        <Route path ="/India"  element={<India/>}/>
+        <Route path ="/Usa"  element={<Usa/>}/>
+        <Route path ="/Canada"  element={<Canada/>}/>
+        <Route path ="/China"  element={<China/>}/>
+        <Route path ="/Uk"  element={<Uk/>}/>
+        <Route path="/Univ" exact element = {<University/>} />
+        <Route path ="/Majors" exact element ={<Majors/>}/>
+        <Route path ="Courses" exact element={<Courses/>}/>
+        
       </Routes>
     </BrowserRouter>
-    </div>
+   
   );
 }
 

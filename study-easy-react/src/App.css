@@ -54,11 +54,11 @@ margin: 10px;
 .container{
   position: relative;
   float: left;
-  width: 300px;
+  width: 250px;
   margin-top: 17px;
   margin-bottom: 17px;
-  margin-left: 17px;
-  margin-right: 17px;   
+  margin-left: 10px;
+  margin-right: 9px;   
 }
 
 .overlay {
@@ -67,11 +67,12 @@ margin: 10px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.8); /* Black see-through */
   color: #f1f1f1; 
-  width: 258px;
+  width: 208px;
   height: 66%;
   margin-top: 20px;
   border-radius: 20px;
   border: 1px solid black;
+  
   transition: .5s ease;
   opacity:0;
   color: white;
@@ -84,7 +85,6 @@ margin: 10px;
 .container:hover .overlay {
   opacity: 1;
 }
-
 .unselectable {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
