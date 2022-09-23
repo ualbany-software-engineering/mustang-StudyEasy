@@ -1,12 +1,13 @@
 import React from 'react'
 import Select from 'react-select';
-import pic from './buffalo.jpeg';
+import pic from './NIT.jpeg';
 import { useNavigate } from "react-router-dom";
 import './UAB.css';
 import { useState} from "react";
 import { Req } from "./Requirements/Req"
 
-const SB = (props) => {
+
+const NIT = (props) => {
   var courseOptions = [
     {value: 'CS', label: "Computer Science"},
     {value: 'DS', label: "Data Science"},
@@ -15,12 +16,18 @@ const SB = (props) => {
 const [selectedcourse,updateData]= useState("Please pick a Course");
 const update = (e) =>{updateData(e.value)}
   const navigate = useNavigate();
+
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+
   return (
     <>
-      <h1>Welcome to SUNY Buffalo</h1>
+      <h1>Welcome to National Institute of Technology</h1>
       <div class="img"><img src={pic}/>
       <br />
-      <p>The State University of New York at Buffalo, commonly called the University at Buffalo (UB) and sometimes called SUNY Buffalo, is a public research university with campuses in Buffalo and Amherst, New York. The university was founded in 1846 as a private medical college and merged with the State University of New York system in 1962. It is the flagship institution of the SUNY system. As of fall 2020, the university enrolls 32,347 students in 13 schools and colleges, making it the largest and most comprehensive public university in the state of New York.</p>
+      <p>National Institute of Technology Warangal (NIT Warangal or NITW) is a public technical and research university located in Warangal, India. It is recognised as an Institute of National Importance by the Government of India. The foundation stone for this institute was laid by then Prime Minister Jawaharlal Nehru on 1959, the first in the chain of 31 NITs (formerly known as RECs) in the country.[3] The institute was renamed as the National Institute of Technology, Warangal in 2002</p>
       <div class="req">
         <h2> <hr />Admission Requirements</h2>
         <p><Select options={courseOptions} value={selectedcourse} onChange={update} /> 
@@ -28,16 +35,16 @@ const update = (e) =>{updateData(e.value)}
             {selectedcourse==='None'? <h1>{selectedcourse}</h1>: <h1></h1>}
              
              <Req course = {selectedcourse}/></p>
-      </div><hr/>
-      <h3>To view fee structure</h3>
+      </div>
+    <hr/>
+    <h3>To view fee structure</h3>
       <ReadMore>
       
-          <h4>Total estimated Fees:</h4> 40000$<br/>
-          <h4>Scholarship:</h4> yes, 5000 $<br/>
+          <h4>Total estimated Fees:</h4> 50,000$<br/>
+          <h4>Scholarship:</h4> yes, 9000 $<br/>
         </ReadMore>
       
-      <br/><br/><br/>
-      <button onClick={() => navigate(-1)}>Go Back</button></div>
+      <br/><br/><br/><button onClick={() => navigate(-1)}>Go Back</button></div>
     </>
   );
 };
@@ -56,4 +63,4 @@ const ReadMore = ({ children }) => {
     </p>
   );
 };
-export default SB;
+export default NIT;

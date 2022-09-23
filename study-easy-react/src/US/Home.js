@@ -7,15 +7,14 @@ const Home = (props) => {
   return (
     <>
     <div class="bg-image">
-      <h1>Welcome to USA</h1>
+      <h1>Welcome<br/> Choose Your Country</h1>
       <hr />
 
       {/* Button */}
       <p>
-        <button onClick={() => navigate("/Ualbany")}>University at Albany</button><br/>
-        <button onClick={() => navigate("/Ulos")}>University of Los Angeles</button><br/>
-        <button onClick={() => navigate("/Ubuffalo")}>SUNY Buffalo</button><br/>
-        <button onClick={() => navigate("/Ustony")}>StonyBrook University</button>
+        <button onClick={() => navigate("/USHome")}>United States</button><br/>
+        <button onClick={() => navigate("/INDHome")}>India</button><br/>
+        <button onClick={() => navigate("/CHIHome")}>China</button><br/>\
       </p>
 
       </div>

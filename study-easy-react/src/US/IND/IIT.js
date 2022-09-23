@@ -1,12 +1,12 @@
 import React from 'react'
 import Select from 'react-select';
-import pic from './buffalo.jpeg';
+import pic from './IIT.jpeg';
 import { useNavigate } from "react-router-dom";
 import './UAB.css';
 import { useState} from "react";
 import { Req } from "./Requirements/Req"
 
-const SB = (props) => {
+const IIT = (props) => {
   var courseOptions = [
     {value: 'CS', label: "Computer Science"},
     {value: 'DS', label: "Data Science"},
@@ -17,10 +17,10 @@ const update = (e) =>{updateData(e.value)}
   const navigate = useNavigate();
   return (
     <>
-      <h1>Welcome to SUNY Buffalo</h1>
+      <h1>Welcome to Indian Institutes of Technology</h1>
       <div class="img"><img src={pic}/>
       <br />
-      <p>The State University of New York at Buffalo, commonly called the University at Buffalo (UB) and sometimes called SUNY Buffalo, is a public research university with campuses in Buffalo and Amherst, New York. The university was founded in 1846 as a private medical college and merged with the State University of New York system in 1962. It is the flagship institution of the SUNY system. As of fall 2020, the university enrolls 32,347 students in 13 schools and colleges, making it the largest and most comprehensive public university in the state of New York.</p>
+      <p>The Indian Institutes of Technology (IITs) are central government owned public technical institutes located across India. They are under the ownership of Ministry of Education, Government of India. They are governed by the Institutes of Technology Act, 1961, which has declared them as Institutes of National Importance and lays down their powers, duties, and framework for governance as the country's premier institutions in the field of Technology.</p>
       <div class="req">
         <h2> <hr />Admission Requirements</h2>
         <p><Select options={courseOptions} value={selectedcourse} onChange={update} /> 
@@ -32,8 +32,8 @@ const update = (e) =>{updateData(e.value)}
       <h3>To view fee structure</h3>
       <ReadMore>
       
-          <h4>Total estimated Fees:</h4> 40000$<br/>
-          <h4>Scholarship:</h4> yes, 5000 $<br/>
+          <h4>Total estimated Fees:</h4> 60,000$<br/>
+          <h4>Scholarship:</h4> NO<br/>
         </ReadMore>
       
       <br/><br/><br/>
@@ -56,4 +56,6 @@ const ReadMore = ({ children }) => {
     </p>
   );
 };
-export default SB;
+export default IIT;
+
+

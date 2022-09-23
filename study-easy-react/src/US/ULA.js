@@ -30,9 +30,32 @@ const update = (e) =>{updateData(e.value)}
              <Req course = {selectedcourse}/>
         </p>
       </div>
+      <hr/>
+      <h3>To view fee structure</h3>
+      <ReadMore>
+      
+          <h4>Total estimated Fees:</h4> 40000$<br/>
+          <h4>Scholarship:</h4> yes, 5000 $<br/>
+        </ReadMore>
+      
+      <br/><br/><br/>
       <button onClick={() => navigate(-1)}>Go Back</button></div>
     </>
   );
 };
-
+const ReadMore = ({ children }) => {
+  const text = children;
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+  return (
+    <p className="text">
+      {isReadMore ? text.slice(0, 0) : text}
+      <span onClick={toggleReadMore} className="read-or-hide">
+        {isReadMore ? "click here" : " close"}
+      </span>
+    </p>
+  );
+};
 export default ULA;

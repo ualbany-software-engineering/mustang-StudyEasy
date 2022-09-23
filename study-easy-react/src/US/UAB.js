@@ -7,7 +7,6 @@ import { useState} from "react";
 import { Req } from "./Requirements/Req"
 
 
-
 const UAB = (props) => {
   var courseOptions = [
     {value: 'CS', label: "Computer Science"},
@@ -17,6 +16,12 @@ const UAB = (props) => {
 const [selectedcourse,updateData]= useState("Please pick a Course");
 const update = (e) =>{updateData(e.value)}
   const navigate = useNavigate();
+
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+
   return (
     <>
       <h1>Welcome to University at Albany</h1>
@@ -33,9 +38,31 @@ The university enrolls 17,944 students in nine schools and colleges, which offer
              
              <Req course = {selectedcourse}/></p>
       </div>
-      <button onClick={() => navigate(-1)}>Go Back</button></div>
+    <hr/>
+    <h3>To view fee structure</h3>
+      <ReadMore>
+      
+          <h4>Total estimated Fees:</h4> 40000$<br/>
+          <h4>Scholarship:</h4> yes, 5000 $<br/>
+        </ReadMore>
+      
+      <br/><br/><br/><button onClick={() => navigate(-1)}>Go Back</button></div>
     </>
   );
 };
-
+const ReadMore = ({ children }) => {
+  const text = children;
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+  return (
+    <p className="text">
+      {isReadMore ? text.slice(0, 0) : text}
+      <span onClick={toggleReadMore} className="read-or-hide">
+        {isReadMore ? "click here" : " close"}
+      </span>
+    </p>
+  );
+};
 export default UAB;

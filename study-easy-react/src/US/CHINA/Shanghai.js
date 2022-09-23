@@ -1,12 +1,12 @@
 import React from 'react'
 import Select from 'react-select';
-import pic from './buffalo.jpeg';
+import pic from './Shanghai.jpeg';
 import { useNavigate } from "react-router-dom";
 import './UAB.css';
 import { useState} from "react";
 import { Req } from "./Requirements/Req"
 
-const SB = (props) => {
+const Shanghai = (props) => {
   var courseOptions = [
     {value: 'CS', label: "Computer Science"},
     {value: 'DS', label: "Data Science"},
@@ -17,10 +17,10 @@ const update = (e) =>{updateData(e.value)}
   const navigate = useNavigate();
   return (
     <>
-      <h1>Welcome to SUNY Buffalo</h1>
+      <h1>Welcome to Shanghai University</h1>
       <div class="img"><img src={pic}/>
       <br />
-      <p>The State University of New York at Buffalo, commonly called the University at Buffalo (UB) and sometimes called SUNY Buffalo, is a public research university with campuses in Buffalo and Amherst, New York. The university was founded in 1846 as a private medical college and merged with the State University of New York system in 1962. It is the flagship institution of the SUNY system. As of fall 2020, the university enrolls 32,347 students in 13 schools and colleges, making it the largest and most comprehensive public university in the state of New York.</p>
+      <p>Shanghai University, commonly referred to as SHU, or colloquially Shangda (Chinese: 上大; pinyin: Shàngdà), is a public research university located in Shanghai. The 555-acre main Baoshan campus is situated in the north of Shanghai, and there are two other campuses in Jiading and Jing'an. It is co-funded by Chinese Ministry of Education and Shanghai Municipal Government as part of the Project 211 and the Double First Class University Plan for leading national universities.</p>
       <div class="req">
         <h2> <hr />Admission Requirements</h2>
         <p><Select options={courseOptions} value={selectedcourse} onChange={update} /> 
@@ -32,8 +32,8 @@ const update = (e) =>{updateData(e.value)}
       <h3>To view fee structure</h3>
       <ReadMore>
       
-          <h4>Total estimated Fees:</h4> 40000$<br/>
-          <h4>Scholarship:</h4> yes, 5000 $<br/>
+          <h4>Total estimated Fees:</h4> 70,000$<br/>
+          <h4>Scholarship:</h4> yes, 10,000 $<br/>
         </ReadMore>
       
       <br/><br/><br/>
@@ -56,4 +56,6 @@ const ReadMore = ({ children }) => {
     </p>
   );
 };
-export default SB;
+export default Shanghai;
+
+
