@@ -1,7 +1,9 @@
 import { University } from "./University";
 import React from 'react'
-import Select from 'react-select'
 import { useState } from "react";
+import Datacard from "../designpages/Datacard";
+import '../styling/Country.css';
+import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 
 export const Country = () => {
     var countryOptions = [
@@ -10,16 +12,25 @@ export const Country = () => {
         {value: 'CHI', label: "China"},
         {value :'None', label: 'None'}
     ];
-    const [selectedCountry,updateData]= useState("Please pick a Country");
-    const update = (e) =>{updateData(e.value)}
+    const [selectedCountry, userselectedCountry]= useState("");
+    // const update = (e) =>{updateData(e.value)}
+
+    const changer = () =>
+    {
+        userselectedCountry();
+    }
+
     return (
-        <div>
-            <h1>Title</h1>
-            <Select options={countryOptions} value={selectedCountry} onChange={update} /> 
+        <div className="Country">
+            {/* <Select options={countryOptions} value={selectedCountry} onChange={update} />  */}
             {/* {countryOptions.map((country) => (<option value = {country.value}>{country.label}</option>))} */}
             {/* </Select> */}
-           {selectedCountry==='None'? <h1>{selectedCountry}</h1>: <h1>Country Code Name:{selectedCountry} (remove me)</h1>}
-                
+            <Datacard title="USA" logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/440px-Flag_of_the_United_States.svg.png" name = 'USA'/>
+            <Datacard title="INDIA" logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1599px-Flag_of_India.svg.png?20111003033457" name = 'IND'/>
+            <Datacard title="CHINA" logo="https://vignette.wikia.nocookie.net/cyberpunk/images/3/3e/255px-Flag_of_the_People%27s_Republic_of_China.svg.png/revision/latest?cb=20180830132455" name = 'CHI'/>
+            <Datacard title="CANADA" logo="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" name = 'CAN'/>
+            <Datacard title="UK" logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" name = 'UK'/>
+             <Datacard title="Australia" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/250px-Flag_of_Australia_%28converted%29.svg.png" name = 'AUS'/>         
             <University country = {selectedCountry}/>
         </div>);
 };
