@@ -1,10 +1,15 @@
 import React from 'react'
-import './Datacard.css';
+import { University } from '../Pages/University'
+import '../styling/Datacard.css'
+import { Link} from "react-router-dom";
+import Button from '@mui/material/Button';
 
-function Datacard() {
+function Datacard({title, logo, name}) {
   return (
-    <div>
-        hi
+    <div className = "datacard">
+        <h1>{title}</h1>
+        <img src = {logo} alt=""/>
+        <Button component={Link} to="/Univ/USA"varitation = "contained" color="inherit"> press me </Button>
     </div>
   )
 }

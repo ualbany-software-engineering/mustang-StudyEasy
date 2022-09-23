@@ -1,0 +1,28 @@
+.datacard
+{
+    color: white;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    transform: transfrom 100ms ease-in;
+}
+
+.datacard:hover
+{
+    transform: scale(1.09);
+}
+.datacard>img
+{
+    height: 300px;
+    object-fit: cover;
+    width: 500px;
+    image-rendering: optimizeQuality;
+}
+.datacard>h1
+{
+    font-size: xx-large;
+    padding-top: 20px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
