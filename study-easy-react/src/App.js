@@ -1,19 +1,19 @@
 import './App.css';
 // import ReactDOM from 'react-dom/client'
 import {BrowserRouter,Route,Routes,Link} from "react-router-dom"
-import About from "./Pages/About"
-import Home from "./Pages/Home"
-import Extra from './Pages/Extra';
-import {Country} from "./Pages/Country";
-import Visa from "./Pages/Visa";
-import {University} from './Pages/University';
-import {Majors}from './components/Majors';
-import {Courses}from './components/Courses';
-import India  from './Pages/India';
-import Usa from './Pages/Usa';
-import Canada from './Pages/Canada';
-import China from './Pages/China';
-import Uk from './Pages/Uk';
+import About from "../src/pages/About";
+import Home from "../src/pages/Home"
+import Extra from '../src/pages/Extra';
+import {Country} from "../src/pages/Country";
+import Visa from "../src/pages/Visa";
+import {University} from '../src/pages/University';
+import {Majors}from '../src/components/Majors';
+import {Courses}from '../src/components/Courses';
+import India  from '../src/pages/India';
+import Usa from '../src/pages/Usa';
+import Canada from '../src/pages/Canada';
+import China from '../src/pages/China';
+import Uk from '../src/pages/Uk';
 
 
 function App() {
