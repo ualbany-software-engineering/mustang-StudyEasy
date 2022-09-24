@@ -7,8 +7,8 @@ export const University = (data) =>{
       return(
         <div>
           <h1>Welcome to USA </h1>
-          <College collegeName="UAblany" city="Albany" zipCode={12345} url= "https://albany.edu/" number={1}/>
-          <College collegeName= "ULosAngles" city = "Los Angles" zipCode={99993} url ="https://www.programiz.com/python-programming/time/sleep" number={2}/>
+          <College collegeName="State University of New York at Ablany" city="Albany" zipCode={12222} url= "https://albany.edu/" number={1}/>
+          <College collegeName= "New York University" city = "New York City" zipCode={10012} url ="https://www.nyu.edu/" number={2}/>
         </div>
       );
     }
@@ -33,22 +33,31 @@ export const University = (data) =>{
       return( 
       <div>
          <h1>Welcome to Canada</h1>
-         <College collegeName="University of Toronto" city ="Toronto, Ontario, Canada" zipCode={M5s1a4} url= "https://www.utoronto.ca/" number={1}/>
-         <College collegeName="McGill University" city ="Montreal, Quebec, Canada" zipCode={H3A0G4} url= "https://www.mcgill.ca/" number={2}/>
+         <College collegeName="University of Toronto" city ="Toronto, Ontario, Canada" zipCode="M5S1A4" url= "https://www.utoronto.ca/" number={1}/>
+         <College collegeName="McGill University" city ="Montreal, Quebec, Canada" zipCode="H3A0G4" url= "https://www.mcgill.ca/" number={2}/>
      </div>)
      }
      if(country==='UK'){
       return( 
       <div>
-         <h1>Welcome to England</h1>
-         <College collegeName="H.Tech " city ="New Delhi" zipCode={9091321} url= "https://fastapi.io" number={1}/>
-         <College collegeName="Darius" city ="Pune" zipCode={19123321} url= "https://www.robinwieruch.de/react-dropdown/" number={2}/>
+         <h1>Welcome to the United Kingdom</h1>
+         <College collegeName="University of Cambridge " city ="Cambridge" zipCode="CB21TN" url= "https://www.cam.ac.uk/" number={1}/>
+         <College collegeName="University of Oxford" city ="Oxford" zipCode="OX12JD" url= "https://www.ox.ac.uk/" number={2}/>
      </div>)
      }
     if(country==='None'){
       return(<div>
         <h4>Please Pick a Country</h4>
       </div>)
+    }
+    if (country==='AUS'){
+      return(
+        <div>
+          <h1>Welcome to Australia </h1>
+          <College collegeName="State University of New York at Ablany" city="Albany" zipCode={12222} url= "https://albany.edu/" number={1}/>
+          <College collegeName= "New York University" city = "New York City" zipCode={10012} url ="https://www.nyu.edu/" number={2}/>
+        </div>
+      );
     }
     
     return(
