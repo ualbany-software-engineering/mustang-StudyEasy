@@ -1,4 +1,8 @@
 
+.btn{
+    margin-top: 0%;
+}
+
 .number{
     background-color: black;
     color: white;
@@ -19,10 +23,15 @@
 .h3tag{
     margin-top: 15px;
     text-align: center;
+    color: white;
 }
 .para{
     width: 400px;
+    padding: 10px;
     text-align: justify;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
 }
 .usainfopane{
   
@@ -44,7 +53,7 @@
     text-align: center;
     float: none;
     display: block;
-    margin-top: 20%;
+    
 }
 .usacontent{
     float: left;
