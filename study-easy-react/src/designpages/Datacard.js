@@ -1,5 +1,5 @@
 import React from 'react'
-import { University } from '../Pages/University'
+import { University } from '../pages/University'
 import '../styling/Datacard.css'
 import { Link} from "react-router-dom";
 import Button from '@mui/material/Button';
