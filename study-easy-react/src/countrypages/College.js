@@ -31,7 +31,7 @@ const College = (props) =>{
           <Datacard title = {props.collegeName} logo ={props.Logo} />
           {/* <h4><a href={props.url}>Click for {props.collegeName}</a></h4> */}
           {majors ? <Majors major={props?.number}/>: null}
-          <Button onClick ={getMajor} variant = "contained" color="success">Checkout</Button>
+          <Button onClick ={getMajor} variant = "contained" color="success">{buttonText}</Button>
           {/* <button onClick ={getMajor} >{buttonText}</button> */}
         </div>
         )
