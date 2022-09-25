@@ -14,7 +14,10 @@ const Home = (props) => {
       <p>
         <button onClick={() => navigate("/USHome")}>United States</button><br/>
         <button onClick={() => navigate("/INDHome")}>India</button><br/>
-        <button onClick={() => navigate("/CHIHome")}>China</button><br/>\
+        <button onClick={() => navigate("/CHIHome")}>China</button><br/>
+        <button onClick={() => navigate("/UKHome")}>United Kingdom</button><br/>
+        <button onClick={() => navigate("/CANHome")}>Canada</button><br/>
+        <button onClick={() => navigate("/AUSHome")}>Australia</button><br/>
       </p>
 
       </div>
