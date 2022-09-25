@@ -1,5 +1,5 @@
 import React from "react"
-import '../styling/usa.css';
+import '../styling/Usa.css';
 export const USAVISA = () => {
     return (
         <div>

@@ -1,5 +1,5 @@
 import React from "react"
-import '../styling/india.css';
+import '../styling/India.css';
 export const INDIAVISA = () => {
     return (
         <div>
