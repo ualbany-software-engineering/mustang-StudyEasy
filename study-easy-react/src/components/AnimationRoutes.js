@@ -12,6 +12,9 @@ import {AnimatePresence} from 'framer-motion';
 import  {USA}  from '../countrypages/USA';
 import { INDIA } from '../countrypages/INDIA';
 import { CHINA } from '../countrypages/CHINA';
+import { CANADA } from '../countrypages/CANADA';
+import { UK } from '../countrypages/UK';
+import { AUS } from '../countrypages/AUS';
 import { USAVISA } from '../visapages/usavisa';
 import { INDIAVISA } from '../visapages/indiavisa';
 // import { INDIA } from '../countrypages/INDIA';
@@ -36,6 +39,9 @@ function AnimationRoutes() {
                 <Route path="/Univ/USA" exact element = {<USA/>} />
                 <Route path="/Univ/IND" exact element = {<INDIA/>} />
                 <Route path="/Univ/CHI" exact element = {<CHINA/>} />
+                <Route path="/Univ/CAN" exact element = {<CANADA/>} />
+                <Route path="/Univ/AUS" exact element = {<AUS/>} />
+                <Route path="/Univ/UK" exact element = {<UK/>} />
 
                 <Route path="/usavisa" exact element = {<USAVISA/>} />
                 <Route path="/indiavisa" exact element = {<INDIAVISA/>} />

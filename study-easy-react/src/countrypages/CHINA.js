@@ -11,8 +11,8 @@ export const CHINA = () => {
          <Nav given = 'country' link = '/usavisa' link1 = "/Univ/CHI"/>
       <h1 className='h1'>Welcome to CHINA</h1><div className='Country'>
     <div className='Country'>
-    <College collegeName="Peking University" Logo='https://mcdonnell.wustl.edu/wp-content/uploads/2020/10/PKU.png' zipCode={443211} url= "https://reactjs.org/docs/conditional-rendering.html"number={2}/>
-    <College collegeName="Ming vu university " Logo='https://cdn-almjc.nitrocdn.com/aZYyrACOqPKwqacflNAAVPArFRYGkpZe/assets/static/optimized/rev-76f8472/wp-content/uploads/2020/07/46d82e1a0b0100936591de3958f3408d.Beijing-Normal-University-e1595868998763.jpg' zipCode={443200} url= "https://reactjs.org/docs/conditional-rendering.html"number={1}/>
+    <College collegeName="Peking University" Logo='https://mcdonnell.wustl.edu/wp-content/uploads/2020/10/PKU.png' zipCode={100871} url= "https://english.pku.edu.cn/"number={1}/>
+    <College collegeName="Nanjing University" Logo='https://www.12consultants.com/wp-content/uploads/2022/03/Nanjing-University.jpg' zipCode={210093} url= "https://www.nju.edu.cn/EN/main.htm"number={2}/>
   </div>
   </div>
 
