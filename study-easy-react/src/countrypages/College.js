@@ -1,6 +1,6 @@
 import { Majors } from "../components/Majors";
 import {useState} from "react";
-import Datacard from "../designpages/Datacard";
+import Datacard from "./DatacardCollege";
 import '../styling/College.css'
 import Button from '@mui/material/Button';
 
@@ -28,11 +28,11 @@ const College = (props) =>{
       return (
         
         <div className="college">
-          <Datacard title = {props.collegeName} logo ={props.Logo} name={''} />
+          <Datacard title = {props.collegeName} logo ={props.Logo} />
           {/* <h4><a href={props.url}>Click for {props.collegeName}</a></h4> */}
           {majors ? <Majors major={props?.number}/>: null}
           <Button onClick ={getMajor} variant = "contained" color="success">Checkout</Button>
-          <button onClick ={getMajor} >{buttonText}</button>
+          {/* <button onClick ={getMajor} >{buttonText}</button> */}
         </div>
         )
     
