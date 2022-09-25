@@ -1,24 +1,25 @@
-// import { University } from "./University";
+
+import { University } from "./University";
 import React from 'react'
-// import { useState } from "react";
+import { useState } from "react";
 import Datacard from "../designpages/Datacard";
 import '../styling/Country.css';
-// import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 
 export const Country = () => {
-    // var countryOptions = [
-    //     {value: 'USA', label: "United States of America"},
-    //     {value: 'IND', label: "India"},
-    //     {value: 'CHI', label: "China"},
-    //     {value :'None', label: 'None'}
-    // ];
-    // const [selectedCountry, userselectedCountry]= useState("");
-    // // const update = (e) =>{updateData(e.value)}
+    var countryOptions = [
+        {value: 'USA', label: "United States of America"},
+        {value: 'IND', label: "India"},
+        {value: 'CHI', label: "China"},
+        {value :'None', label: 'None'}
+    ];
+    const [selectedCountry, userselectedCountry]= useState("");
+    // const update = (e) =>{updateData(e.value)}
 
-    // const changer = () =>
-    // {
-    //     userselectedCountry();
-    // }
+    const changer = () =>
+    {
+        userselectedCountry();
+    }
 
     return (
         <div className="Country">
@@ -31,7 +32,7 @@ export const Country = () => {
             <Datacard title="CANADA" logo="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" name = '/Univ/CAN'/>
             <Datacard title="UK" logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" name = '/Univ/UK'/>
              <Datacard title="Australia" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/250px-Flag_of_Australia_%28converted%29.svg.png" name = '/Univ/AUS'/>         
-            {/* <University country = {selectedCountry}/> */}
+            <University country = {selectedCountry}/>
         </div>);
 };
 
