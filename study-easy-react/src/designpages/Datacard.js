@@ -10,8 +10,8 @@ function Datacard({title, logo, name}) {
     <div className = "datacard">
         <h1>{title}</h1>
         <img src = {logo} alt=""/>
-        
-        <Button component={Link} to={newLink} varitation = "contained" color="inherit"> press me </Button>
+        <Button component={Link} to={name} variant = "contained" color="success">Checkout</Button>
+
     </div>
   )
 }

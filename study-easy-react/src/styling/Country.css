@@ -2,6 +2,17 @@
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content:flex-start;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.h1
+{
+    padding-left: 30px;
     justify-content: center;
-    overflow-y: scroll;
+    text-decoration: underline;
+    font-weight: 500;
+    color: #131617;
+
 }

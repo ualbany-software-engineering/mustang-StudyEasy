@@ -32,17 +32,16 @@ function AnimationRoutes() {
                <Route path ="/Extra" exact element = {<Extra/>} />
                <Route path ="*" exact element = {<Error/>} />{/* to capture all the error from user input links 404 page not found */}
                <Route path ="/Country" exact element = {<Country/>}/>
-                <Route path="/USA" exact element = {<USA/>} />
-                <Route path="/IND" exact element = {<INDIA/>} />
-                <Route path="/CHI" exact element = {<CHINA/>} />
+
+                <Route path="/Univ/USA" exact element = {<USA/>} />
+                <Route path="/Univ/IND" exact element = {<INDIA/>} />
+                <Route path="/Univ/CHI" exact element = {<CHINA/>} />
 
                 <Route path="/usavisa" exact element = {<USAVISA/>} />
                 <Route path="/indiavisa" exact element = {<INDIAVISA/>} />
                 <Route path="/canadavisa" exact element = {<CANADAVISA/>} />
                 <Route path="/chinavisa" exact element = {<CHINAVISA/>} />
                 <Route path="/ukvisa" exact element = {<UKVISA/>} />
-
-
                <Route path ="/Majors" exact element ={<Majors/>}/>
                <Route path ="Courses" exact element={<Courses/>}/>
         </Routes>
