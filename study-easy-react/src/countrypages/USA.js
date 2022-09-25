@@ -1,7 +1,7 @@
 import React from 'react'
 import College from './College';
-import { Majors } from "../components/Majors";
-import {useState} from "react";
+// import { Majors } from "../components/Majors";
+// import {useState} from "react";
 import '../styling/Country.css'
 
 export const USA = () => {
