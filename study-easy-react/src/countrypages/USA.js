@@ -2,18 +2,18 @@ import React from 'react'
 import College from './College';
 import { Majors } from "../components/Majors";
 import {useState} from "react";
-import { Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import EastIcon from '@mui/icons-material/East';
-
+import '../styling/Country.css'
 
 export const USA = () => {
   return (
-    <div>
-  <Button className='btn' component={Link} to='/Usavisa' variant = "contained" color="inherit"  endIcon={<EastIcon/>}>Usa Visa Data</Button>
-    <h1>Welcome to India</h1>
-    <College collegeName="H.Tech Ashoka" city ="New Delhi" zipCode={9091321} url= "https://fastapi.io" number={1}/>
-    <College collegeName="Darius" city ="Pune" zipCode={19123321} url= "https://www.robinwieruch.de/react-dropdown/" number={2}/>
+  <div>
+      <h1 className='h1'>Welcome to USA</h1><div className='Country'>
+    <div className='Country'>
+      <College collegeName="UAblany" Logo='https://www.uniquevenues.com/sites/uniquevenues.com/files/imagecache/venue_flexslider_2018/venues/slideshow/CC-8-X2.jpg' zipCode={12345} url="https://albany.edu/" number={1} />
+      <College collegeName="New York University" Logo='https://publichealth.nyu.edu/sites/default/files/2020-04/header-get-started.jpg' zipCode={99993} url="https://www.programiz.com/python-programming/time/sleep" number={2} />
     </div>
+  </div>
+  </div>
+
   )
 }

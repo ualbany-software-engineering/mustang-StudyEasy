@@ -1,19 +1,19 @@
 import React from 'react'
 import College from './College';
-// import { Majors } from "../components/Majors";
-// import {useState} from "react";
-import { Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import EastIcon from '@mui/icons-material/East';
+import { Majors } from "../components/Majors";
+import {useState} from "react";
+import '../styling/Country.css'
 
 
 export const CHINA = () => {
   return (
     <div>
-       <Button className='btn' component={Link} to='/chinavisa' variant = "contained" color="inherit"  endIcon={<EastIcon/>}>China Visa Data</Button>
-    <h1>Welcome to China</h1>
-    <College collegeName="Peking University" city ="Beijing" zipCode={443211} url= "https://reactjs.org/docs/conditional-rendering.html"number={2}/>
-    <College collegeName="Ming vu university " city ="Beijing" zipCode={443200} url= "https://reactjs.org/docs/conditional-rendering.html"number={1}/>
+      <h1 className='h1'>Welcome to CHINA</h1><div className='Country'>
+    <div className='Country'>
+    <College collegeName="Peking University" Logo='https://mcdonnell.wustl.edu/wp-content/uploads/2020/10/PKU.png' zipCode={100871} url= "https://english.pku.edu.cn/"number={1}/>
+    <College collegeName="Nanjing University" Logo='https://www.12consultants.com/wp-content/uploads/2022/03/Nanjing-University.jpg' zipCode={210093} url= "https://www.nju.edu.cn/EN/main.htm"number={2}/>
+  </div>
+  </div>
 
   </div>
   )
