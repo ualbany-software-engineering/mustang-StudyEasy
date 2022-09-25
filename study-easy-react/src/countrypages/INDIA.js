@@ -4,6 +4,7 @@ import { Majors } from "../components/Majors";
 import {useState} from "react";
 import '../styling/Country.css'
 
+
 export const INDIA = () => {
   return (
     <div>
