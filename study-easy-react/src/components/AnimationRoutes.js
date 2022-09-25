@@ -1,9 +1,9 @@
 import React from 'react'
 import {  Routes, Route, useLocation } from "react-router-dom";
-import {Country} from "../pages/Country";
-import Home from "../pages/Home";
-import About from "../pages/AboutLowercase";
-import Extra from '../pages/Extra';
+import {Country} from "../Pages/Country";
+import Home from '../Pages/Home';
+import About from "../Pages/AboutLowercase";
+import Extra from '../Pages/Extra';
 // import {University} from '../pages/University';
 import {Majors}from '../components/Majors';
 import {Courses}from '../components/Courses';
