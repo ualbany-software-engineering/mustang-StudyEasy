@@ -1,5 +1,7 @@
 import { Majors } from "../components/Majors";
 import {useState} from "react";
+import Datacard from "../designpages/Datacard";
+import '../styling/College.css'
 
 const College = (props) =>{
     const [majors,showMajors]= useState(false)
@@ -8,8 +10,6 @@ const College = (props) =>{
     const getMajor =()=>{
       showMajors(!majors);
       updateButton_text(!button_text)
-      
-  
       // render()
       // return(
       //   // <div>
@@ -26,15 +26,11 @@ const College = (props) =>{
     
       return (
         
-        <div>
-          <h2>{props.collegeName}</h2>
-          <h3>{props.city}, {props.zipCode}</h3>
-          <h4><a href={props.url}>Click for {props.collegeName}</a></h4>
+        <div className="college">
+          <Datacard title = {props.collegeName} logo ={props.Logo} name={''} />
+          {/* <h4><a href={props.url}>Click for {props.collegeName}</a></h4> */}
           {majors ? <Majors major={props?.number}/>: null}
           <button onClick ={getMajor} >{buttonText}</button>
-         
-          
-          
         </div>
         )
     

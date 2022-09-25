@@ -10,7 +10,8 @@ import {Courses}from '../components/Courses';
 import {AnimatePresence} from 'framer-motion';
 import { CollegeDisplay } from '../Pages/CollegeDisplay';
 import  {USA}  from '../countrypages/USA';
-
+import { INDIA } from '../countrypages/INDIA';
+import { CHINA } from '../countrypages/CHINA';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -23,8 +24,8 @@ function AnimationRoutes() {
                <Route path ="/Extra" exact element = {<Extra/>} />
                <Route path ="/Country" exact element = {<Country/>}/>
                 <Route path="/Univ/USA" exact element = {<USA/>} />
-
-
+                <Route path="/Univ/IND" exact element = {<INDIA/>} />
+                <Route path="/Univ/CHI" exact element = {<CHINA/>} />
                <Route path ="/Majors" exact element ={<Majors/>}/>
                <Route path ="Courses" exact element={<Courses/>}/>
         </Routes>
