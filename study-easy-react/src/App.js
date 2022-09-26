@@ -13,7 +13,6 @@ function App() {
   return (
     <BrowserRouter basename = {process.env.PUBLIC_URL}>
     <Headertab/>
-    <Bodytab/>
     <div className="App">
           <AnimationRoutes/>
     </div>
