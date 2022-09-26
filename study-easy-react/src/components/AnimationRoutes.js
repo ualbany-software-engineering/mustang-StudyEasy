@@ -27,6 +27,16 @@ import Gmat from '../Pages/Gmat';
 import Gre from '../Pages/Gre';
 import Ielts from '../Pages/Ielts';
 
+import Ualbany from '../adminreq/US/UAB'
+import SBU from '../adminreq/US/SBU'
+
+import UM from '../adminreq/AUS/UM'
+import USyd from '../adminreq/AUS/USyd'
+
+
+import IIT from "../adminreq/INDIA/IIT"
+import NIT from "../adminreq/INDIA/NIT"
+
 function AnimationRoutes() {
     const location = useLocation();
   return (
@@ -53,6 +63,15 @@ function AnimationRoutes() {
                 <Route path="/ukvisa" exact element = {<UKVISA/>} />
                <Route path ="/Majors" exact element ={<Majors/>}/>
                <Route path ="Courses" exact element={<Courses/>}/>
+               
+               <Route path="/ualbany" element={<Ualbany />} />
+               <Route path="/SBU" element={<SBU />} />
+               <Route path="/UM" element={<UM />} />
+               <Route path="/USyd" element={<USyd />} />
+               <Route path="/IIT" element={<IIT />}/>
+               <Route path="/NIT" element={<NIT />}/>
+              
+              
                <Route path ="/Home1" exact element = {<Home1/>}/>
                <Route path ="/Gmat" exact element = {<Gmat/>}/>
                <Route path ="/Gre" exact element = {<Gre/>}/>

@@ -14,7 +14,7 @@ function Headertab() {
     <div className = "headertab"> 
         <div className='header_icons'>
 
-          <Link to='/Home' style={{textDecoration: 'none' , color: 'white'}}>
+          <Link to='/Country' style={{textDecoration: 'none' , color: 'white'}}>
           <div className='header_icon header_icon--active'>
           <HomeIcon />
           <p>Home</p>

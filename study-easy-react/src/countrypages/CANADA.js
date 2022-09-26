@@ -3,6 +3,7 @@ import College from './College';
 import { Majors } from "../components/Majors";
 import {useState} from "react";
 import '../styling/Country.css'
+import Nav from '../designpages/Nav'
 
 
 export const CANADA = () => {
