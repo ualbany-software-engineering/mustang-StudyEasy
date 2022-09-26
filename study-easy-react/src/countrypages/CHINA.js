@@ -8,7 +8,7 @@ import Nav from '../designpages/Nav'
 export const CHINA = () => {
   return (
     <div>
-         <Nav given = 'country' link = '/usavisa' link1 = "/Univ/CHI"/>
+         <Nav given = 'country' link = '/chinavisa' link1 = "/Univ/CHI"/>
       <h1 className='h1'>Welcome to CHINA</h1><div className='Country'>
     <div className='Country'>
     <College collegeName="Peking University" Logo='https://mcdonnell.wustl.edu/wp-content/uploads/2020/10/PKU.png' zipCode={100871} url= "https://english.pku.edu.cn/"number={1}/>

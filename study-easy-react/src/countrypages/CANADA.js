@@ -8,6 +8,7 @@ import '../styling/Country.css'
 export const CANADA = () => {
   return (
     <div>
+       <Nav given = 'country' link = '/canadavisa' link1 = "/Univ/CAN"/>
       <h1 className='h1'>Welcome to CANADA</h1><div className='Country'>
     <div className='Country'>
     <College collegeName="University of Toronto" Logo='http://wawh.wpengine.com/wp-content/uploads/2015/08/university_of_toronto.jpg' zipCode={"M5S1A4"} url= "https://www.utoronto.ca/"number={2}/>
