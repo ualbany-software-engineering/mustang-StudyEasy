@@ -32,11 +32,11 @@ function AnimationRoutes() {
   return (
     //animation reuser
     <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
+        <Routes location={location} key={location.pathname} basename = {process.env.PUBLIC_URL}>
                <Route path="/" exact element={<Home/>} />
                <Route path = "/About" exact element={<About/>}/>
                <Route path ="/Extra" exact element = {<Extra/>} />
-               <Route path ="*" exact element = {<Error/>} />{/* to capture all the error from user input links 404 page not found */}
+               {/* <Route path ="*" exact element = {<Error/>} />to capture all the error from user input links 404 page not found */}
                <Route path ="/Country" exact element = {<Country/>}/>
 
                 <Route path="/Univ/USA" exact element = {<USA/>} />

@@ -15,7 +15,11 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 =======
 npm install @steveeeie/react-page-transition
 npm install react-router react-router-dom react-transition-group styled-components
->>>>>>> 5f6b50c1f9851a4886683367a48bc252e273d70f
+
+//to install git pages to publish the page
+npm install gh-pages --save-dev
+//every time you want to merge to main and publish it on the page 
+npm run deploy
 ```
 ---
 # sprint 1 plan details
