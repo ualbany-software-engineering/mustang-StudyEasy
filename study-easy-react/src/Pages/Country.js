@@ -1,4 +1,3 @@
-
 // import { University } from "./University";
 import React from 'react'
 // import { useState } from "react";
@@ -11,9 +10,6 @@ export const Country = () => {
     //     {value: 'USA', label: "United States of America"},
     //     {value: 'IND', label: "India"},
     //     {value: 'CHI', label: "China"},
-    //     {value: 'CAN', label: "Canada"},
-    //     {value: 'UK', label: "United Kingdom"},
-    //     {value: 'AUS', label: "Australia"},
     //     {value :'None', label: 'None'}
     // ];
     // const [selectedCountry, userselectedCountry]= useState("");
