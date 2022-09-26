@@ -13,11 +13,12 @@ function Headertab() {
   return (
     <div className = "headertab"> 
         <div className='header_icons'>
-          
+          <Link to ="/">
           <div className='header_icon header_icon--active'>
           <HomeIcon />
           <p>Home</p>
           </div>
+          </Link>
 
           <div className='header_icon'>
           <PageviewIcon />
@@ -29,7 +30,7 @@ function Headertab() {
           <p>Trending</p>
           </div>
 
-          <Link to='/Home1'>
+          <Link to='/Resources'>
             <div className='header_icon'>
               <AutoStoriesIcon/>
             <p>Resources</p>
