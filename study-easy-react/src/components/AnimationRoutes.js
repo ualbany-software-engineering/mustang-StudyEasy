@@ -22,7 +22,10 @@ import { CANADAVISA } from '../visapages/canadavisa';
 import { CHINAVISA } from '../visapages/chinavisa';
 import { UKVISA } from '../visapages/ukvisa';
 import Error from "./Error"
-
+import Home1 from '../Pages/Home1';
+import Gmat from '../Pages/Gmat';
+import Gre from '../Pages/Gre';
+import Ielts from '../Pages/Ielts';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -50,6 +53,10 @@ function AnimationRoutes() {
                 <Route path="/ukvisa" exact element = {<UKVISA/>} />
                <Route path ="/Majors" exact element ={<Majors/>}/>
                <Route path ="Courses" exact element={<Courses/>}/>
+               <Route path ="/Home1" exact element = {<Home1/>}/>
+               <Route path ="/Gmat" exact element = {<Gmat/>}/>
+               <Route path ="/Gre" exact element = {<Gre/>}/>
+               <Route path ="/Ielts" exact element = {<Ielts/>}/>
         </Routes>
     </AnimatePresence>
   )
