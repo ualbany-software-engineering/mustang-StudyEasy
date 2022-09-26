@@ -2,7 +2,7 @@
   "name": "study-easy-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ualbany-software-engineering.mustang-StudyEasy.github.io",
+  "homepage": "https://Ualbany-software-engineering.github.io/mustang-StudEasy",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
