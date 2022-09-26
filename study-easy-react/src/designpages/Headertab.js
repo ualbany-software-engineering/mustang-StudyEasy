@@ -14,6 +14,7 @@ function Headertab() {
     <div className = "headertab"> 
         <div className='header_icons'>
 
+
           <Link to='/Country' style={{textDecoration: 'none' , color: 'white'}}>
           <div className='header_icon header_icon--active'>
           <HomeIcon />
@@ -31,7 +32,11 @@ function Headertab() {
           <p>Trending</p>
           </div>
 
-          <Link to='/Home1' style={{textDecoration: 'none' , color: 'white'}}>
+{/* //<<<<<<< merge-main */}
+          <Link to='/Resources'>
+{/* //======= */}
+          {/* //<Link to='/Home1' style={{textDecoration: 'none' , color: 'white'}}> */}
+{/* //>>>>>>> main */}
             <div className='header_icon'>
               <AutoStoriesIcon/>
             <p>Resources</p>

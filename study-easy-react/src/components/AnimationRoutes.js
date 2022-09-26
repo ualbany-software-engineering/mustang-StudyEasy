@@ -46,7 +46,7 @@ function AnimationRoutes() {
                <Route path="/" exact element={<Home/>} />
                <Route path = "/About" exact element={<About/>}/>
                <Route path ="/Extra" exact element = {<Extra/>} />
-               {/* <Route path ="*" exact element = {<Error/>} />to capture all the error from user input links 404 page not found */}
+               <Route path ="*" exact element = {<Error/>} />to capture all the error from user input links 404 page not found
                <Route path ="/Country" exact element = {<Country/>}/>
 
                 <Route path="/Univ/USA" exact element = {<USA/>} />
@@ -73,6 +73,7 @@ function AnimationRoutes() {
               
               
                <Route path ="/Home1" exact element = {<Home1/>}/>
+               <Route path ="/Resources" exact element = {<Home1/>}/>
                <Route path ="/Gmat" exact element = {<Gmat/>}/>
                <Route path ="/Gre" exact element = {<Gre/>}/>
                <Route path ="/Ielts" exact element = {<Ielts/>}/>

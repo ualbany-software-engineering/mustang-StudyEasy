@@ -1,7 +1,7 @@
 import React from 'react'
 import College from './College';
-import { Majors } from "../components/Majors";
-import {useState} from "react";
+// import { Majors } from "../components/Majors";
+// import {useState} from "react";
 import '../styling/Country.css'
 import Nav from '../designpages/Nav'
 
@@ -9,7 +9,7 @@ import Nav from '../designpages/Nav'
 export const CANADA = () => {
   return (
     <div>
-       <Nav given = 'country' link = '/canadavisa' link1 = "/Univ/CAN"/>
+      <Nav given = 'country' link = '/canadavisa' link1 = "/Univ/CAN"/>
       <h1 className='h1'>Welcome to CANADA</h1><div className='Country'>
     <div className='Country'>
     <College collegeName="University of Toronto" Logo='http://wawh.wpengine.com/wp-content/uploads/2015/08/university_of_toronto.jpg' zipCode={"M5S1A4"} url= "https://www.utoronto.ca/"number={2}/>
