@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/mustang-StudyEasy/home/static/css/main.f440fa60.css",
-    "main.js": "/mustang-StudyEasy/home/static/js/main.ae9f6f80.js",
-    "static/js/787.c4b9f9eb.chunk.js": "/mustang-StudyEasy/home/static/js/787.c4b9f9eb.chunk.js",
-    "static/media/wallpaper.gif": "/mustang-StudyEasy/home/static/media/wallpaper.d1dd3c71b9feb6c9d497.gif",
-    "static/media/edited.mp4": "/mustang-StudyEasy/home/static/media/edited.a175636677291289a1c1.mp4",
-    "static/media/lastcopy.png": "/mustang-StudyEasy/home/static/media/lastcopy.2ab9abbc7b5b2abe9bc6.png",
-    "index.html": "/mustang-StudyEasy/home/index.html",
-    "main.f440fa60.css.map": "/mustang-StudyEasy/home/static/css/main.f440fa60.css.map",
-    "main.ae9f6f80.js.map": "/mustang-StudyEasy/home/static/js/main.ae9f6f80.js.map",
-    "787.c4b9f9eb.chunk.js.map": "/mustang-StudyEasy/home/static/js/787.c4b9f9eb.chunk.js.map"
+    "main.css": "/mustang-StudyEasy/static/css/main.71f08bd4.css",
+    "main.js": "/mustang-StudyEasy/static/js/main.b3268c14.js",
+    "static/js/787.c4b9f9eb.chunk.js": "/mustang-StudyEasy/static/js/787.c4b9f9eb.chunk.js",
+    "static/media/wallpaper.gif": "/mustang-StudyEasy/static/media/wallpaper.d1dd3c71b9feb6c9d497.gif",
+    "static/media/edited.mp4": "/mustang-StudyEasy/static/media/edited.a175636677291289a1c1.mp4",
+    "static/media/lastcopy.png": "/mustang-StudyEasy/static/media/lastcopy.2ab9abbc7b5b2abe9bc6.png",
+    "index.html": "/mustang-StudyEasy/index.html",
+    "main.71f08bd4.css.map": "/mustang-StudyEasy/static/css/main.71f08bd4.css.map",
+    "main.b3268c14.js.map": "/mustang-StudyEasy/static/js/main.b3268c14.js.map",
+    "787.c4b9f9eb.chunk.js.map": "/mustang-StudyEasy/static/js/787.c4b9f9eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f440fa60.css",
-    "static/js/main.ae9f6f80.js"
+    "static/css/main.71f08bd4.css",
+    "static/js/main.b3268c14.js"
   ]
 }
