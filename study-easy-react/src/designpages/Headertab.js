@@ -13,11 +13,13 @@ function Headertab() {
   return (
     <div className = "headertab"> 
         <div className='header_icons'>
-          
+
+          <Link to='/Home' style={{textDecoration: 'none' , color: 'white'}}>
           <div className='header_icon header_icon--active'>
           <HomeIcon />
           <p>Home</p>
           </div>
+          </Link>
 
           <div className='header_icon'>
           <PageviewIcon />
