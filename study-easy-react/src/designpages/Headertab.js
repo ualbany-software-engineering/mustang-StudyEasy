@@ -13,12 +13,12 @@ function Headertab() {
   return (
     <div className = "headertab"> 
         <div className='header_icons'>
-//<<<<<<< merge-main
+{/* //<<<<<<< merge-main */}
           <Link to ="/">
-//=======
+{/* //======= */}
 
-          //<Link to='/Home' style={{textDecoration: 'none' , color: 'white'}}>
-//>>>>>>> main
+          {/* //<Link to='/Home' style={{textDecoration: 'none' , color: 'white'}}> */}
+{/* //>>>>>>> main */}
           <div className='header_icon header_icon--active'>
           <HomeIcon />
           <p>Home</p>
@@ -35,11 +35,11 @@ function Headertab() {
           <p>Trending</p>
           </div>
 
-//<<<<<<< merge-main
+{/* //<<<<<<< merge-main */}
           <Link to='/Resources'>
-//=======
-          //<Link to='/Home1' style={{textDecoration: 'none' , color: 'white'}}>
-//>>>>>>> main
+{/* //======= */}
+          {/* //<Link to='/Home1' style={{textDecoration: 'none' , color: 'white'}}> */}
+{/* //>>>>>>> main */}
             <div className='header_icon'>
               <AutoStoriesIcon/>
             <p>Resources</p>
