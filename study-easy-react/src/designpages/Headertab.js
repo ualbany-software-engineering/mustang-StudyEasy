@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../styling/Headertab.css';
 import logo from '../images/logo/lastcopy.png';
-
+import {Link} from "react-router-dom";
 import HomeIcon from '@mui/icons-material/Home';
 import PageviewIcon from '@mui/icons-material/Pageview';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
@@ -29,10 +29,12 @@ function Headertab() {
           <p>Trending</p>
           </div>
 
-          <div className='header_icon'>
-          <AutoStoriesIcon/>
-          <p>Resources</p>
+          <Link to='/Home1'>
+            <div className='header_icon'>
+              <AutoStoriesIcon/>
+            <p>Resources</p>
           </div>
+          </Link>
           
           <div className='header_icon'>
           <AccountBoxIcon/>
