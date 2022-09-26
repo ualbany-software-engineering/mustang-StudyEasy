@@ -1,13 +1,15 @@
 import React from 'react'
 import College from './College';
-import { Majors } from "../components/Majors";
-import {useState} from "react";
+// import { Majors } from "../components/Majors";
+// import {useState} from "react";
 import '../styling/Country.css'
+import Nav from '../designpages/Nav'
 
 
 export const UK = () => {
   return (
     <div>
+      <Nav given = 'country' link = '/ukvisa' link1 = "/Univ/UK"/>
       <h1 className='h1'>Welcome to the UK</h1><div className='Country'>
     <div className='Country'>
     <College collegeName="University of Cambridge" Logo='https://saltosystems.com/sites/default/files/styles/breakpoint_1920/public/images/case-studies/education-case-cambridge-00_0.jpg?itok=5JrTeXFn' zipCode={"CB21TN"} url= "https://www.cam.ac.uk/" number={1}/>
