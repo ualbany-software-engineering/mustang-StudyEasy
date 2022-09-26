@@ -6,12 +6,14 @@ import { BrowserRouter } from "react-router-dom";
 import React from 'react';
 
 import AnimationRoutes from './components/AnimationRoutes';
+import Bodytab from './designpages/bodytab';
 
 function App() {
  
   return (
-    <BrowserRouter>
+    <BrowserRouter basename = {process.env.PUBLIC_URL}>
     <Headertab/>
+    <Bodytab/>
     <div className="App">
           <AnimationRoutes/>
     </div>
