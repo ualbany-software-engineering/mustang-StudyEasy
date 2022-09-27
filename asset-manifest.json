@@ -1,18 +1,31 @@
 {
   "files": {
-    "main.css": "/mustang-StudyEasy/static/css/main.71f08bd4.css",
-    "main.js": "/mustang-StudyEasy/static/js/main.56718198.js",
+    "main.css": "/mustang-StudyEasy/static/css/main.7e12587e.css",
+    "main.js": "/mustang-StudyEasy/static/js/main.f9f92516.js",
     "static/js/787.c4b9f9eb.chunk.js": "/mustang-StudyEasy/static/js/787.c4b9f9eb.chunk.js",
+    "static/media/KaplanGmatPrep.pdf": "/mustang-StudyEasy/static/media/KaplanGmatPrep.8b560d2beb1523baf63b.pdf",
+    "static/media/OfficialGuideGre.pdf": "/mustang-StudyEasy/static/media/OfficialGuideGre.5f2534889c127532b790.pdf",
+    "static/media/GREPrep.pdf": "/mustang-StudyEasy/static/media/GREPrep.fab47951dc6823f09f98.pdf",
+    "static/media/IELTSGuide.pdf": "/mustang-StudyEasy/static/media/IELTSGuide.5dd469abd30f6132bd26.pdf",
+    "static/media/UKGuide.pdf": "/mustang-StudyEasy/static/media/UKGuide.4769d142b561fa1f940b.pdf",
+    "static/media/USGuide.pdf": "/mustang-StudyEasy/static/media/USGuide.05026e46689aa5cbd10f.pdf",
     "static/media/wallpaper.gif": "/mustang-StudyEasy/static/media/wallpaper.d1dd3c71b9feb6c9d497.gif",
-    "static/media/edited.mp4": "/mustang-StudyEasy/static/media/edited.a175636677291289a1c1.mp4",
+    "static/media/GmatStudyGuide.pdf": "/mustang-StudyEasy/static/media/GmatStudyGuide.19dfb63ac8a9cfdf8cba.pdf",
+    "static/media/GmatinBrief.pdf": "/mustang-StudyEasy/static/media/GmatinBrief.79d1f9207549e79aa2ac.pdf",
+    "static/media/GRE Free Prep Resources.pdf": "/mustang-StudyEasy/static/media/GRE Free Prep Resources.162ef5ddba439189c7e7.pdf",
+    "static/media/ielts.png": "/mustang-StudyEasy/static/media/ielts.4d41426ea30d82720858.png",
+    "static/media/pr2.jpg": "/mustang-StudyEasy/static/media/pr2.5fae87cc101056501af4.jpg",
+    "static/media/ets.png": "/mustang-StudyEasy/static/media/ets.f1b53547a3944ac19001.png",
+    "static/media/mba.jpg": "/mustang-StudyEasy/static/media/mba.9cb1aabaad953d667cef.jpg",
+    "static/media/gregmat.jpg": "/mustang-StudyEasy/static/media/gregmat.7c0d907b0fbb7fd77c5e.jpg",
     "static/media/lastcopy.png": "/mustang-StudyEasy/static/media/lastcopy.2ab9abbc7b5b2abe9bc6.png",
     "index.html": "/mustang-StudyEasy/index.html",
-    "main.71f08bd4.css.map": "/mustang-StudyEasy/static/css/main.71f08bd4.css.map",
-    "main.56718198.js.map": "/mustang-StudyEasy/static/js/main.56718198.js.map",
+    "main.7e12587e.css.map": "/mustang-StudyEasy/static/css/main.7e12587e.css.map",
+    "main.f9f92516.js.map": "/mustang-StudyEasy/static/js/main.f9f92516.js.map",
     "787.c4b9f9eb.chunk.js.map": "/mustang-StudyEasy/static/js/787.c4b9f9eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71f08bd4.css",
-    "static/js/main.56718198.js"
+    "static/css/main.7e12587e.css",
+    "static/js/main.f9f92516.js"
   ]
 }
