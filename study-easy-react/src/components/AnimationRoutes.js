@@ -36,6 +36,12 @@ import USyd from '../adminreq/AUS/USyd'
 
 import IIT from "../adminreq/INDIA/IIT"
 import NIT from "../adminreq/INDIA/NIT"
+import McG from '../adminreq/CAN/McG';
+import UT from '../adminreq/CAN/UT';
+import UC from '../adminreq/UK/UC';
+import UO from '../adminreq/UK/UO';
+import Peking from '../adminreq/CHINA/Peking';
+import Shanghai from '../adminreq/CHINA/Shanghai';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -70,6 +76,12 @@ function AnimationRoutes() {
                <Route path="/USyd" element={<USyd />} />
                <Route path="/IIT" element={<IIT />}/>
                <Route path="/NIT" element={<NIT />}/>
+               <Route path="/UT" element={<UT />}/>
+               <Route path="/McG" element={<McG />}/>
+               <Route path="/UC" element={<UC />}/>
+               <Route path="/UO" element={<UO />}/>
+               <Route path="/Peking" element={<Peking />}/>
+               <Route path="/Shanghai" element={<Shanghai />}/>
               
               
                <Route path ="/Home1" exact element = {<Home1/>}/>
