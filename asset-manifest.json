@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mustang-StudyEasy/static/css/main.7e12587e.css",
-    "main.js": "/mustang-StudyEasy/static/js/main.f9f92516.js",
+    "main.js": "/mustang-StudyEasy/static/js/main.ff5de2ae.js",
     "static/js/787.c4b9f9eb.chunk.js": "/mustang-StudyEasy/static/js/787.c4b9f9eb.chunk.js",
     "static/media/KaplanGmatPrep.pdf": "/mustang-StudyEasy/static/media/KaplanGmatPrep.8b560d2beb1523baf63b.pdf",
     "static/media/OfficialGuideGre.pdf": "/mustang-StudyEasy/static/media/OfficialGuideGre.5f2534889c127532b790.pdf",
@@ -21,11 +21,11 @@
     "static/media/lastcopy.png": "/mustang-StudyEasy/static/media/lastcopy.2ab9abbc7b5b2abe9bc6.png",
     "index.html": "/mustang-StudyEasy/index.html",
     "main.7e12587e.css.map": "/mustang-StudyEasy/static/css/main.7e12587e.css.map",
-    "main.f9f92516.js.map": "/mustang-StudyEasy/static/js/main.f9f92516.js.map",
+    "main.ff5de2ae.js.map": "/mustang-StudyEasy/static/js/main.ff5de2ae.js.map",
     "787.c4b9f9eb.chunk.js.map": "/mustang-StudyEasy/static/js/787.c4b9f9eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e12587e.css",
-    "static/js/main.f9f92516.js"
+    "static/js/main.ff5de2ae.js"
   ]
 }
