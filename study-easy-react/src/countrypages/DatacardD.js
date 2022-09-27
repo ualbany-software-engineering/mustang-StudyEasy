@@ -10,7 +10,7 @@ function Datacard({title, logo, name}) {
     <div className = "datacard">
         <h1>{title}</h1>
         <img src = {logo} alt=""/>
-        <Button component={Link} to={name} variant = "contained" color="success">Check admisssion Requirements</Button>
+        <Button component={Link} to={name} variant = "contained" color="success">Check admisssion requirements</Button>
 
     </div>
   )
