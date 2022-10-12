@@ -3,6 +3,7 @@ import React from 'react'
 // import { useState } from "react";
 import Datacard from "../designpages/Datacard";
 import '../styling/Country.css';
+import {motion} from 'framer-motion';
 // import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 
 export const Country = () => {
@@ -21,7 +22,12 @@ export const Country = () => {
     // }
 
     return (
-        <div className="Country">
+        <motion.div className="Country"
+        initial={{width: 0}}
+         animate={{width:'100%'}} 
+         exit={{x: window.innerWidth,
+         transition: {duration: 0.3} 
+         }} >
             {/* <Select options={countryOptions} value={selectedCountry} onChange={update} />  */}
             {/* {countryOptions.map((country) => (<option value = {country.value}>{country.label}</option>))} */}
             {/* </Select> */}
@@ -32,7 +38,7 @@ export const Country = () => {
             <Datacard title="UK" logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" name = '/Univ/UK'/>
              <Datacard title="Australia" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/250px-Flag_of_Australia_%28converted%29.svg.png" name = '/Univ/AUS'/>         
             {/* {<University country = {selectedCountry}/>} */}
-        </div>);
+        </motion.div>);
 };
 
 // const Temp =()=>{
