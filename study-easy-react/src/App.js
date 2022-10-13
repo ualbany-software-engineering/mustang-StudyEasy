@@ -6,7 +6,8 @@ import { BrowserRouter } from "react-router-dom";
 import React from 'react';
 
 import AnimationRoutes from './components/AnimationRoutes';
-import Bodytab from './designpages/bodytab';
+// import Bodytab from './designpages/bodytab';
+import './firbase-config'
 
 function App() {
  
