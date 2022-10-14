@@ -1,7 +1,7 @@
 import React from 'react'
 import {  Routes, Route, useLocation } from "react-router-dom";
 import {Country} from "../Pages/Country";
-import Home from '../Pages/Home';
+import Home from "../Pages/Home";
 import About from "../Pages/AboutLowercase";
 import Extra from '../Pages/Extra';
 // import {University} from '../pages/University';
