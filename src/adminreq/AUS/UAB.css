@@ -1,0 +1,62 @@
+.UAB
+{
+    justify-content: center;
+    color: white;
+}
+
+.img>img{
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    margin: auto;
+
+}
+.img{
+    text-align: center;
+}
+
+.img>p{
+    
+    width: 1000px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+}
+
+.req{
+    
+   color: white !important;
+}
+
+.req>p{
+    
+    width: 1000px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    color: black;
+}
+
+.UAB>h1{
+    text-align: center;
+}
+
+.text{
+
+    display:flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 465px;
+  }
+
+.read_or_hide
+{
+    color: red;
+    cursor: pointer;
+    margin-left: 465px;
+}
