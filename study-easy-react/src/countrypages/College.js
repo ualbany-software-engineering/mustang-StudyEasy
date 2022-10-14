@@ -1,7 +1,9 @@
 import { Majors } from "../components/Majors";
 import {useState} from "react";
-import Datacard from "../designpages/Datacard";
+import Datacard from "./DatacardD";
 import '../styling/College.css'
+import Nav from '../designpages/Nav'
+import Button from '@mui/material/Button';
 
 const College = (props) =>{
     const [majors,showMajors]= useState(false)
@@ -25,12 +27,11 @@ const College = (props) =>{
     var buttonText =button_text ? "hide majors": "Show majors"
     
       return (
-        
-        <div className="college">
-          <Datacard title = {props.collegeName} logo ={props.Logo} name={''} />
+         <div className="college">
+          <Datacard title={props.collegeName} logo={props.Logo} name={props.name} />
           {/* <h4><a href={props.url}>Click for {props.collegeName}</a></h4> */}
-          {majors ? <Majors major={props?.number}/>: null}
-          <button onClick ={getMajor} >{buttonText}</button>
+          {majors ? <Majors major={props?.number} /> : null}
+          <Button onClick={getMajor} variant = "contained" color="success">{buttonText}</Button>
         </div>
         )
     
