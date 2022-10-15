@@ -42,7 +42,9 @@ import UC from '../adminreq/UK/UC';
 import UO from '../adminreq/UK/UO';
 import Peking from '../adminreq/CHINA/Peking';
 import Shanghai from '../adminreq/CHINA/Shanghai';
-import AddMajors from '../countrypages/addMajors';
+
+import AddMajors from '../CollegeAdministrators/addMajors';
+import UpdateDeleteMajor from '../CollegeAdministrators/UpdateOrDelete';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -71,6 +73,7 @@ function AnimationRoutes() {
                <Route path ="/Majors" exact element ={<Majors/>}/>
                <Route path ="Courses" exact element={<Courses/>}/>
                <Route path ="/AddMajors" exact element={<AddMajors/>}/>
+               <Route path="/UpdateDeleteMajor" exact element={<UpdateDeleteMajor/>}   />
                
                <Route path="/ualbany" element={<Ualbany />} />
                <Route path="/SBU" element={<SBU />} />

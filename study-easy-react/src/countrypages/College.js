@@ -48,7 +48,7 @@ const College = (props) =>{
       getMajors()
     },[])
 
-    const [addmajor,setaddmajor]=useState([ {name:'', grad:{str:''}, undergrad:['']}])
+    // const [addmajor,setaddmajor]=useState([ {name:'', grad:{str:''}, undergrad:['']}])
     var buttonText =button_text ? "hide majors": "Show majors"
 
     
@@ -62,14 +62,14 @@ const College = (props) =>{
           {/* <Bb variant="primary">Hello</Bb> */}
           <p> Hellp</p>
           {majorsData.map((mj) => {
-            return( <div> 
+            return( <div style={{backgroundColor:"white"}}> 
               
               <h2>id : {mj.id}</h2>
-              <h2 >major : {mj.major.name}</h2>
+              <h2 >major : {mj.values.majorName}</h2>
               <h2 >undergrad : </h2>
-              {mj.major.undergrad.map(e => <p>{e}</p>)}
+              {mj.values.undergrad.map(e => <p>course Name: {e.courseName} & course dispersion: {e.dispersion}</p>)}
               <h2 >Grad : </h2>
-              {mj.major.grad.map(e => <p>{e}</p>)} 
+              {mj.values.grad.map(e => <p>course Name: {e.courseName} & course dispersion: {e.dispersion}</p>)}
 
             </div>
           )})}
