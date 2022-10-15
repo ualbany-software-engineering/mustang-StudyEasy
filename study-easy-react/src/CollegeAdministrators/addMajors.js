@@ -24,6 +24,8 @@ export default function AddMajors () {
             })}
               onSubmit={async (values) => {
                 console.log('My Values from addMajors .js ', values)
+                const myDBCollectionRef = collection(db,"college")
+                await addDoc(myDBCollectionRef,{values})
                 return new Promise ((res) => setTimeout(res, 3000))
               }
               }>
