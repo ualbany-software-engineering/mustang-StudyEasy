@@ -1,0 +1,61 @@
+
+.number{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-left: 45%;
+    
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+   
+}
+
+.h3tag{
+    margin-top: 15px;
+    text-align: center;
+}
+.para{
+    width: 400px;
+    text-align: justify;
+}
+.ukinfopane{
+  
+  margin-right: 50%;
+}
+.h2tag{
+    
+    background-color: black;
+    color: white;
+    height: 40px;
+    border-radius: 25px;
+    padding-top: 8px;
+    display: block;
+    text-align: center;
+    float: none;
+}
+
+.h1tag{
+    text-align: center;
+    float: none;
+    display: block;
+}
+.ukcontent{
+    float: left;
+    margin-top: 20px;
+    margin: 15px;
+    margin-left: 20px;
+    height: 350px;
+}
+.unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
