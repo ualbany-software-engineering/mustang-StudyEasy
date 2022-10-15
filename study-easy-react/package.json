@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
     "formik": "^2.2.9",
+    "formik-material-ui": "^4.0.0-alpha.2",
     "framer-motion": "^7.3.6",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
