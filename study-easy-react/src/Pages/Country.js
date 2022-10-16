@@ -1,11 +1,27 @@
 // import { University } from "./University";
-import React from 'react'
+import React,{ useState } from 'react'
+import Chatbot from 'react-chatbot-kit';
+import 'react-chatbot-kit/build/main.css'
+
 // import { useState } from "react";
+
+
 import Datacard from "../designpages/Datacard";
 import '../styling/Country.css';
+import { Button } from '@mui/material';
 // import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 
-export const Country = () => {
+//chatbot imports
+import config from "./Chatbot/bots/docsbot/config";
+import MessageParser from "./Chatbot/bots/docsbot/MessageParser";
+import ActionProvider from "./Chatbot/bots/docsbot/ActionProvider";
+import { ConditionallyRender } from "react-util-kit";
+import { ReactComponent as ButtonIcon } from "./Chatbot/images/bot.svg";
+
+
+
+export const Country = () => {  
+    
     // var countryOptions = [
     //     {value: 'USA', label: "United States of America"},
     //     {value: 'IND', label: "India"},
@@ -21,6 +37,7 @@ export const Country = () => {
     // }
 
     return (
+        <>
         <div className="Country">
             {/* <Select options={countryOptions} value={selectedCountry} onChange={update} />  */}
             {/* {countryOptions.map((country) => (<option value = {country.value}>{country.label}</option>))} */}
@@ -32,7 +49,21 @@ export const Country = () => {
             <Datacard title="UK" logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" name = '/Univ/UK'/>
              <Datacard title="Australia" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/250px-Flag_of_Australia_%28converted%29.svg.png" name = '/Univ/AUS'/>         
             {/* {<University country = {selectedCountry}/>} */}
-        </div>);
+      
+        </div>
+        <div>
+        
+      
+       
+      
+     
+
+
+
+
+             </div>
+             </>
+        );
 };
 
 // const Temp =()=>{
