@@ -1,17 +1,42 @@
-html
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+body
 {
-     width: 100vw; 
-    /* background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%); */
-    background-image: linear-gradient(to left, #262d2f 50%, #727776 100%);
-    overflow-x: hidden !important;
-    /* overflow: hidden !important; */
+    font-family: "Roboto", sans-serif;
+}
+.container
+{
+    max-width: 85%;
+    margin: auto;
+}
+.flexSB
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Social
+{
+    /* display: inline-block !important; */
+    line-height: 40px;
+    border-radius: 200%;
+    text-align: center;
+    background-color: rgb(255, 255 , 255,0.3);
+    color: skyblue;
+    transition: 0.2s;
+
+}
+.Social:hover
+{
+    cursor: pointer;  
+    background-color: black;  
 }
 .App
 {
-    width: 100vw; 
-    /* background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%); */
-    background-image: linear-gradient(to left, #262d2f 50%, #727776 100%);
-    overflow-x: hidden !important;
-    /* overflow: hidden !important; */
+
 }
 

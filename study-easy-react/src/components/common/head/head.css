@@ -1,0 +1,39 @@
+.head
+{
+    padding: 20px 0;
+    color: black;
+}
+
+img
+{
+    width: 20%;
+}
+.head 
+{
+    margin-left: 10px ;
+}
+
+ul
+{
+    display: flex !important;
+}
+
+li{
+    display: block !important;
+}
+
+.Social 
+{
+   
+    margin-left: 10px;
+    width: 10;
+    height: 10;
+}
+
+/*----------------header--------------------------*/
+
+.header
+{
+    background-color: grey;
+
+}
