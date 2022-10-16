@@ -7,26 +7,23 @@ class MessageParser {
     const lowerCase = message.toLowerCase();
 
     if (
-      lowerCase.includes("messageparser") ||
-      lowerCase.includes("parse") ||
-      lowerCase.includes("parser") ||
-      lowerCase.includes("message parser")
+      lowerCase.includes("country") ||
+      lowerCase.includes("Country")
     ) {
       return this.actionProvider.handleMessageParserDocs();
     }
 
-    if (lowerCase.includes("action") || lowerCase.includes("actionprovider")) {
+    if (lowerCase.includes("resources") || lowerCase.includes("Resources")) {
       return this.actionProvider.handleActionProviderDocs();
     }
 
-    if (lowerCase.includes("config")) {
+    if (lowerCase.includes("visa")) {
       return this.actionProvider.handleConfigDocs();
     }
-
-    if (lowerCase.includes("widget")) {
-      return this.actionProvider.handleWidgetDocs();
+    if(lowerCase.includes("hi")||lowerCase.includes("hello")||lowerCase.includes("hey")){
+      return this.actionProvider.handleHello();
     }
-
+    
     return this.actionProvider.handleDefault();
   };
 }

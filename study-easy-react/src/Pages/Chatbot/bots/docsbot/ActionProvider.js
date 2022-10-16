@@ -3,7 +3,13 @@ class ActionProvider {
     this.createChatBotMessage = createChatBotMessage;
     this.setState = setStateFunc;
   }
-
+  handleHello = () => {
+    const messages = this.createChatBotMessage("Hey! Select a option.",
+    {
+      withAvatar: true,
+      widget: "overview",});
+      this.addMessageToBotState(messages);
+  }
   handleMessageParserDocs = () => {
     const messages = this.createChatBotMessage(
       "Choose the Country",
@@ -37,7 +43,7 @@ class ActionProvider {
 
   handleDefault = () => {
     const message = this.createChatBotMessage(
-      "How can I help? Here is the overview.",
+      "Sorry! cannot get you. You can try this options",
       {
         withAvatar: true,
         widget: "overview",
