@@ -1,7 +1,8 @@
 import React from 'react'
 import {  Routes, Route, useLocation } from "react-router-dom";
-import { Header } from './head/header';
+
 import {AnimatePresence} from 'framer-motion';
+import { Home } from './home/home';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -9,7 +10,7 @@ function AnimationRoutes() {
     //animation reuser
     <AnimatePresence>
         <Routes location={location} key={location.pathname} basename = {process.env.PUBLIC_URL}>
-        <Route path="/" exact element={<Header/>} />
+        <Route path="/" exact element={<Home/>} />
         </Routes>
     </AnimatePresence>
   )

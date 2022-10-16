@@ -8,6 +8,8 @@
 body
 {
     font-family: "Roboto", sans-serif;
+    /* background-color: white; */
+    /* background-color: antiquewhite; */
 }
 .container
 {
@@ -35,6 +37,93 @@ body
     cursor: pointer;  
     background-color: black;  
 }
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    text-decoration: none;
+}
+
+button
+{
+    border: none;
+}
+
+.row
+{
+    width: 50%;
+}
+
+button
+{
+    padding: 17px 30px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border: none;
+    margin: 30px 10px 0 0;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 24px 36px -11px rgba(0, 0, 0, 9%);
+}
+
+button i
+{
+    margin-left: 20px;
+}
+
+button:hover
+{
+    box-shadow: none;
+}
+
+.primary-btn
+{
+    background-color: rgba(0, 116, 217, 1);
+    color: white;
+}
+
+#heading
+{
+    text-align: center;
+    padding: 40px 0;  
+}
+
+#heading h3
+{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#heading h2
+{
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#heading h1
+{
+    font-size: 40px;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+p
+{
+    line-height: 30px;
+    font-size: 18px;
+}
+
 .App
 {
 

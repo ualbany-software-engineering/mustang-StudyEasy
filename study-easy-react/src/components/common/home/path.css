@@ -1,0 +1,154 @@
+.scrollholder
+{
+    border-radius: 100px;
+    padding-top: 150px;
+    margin-top: 33%;
+    margin-left: 2%;
+    margin-right: 2%;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+}
+.scrollholder>div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    position: relative;
+    min-height: 300px;
+}
+.scrollholder h4{
+    color: #555555!important;
+}
+.scrollholder>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.scrollholder img{
+    border-radius: 12px;
+    height: 250px;
+    width: 380px;
+    object-fit: cover;
+    margin-top: 0rem;
+    transition: 300ms all;
+}
+.scrollholder img:hover{
+    height: 300px;
+}
+.scrollholder>div>div{
+    padding: 25px 25px;
+}
+.scrollholder>div>div:last-child{
+    border-left: 1px solid #5286B5;
+    height: 100%;
+}
+.scrollholder>div:first-child::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 12px);
+    background-color: #015195;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+
+.scrollholder>div:last-child::after{
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 12px);
+    background-color: #000;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+.scrollholder>div:last-child::before{
+    height: 49%;
+    left: calc(50% - 6px);
+    bottom: 0;
+    background-color: blanchedalmond;
+    width: 12px;
+    position: absolute;
+}
+.scrollholder>div:nth-child(2),.scrollholder>div:nth-child(4),.scrollholder>div:nth-child(6){
+    background: rgb(0,0,0);
+    background: #E3F3FF;
+}
+.scrollholder>div:last-child::before{
+    background: linear-gradient(186deg, rgba(0,0,0,1) 28%, rgb(42 42 42 / 86%) 95%, rgb(94 94 94) 100%);
+}
+.scrollholder>div:nth-child(2){
+    background-color: rgba(234,208,173,0.5);
+}
+.scrollholder>div:nth-child(4){
+    background-color: rgba(234,208,173,0.5);
+
+}
+.scrollholder>div:nth-child(6){
+    background-color: rgba(234,208,173,0.5);
+
+}
+
+.scrollholder>div>div:nth-child(even){
+    align-items: flex-start;
+    padding-left: 96px;
+}
+.scrollholder>div>div:nth-child(even) a{
+    background-color: blanchedalmond !important;
+}
+.bgimg_cntImg{
+    background-color: #F8FCFF!important;
+}
+.scrollholder>div:nth-child(even) h4{
+    text-align: right!important;
+}
+.scrollholder>div h4{
+    font-size: 24px!important;
+}
+.scrollholder>div:nth-child(odd) h4{
+    text-align: left!important;
+}
+.scrollholder>div:nth-child(odd)>div:nth-child(odd){
+    align-items: flex-end;
+}
+.scrollholder>div:nth-child(even)>div:nth-child(even){
+    align-items: flex-start;
+}
+.scrollholder>div>div:nth-child(odd){
+    align-items: flex-end;
+    padding-right: 96px;
+    transition: 300ms all;
+}
+.scrollholder>div:nth-child(even)>div:nth-child(odd) h4{
+    color: black!important;
+}
+.scrollholder>div:nth-child(even)>div:nth-child(odd) a:hover{
+    background-color: white!important;
+    color: black;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.scrollholder .btn-orange{
+    transition: 300ms all;
+}
+.scrollholder .btn-orange:hover{
+    background-color: white!important;
+    border: 1px solid #015195;
+    color: #015195;
+    cursor: pointer;
+}
+.scrollholder>div>div>div{
+    font-size: 16px;
+}
+.scrollholder>div>div>h4{
+    font-size: 32px;
+}
+.scrollholder>div>div>button{
+    font-size: 14px;
+}
+
+.scrollholder>h4
+{
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 40px;
+}

@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Head } from './head'
 import {Link} from "react-router-dom";
 import "./head.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-export const Header = () => {
+
+const Header = () => {
+
+    const [click, setclick] = useState(false);
+
   return (
     <div>
         <Head/>
-        <Header>
+        <header>
             <nav className='flexSB'>
-                <ul>
+                <ul className = {click ? "mobile-nav" : "flexSB" } onClick = {()=> setclick(false)}>
                     <li><Link to = "/">Home</Link></li>
                     <li><Link to = "/Search ">Search</Link></li>
                     <li><Link to = "/Trending">Trending</Link></li>
+                    <li><Link to = "/Team">Team</Link></li>
                     <li><Link to = "/Profile">Profile</Link></li>
                 </ul>
                 <div className='start'>
@@ -20,8 +26,13 @@ export const Header = () => {
                         ABOUT US
                     </div>
                 </div>
+                <button className='toggle' onClick={() => setclick(!click)}>
+                    {click ? <i className='bi bi-x'></i> : <i className='bi bi-list'></i>}
+                </button>
             </nav>
-        </Header>
+        </header>
     </div>
   )
 }
+
+export default Header
