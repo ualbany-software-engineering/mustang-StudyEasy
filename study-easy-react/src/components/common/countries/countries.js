@@ -3,6 +3,7 @@ import db from '../../../firebase/firebaseconfig.js';
 import { useState, useEffect} from 'react';
 import { async } from '@firebase/util';
 import {collection, doc, getDoc, getDocs} from 'firebase/firestore';
+import  Map  from './Map.js';
 
 export const Country = () => {
 
@@ -37,9 +38,13 @@ export const Country = () => {
                 flag.map((flagdata,index) => {
                     return(
 
-                        <div key={index}>
-                            <img src={flagdata.canada}/>
-                        </div>
+                        <>
+                        {/* <div key={index}>
+                            <img src={flagdata.canada} />
+                        </div> */}
+                        <Map />
+                        </>
+
                     )
                 })
             }
