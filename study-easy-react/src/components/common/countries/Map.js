@@ -18,6 +18,7 @@ import React, {
     const [countries, setCountries] = useState({ features: [] });
     const [hover, setHover] = useState();
     const [rotation, setRotation] = useState(true);
+    const [hoverD, sethoverD] = useState();
   
     useEffect(() => {
       fetch(
@@ -55,7 +56,7 @@ import React, {
   
     useEffect(() => {
       globeEl.current.controls().autoRotate = true;
-      globeEl.current.controls().autoRotateSpeed = 2;
+      globeEl.current.controls().autoRotateSpeed = 3;
   
       globeEl.current.pointOfView({ altitude: 1 }, 5000);
   
@@ -88,7 +89,8 @@ import React, {
     return (
       <Globe
         ref={globeEl}
-        globeImageUrl={earth}
+        globeImageUrl="https://unpkg.com/three-globe@2.24.8/example/img/earth-blue-marble.jpg"
+        backgroundImageUrl = "https://unpkg.com/three-globe@2.24.8/example/img/night-sky.png"
         // bumpImageUrl="/bump-large.jpg"
         globeMaterial={globeMaterial}
         polygonsData={countries.features.filter(
