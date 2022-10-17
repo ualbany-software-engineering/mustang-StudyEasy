@@ -1,5 +1,6 @@
 import React from 'react'
 import "../home/path.css";
+import {Link}  from "react-router-dom";
 
 export const Path= () => {
   return (
@@ -12,7 +13,13 @@ export const Path= () => {
           <div>
             <div class="clr-orange fBold" data-aos="fade-left">Selection</div>
             <h4 class="fBold clr-dgray" data-aos="fade-left">Select a Country</h4>
-            <button className='primary-btn' data-aos="fade-left">Checkout</button>
+           
+           
+            <Link to="/Countries">
+              <button className='primary-btn' data-aos="fade-left">Checkout</button>
+            </Link>
+
+
           </div>
         </div>
 
