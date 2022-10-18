@@ -1,14 +1,19 @@
 import "../styling/Login.css";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import app from './firebase-config.js';
+import {app, auth} from '../firbase-config'
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
 
-    const auth = getAuth(app);
-
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+    let path = `/`; 
+    navigate(path);
+  }
 
     const signUp = () => {
         createUserWithEmailAndPassword(auth, email, password)
@@ -17,6 +22,7 @@ function Login() {
                 const user = userCredential.user;
                 console.log(user);
                 alert("Successfully created an account")
+                routeChange()
                 // ...
             })
             .catch((error) => {
@@ -24,7 +30,7 @@ function Login() {
                 //const errorMessage = error.message;
                 alert(errorCode)
                 // ..
-            });
+            }); 
     }
 
     const signIn = () => {
@@ -34,6 +40,7 @@ function Login() {
                 const user = userCredential.user;
                 console.log(user)
                 alert("Successfully signed in")
+                routeChange()
                 // ...
             })
             .catch((error) => {

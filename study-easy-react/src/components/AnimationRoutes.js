@@ -4,6 +4,7 @@ import {Country} from "../Pages/Country";
 import Home from '../Pages/Home';
 import About from "../Pages/AboutLowercase";
 import Extra from '../Pages/Extra';
+import LOGIN  from '../Pages/Login';
 // import {University} from '../pages/University';
 import {Majors}from '../components/Majors';
 import {Courses}from '../components/Courses';
@@ -85,6 +86,7 @@ function AnimationRoutes() {
               
               
                <Route path ="/Home1" exact element = {<Home1/>}/>
+               <Route path ="/Login" exact element = {<LOGIN/>}/>
                <Route path ="/Resources" exact element = {<Home1/>}/>
                <Route path ="/Gmat" exact element = {<Gmat/>}/>
                <Route path ="/Gre" exact element = {<Gre/>}/>
