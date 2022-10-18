@@ -1,19 +1,20 @@
 import "../styling/Login.css";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import {app, auth} from '../firbase-config'
+import { app, auth } from '../firbase-config'
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { TextField } from "@mui/material";
 
 function Login() {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    let navigate = useNavigate(); 
-    const routeChange = () =>{ 
-    let path = `/`; 
-    navigate(path);
-  }
+    let navigate = useNavigate();
+    const routeChange = () => {
+        let path = `/`;
+        navigate(path);
+    }
 
     const signUp = () => {
         createUserWithEmailAndPassword(auth, email, password)
@@ -30,7 +31,7 @@ function Login() {
                 //const errorMessage = error.message;
                 alert(errorCode)
                 // ..
-            }); 
+            });
     }
 
     const signIn = () => {
@@ -53,11 +54,18 @@ function Login() {
     return (
         <div className="loginCreateAccount">
             <div classsName='login'>
-                <input type={"email"} placeholder="please enter your email" onChange={(e) => setEmail(e.target.value)} />
-                <input type={"password"} placeholder="please enter your password" onChange={(e) => setPassword(e.target.value)} />
-
-                <button onClick={signUp}>Create Account</button>
-                <button onClick={signIn}>Sign in</button>
+                <div>
+                    <TextField type={"email"} label="please enter your email" style={{width:275}} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div>
+                    <TextField type={"password"} label="please enter your password" style={{width:275}} onChange={(e) => setPassword(e.target.value)} />
+                </div>
+                <div>
+                    <button variant="contained" onClick={signUp}>Create Account</button>
+                </div>
+                <div>
+                    <button variant="contained" onClick={signIn}>Sign in</button>
+                </div>
             </div>
         </div>
     );
