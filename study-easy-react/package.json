@@ -15,6 +15,7 @@
     "chatbot": "^1.2.3",
     "framer-motion": "^7.3.6",
     "react": "^18.2.0",
+    "react-anim-kit": "^1.0.19",
     "react-chatbot-kit": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.4.1",
@@ -22,6 +23,7 @@
     "react-select": "^5.4.0",
     "react-simple": "^1.2.3",
     "react-transition-group": "^4.4.5",
+    "react-util-kit": "^0.0.15",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
