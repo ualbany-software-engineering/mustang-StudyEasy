@@ -9,7 +9,7 @@ import Nav from '../designpages/Nav'
 export const AUS = () => {
   return (
     <div>
-      <Nav given = 'country' link = '/canadavisa' link1 = "/Univ/AUS"/>
+      <Nav given = 'country' link = '/australiavisa' link1 = "/Univ/AUS"/>
     <h1 className='h1'>Welcome to AUSTRALIA</h1><div className='Country'>
     <div className='Country'>
     <College collegeName="University of Melbourne" Logo='https://img.emg-services.net/institutes/institute3393/uom-header.jpg' zipCode={3010} url= "https://www.unimelb.edu.au/" name = "/UM" number={1}/>

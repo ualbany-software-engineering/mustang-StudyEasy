@@ -21,6 +21,7 @@ import { INDIAVISA } from '../visapages/indiavisa';
 import { CANADAVISA } from '../visapages/canadavisa';
 import { CHINAVISA } from '../visapages/chinavisa';
 import { UKVISA } from '../visapages/ukvisa';
+import {AUSVISA} from '../visapages/australiavisa';
 import Error from "./Error"
 import Home1 from '../Pages/Home1';
 import Gmat from '../Pages/Gmat';
@@ -67,6 +68,7 @@ function AnimationRoutes() {
                 <Route path="/canadavisa" exact element = {<CANADAVISA/>} />
                 <Route path="/chinavisa" exact element = {<CHINAVISA/>} />
                 <Route path="/ukvisa" exact element = {<UKVISA/>} />
+                <Route path='/australiavisa' exact element = {<AUSVISA/>} />
                <Route path ="/Majors" exact element ={<Majors/>}/>
                <Route path ="Courses" exact element={<Courses/>}/>
                
