@@ -19,21 +19,23 @@
 
 .h3tag{
     margin-top: 15px;
-    
     text-align: center;
+    color: black;
 }
-.para{
+.auspara{
     width: 400px;
-    float: left;
-    background-color: #0066CC;
+    height: 220px;
     text-align: justify;
+    background-color: #0066CC;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
 }
-.canadainfopane{
- float: left;
- margin-right: 40%;
+.indiainfopane{
+  
+  margin-right: 50%;
 }
 .h2tag{
-    
     border: 1px solid black;  
     background-color: #0066CC;
     color: white;
@@ -44,22 +46,18 @@
     text-align: center;
     float: none;
 }
-.visaimg{
-    width: 100%;
-    height: 400px;
-}
+
 .h1tag{
     text-align: center;
     float: none;
     display: block;
-   
+    color: black;
 }
-.canadacontent{
+.auscontent{
     float: left;
     margin-top: 20px;
     margin: 15px;
     margin-left: 20px;
-    height: 280px;
 }
 .unselectable {
     -webkit-user-select: none;
@@ -68,3 +66,7 @@
     -ms-user-select: none;
     user-select: none;
   }
+  .visaimg{
+    width: 100%;
+    height: 400px;
+}

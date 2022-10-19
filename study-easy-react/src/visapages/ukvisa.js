@@ -1,9 +1,10 @@
 import React from "react"
 import '../styling/Uk.css'
+import visa from '../images/visa.jpg';
 export const UKVISA = () => {
     return (
         <div>
-            
+            <img src={visa} class="visaimg"/> 
            <h1 class="h1tag unselectable">Uk Visa Information</h1>
            <h2 class="h2tag unselectable">Five Step Visa Application Process</h2>
            

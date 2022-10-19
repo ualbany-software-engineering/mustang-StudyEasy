@@ -1,9 +1,10 @@
 import React from "react"
 import '../styling/China.css'
+import visa from '../images/visa.jpg';
 export const CHINAVISA = () => {
     return (
         <div>
-            
+          <img src={visa} class="visaimg"/>   
         <h1 class="h1tag unselectable">China Visa Information</h1>
         <h2 class="h2tag unselectable">Five Step Visa Application Process</h2>
         

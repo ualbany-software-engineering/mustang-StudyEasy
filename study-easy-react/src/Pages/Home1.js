@@ -4,12 +4,15 @@ import ielts from '../assets/ielts.png';
 import gmat from '../assets/gmat.jpg';
 import "../styling/Home1.css"
 import { Link } from "react-router-dom";
-
+import resources from '../images/resources.jpg';
 
 function Home() {
   return (
     <div className='home'>
+        <img className='main-image' src={resources} />
+      
       <div className='main-container'>
+        <br/>
         <div className='gre-main-container'>
           <div className='gre-heading-container'>
             <img src={gre} className="my-gre-image" alt="gre-img" />

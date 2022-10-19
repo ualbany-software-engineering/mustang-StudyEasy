@@ -25,11 +25,11 @@ function Gmat() {
 
         </div>
             <div className="container">
-                <h1 className="menuTitle" >Materials</h1>
+                <h1 className="menuTitle" >Downloadable Materials</h1>
                 <ul className="list-container">
-                    <li><a href={pic} download>About GMAT</a></li>
-                    <li><a href={pic1} download>GMAT Study Guide</a></li>
-                    <li><a href={pic2} download>Kaplan Prep</a></li>
+                    <li className="list-val"><a className="resourcelink" href={pic} download>About GMAT</a></li>
+                    <li className="list-val"><a className="resourcelink" href={pic1} download>GMAT Study Guide</a></li>
+                    <li className="list-val"><a className="resourcelink" href={pic2} download>Kaplan Prep</a></li>
                 </ul>
             </div>
     </div>

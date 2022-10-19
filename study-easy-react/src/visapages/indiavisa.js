@@ -1,9 +1,11 @@
 import React from "react"
 import '../styling/India.css';
+import visa from '../images/visa.jpg';
+
 export const INDIAVISA = () => {
     return (
         <div>
-            
+        <img src={visa} class="visaimg"/>
         <h1 class="h1tag unselectable">Indian Visa Information</h1>
         <h2 class="h2tag unselectable">Three Step Visa Application Process</h2>
         

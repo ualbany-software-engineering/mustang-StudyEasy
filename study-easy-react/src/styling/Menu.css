@@ -11,7 +11,7 @@
     font-family: cursive;
     font-size: 60px;
     text-align: center;
-    color: rgb(255, 253, 208);
+    color: #0066CC;
   }
   .container{
     width: 100%;
@@ -21,17 +21,18 @@
     justify-content: space-evenly;
     width: 100%;
     text-decoration: none;
-    color: white;
+    color: #0066CC;
     
 }
   
   .menuList {
-    width: 70vw;
+    width: 77vw;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    background-color: white;
+    border-radius: 15px;
+    background-color: #0066CC;
   }
   
   /* MENU ITEM STYLING */
@@ -41,10 +42,11 @@
     width: 300px;
     height: 350px;
     margin: 20px;
+    background-color: white;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
   .menuItem:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
     transition: 0.3s ease-in;
     cursor: pointer;
   }
@@ -64,6 +66,21 @@
     margin-left: 20px;
   }
   
+  .list-val {
+    list-style: none;
+   
+  }
+  .resourcelink {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0066CC;
+    color: white;
+  }
+  .resourcelink:hover{
+    font-size:18px;
+  }
   @media only screen and (max-width: 1300px) {
     .menuList {
       grid-template-columns: 1fr 1fr;

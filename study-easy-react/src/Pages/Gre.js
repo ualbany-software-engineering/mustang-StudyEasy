@@ -25,12 +25,13 @@ function Gre() {
 
         </div>
             <div className="container">
-                <h1 className="menuTitle" >Materials</h1>
+                <h1 className="menuTitle" >Downloadable Materials</h1>
                 <ul className="list-container">
-                    <li><a href={pic} download>Official Gudie</a></li>
-                    <li><a href={pic1} download>GRE Prep</a></li>
-                    <li><a href={pic2} download>Prep Resource</a></li>
+                    <li className="list-val"><a className="resourcelink" href={pic} download>Official Gudie</a></li>
+                    <li className="list-val"><a className="resourcelink" href={pic1} download>GRE Prep</a></li>
+                    <li className="list-val"><a className="resourcelink" href={pic2} download>Prep Resource</a></li>
                 </ul>
+                <br/>
             </div>
     </div>
   )

@@ -1,7 +1,8 @@
 
 .number{
-    background-color: black;
+    background-color: #0066CC;
     color: white;
+    border: 1px solid black;
     border-radius: 50%;
     height: 45px;
     width: 45px;
@@ -22,6 +23,7 @@
 }
 .para{
     width: 400px;
+    background-color: #0066CC;
     text-align: justify;
 }
 .chinainfopane{
@@ -29,9 +31,14 @@
   margin-right: 50%;
   
 }
+.visaimg{
+    width: 100%;
+    height: 400px;
+}
 .h2tag{
     
-    background-color: black;
+    border: 1px solid black;  
+    background-color: #0066CC;
     color: white;
     height: 40px;
     border-radius: 25px;
