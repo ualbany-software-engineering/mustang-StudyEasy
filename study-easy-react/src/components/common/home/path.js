@@ -15,8 +15,8 @@ export const Path= () => {
             <h4 class="fBold clr-dgray" data-aos="fade-left">Select a Country</h4>
            
            
-            <Link to="/Countries">
-              <button className='primary-btn' data-aos="fade-left">Checkout</button>
+            <Link to="/Countries" style={{decoration: 'none'}}>
+            <button className='primary-btn' data-aos="fade-left">Checkout</button>
             </Link>
 
 

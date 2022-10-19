@@ -19,7 +19,7 @@ const Header = () => {
                     <li><Link to = "/Search ">Search</Link></li>
                     <li><Link to = "/Trending">Trending</Link></li>
                     <li><Link to = "/Team">Team</Link></li>
-                    <li><Link to = "/Profile">Profile</Link></li>
+                    <li><Link to = "/Login">Login</Link></li>
                 </ul>
                 <div className='start'>
                     <div className='button'>

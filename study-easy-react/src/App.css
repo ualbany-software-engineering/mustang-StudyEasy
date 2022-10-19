@@ -113,7 +113,8 @@ button:hover
 
 #heading h1
 {
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 200;
     margin: 20px 0;
     text-transform: capitalize;
 }
@@ -122,6 +123,61 @@ p
 {
     line-height: 30px;
     font-size: 18px;
+}
+
+
+.back
+{
+    background-image: url("./images/countbg2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 22%;
+    /* padding-left: 30px; */
+    /* padding-right: 50px; */
+    color:white;
+    image-rendering: optimizeQuality;
+    text-align: left;
+}
+
+.back h1
+{
+    font-size: 80px;
+    text-transform:capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 30px;
+
+}
+
+.back h2
+{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align:left;
+    padding-left: 30px;
+}
+
+.primary-btn1
+{
+    background-color: rgba(0, 116, 217, 1);
+    color: white;
+    margin-left: 2.2%;
+}
+
+.map
+{
+    background-color: black;
+    margin-top: 8.5%;
+    width: 100% !important;
 }
 
 .App

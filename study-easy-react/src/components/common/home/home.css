@@ -25,7 +25,7 @@
 {
     color: white;
     /* background-color: rgba(0, 0, 0, 0.2); */
-    margin-bottom: -10px;
+    margin-bottom: -0.5%;
     margin-top: -55px;
     letter-spacing: 4px;
     font-weight: 100;
@@ -33,12 +33,12 @@
 }
 .Hom #heading h2
 {
-    color: blanchedalmond;
+    color: rgb(255, 235, 205);
     /* background-color: rgba(0, 0, 0, 0.2); */
     letter-spacing: 4px;
     font-weight: 100;
     text-align: start;
-    margin-bottom: -30px;
+    margin-bottom: -3%;
 }
 .Hom #heading
 {

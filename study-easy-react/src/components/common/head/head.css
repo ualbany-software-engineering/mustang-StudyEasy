@@ -34,7 +34,7 @@ li{
 
 header
 {
-    background-color: grey;
+    background-color: rgba(255, 255, 255, 0.4);
     margin: 0 30px;
 }
 header .nav
@@ -54,14 +54,15 @@ header li
 
 header ul li a 
 {
-    color: white;
+    color: black;
     font-weight: 500;
     transition: 0.5s;
 
 }
 header ul li a:hover
 {
-    color: black;
+    font-weight: bolder;
+    color: rgba(0,116,217,255);
 }
 
 .start

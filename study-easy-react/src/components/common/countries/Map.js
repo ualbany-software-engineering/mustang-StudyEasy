@@ -10,9 +10,12 @@ import React, {
   import * as THREE from "three";
   import clouds from "./globe/clouds.png";
   import bump from "./globe/bump-large.jpg";
-  import earth from "./globe/earth-large.jpg";
+  import { Home } from '../home/home.jsx';
+  import {Link} from "react-router-dom";
 
-  
+
+  //refered: https://codesandbox.io/s/react-globegl-4snxx?file=/src/App.js
+
   export default function Map() {
     const globeEl = useRef();
     const [countries, setCountries] = useState({ features: [] });
@@ -58,7 +61,7 @@ import React, {
       globeEl.current.controls().autoRotate = true;
       globeEl.current.controls().autoRotateSpeed = 3;
   
-      globeEl.current.pointOfView({ altitude: 1 }, 5000);
+      globeEl.current.pointOfView({ altitude: 1.8 },2000);
   
       // globeEl.current.controls().update();
     }, [rotation]);
@@ -77,7 +80,7 @@ import React, {
   
     const globeMaterial = useMemo(() => {
       const globeMaterialTemp = new THREE.MeshPhongMaterial();
-      globeMaterialTemp.bumpScale = 10;
+      globeMaterialTemp.bumpScale = 18;
   
       new THREE.TextureLoader().load({bump}, (texture) => {
         globeMaterial.bumpMap = texture;
@@ -86,6 +89,18 @@ import React, {
       return globeMaterialTemp;
     }, []);
   
+    const onclicker = (a) =>
+    {
+       alert(a);
+    }
+    // const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlOrRd);
+    // const maxVal = useMemo(
+    //     () => Math.max(...countries.features.map(getVal)),
+    //     [countries]
+    //   );
+    // colorScale.domain([0, maxVal]);
+    // const getVal = feat => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
+      
     return (
       <Globe
         ref={globeEl}
@@ -96,13 +111,16 @@ import React, {
         polygonsData={countries.features.filter(
           (d) => d.properties.ISO_A2 !== "AQ"
         )}
-        polygonAltitude={0.01}
+        polygonAltitude={(d) => d === hoverD ? 0.08 : 0.01}
+        polygonStrokeColor={()=> '#111'}
+        polygonSideColor = {() => "rgba(0, 0, 0,1)"}
         polygonCapColor={(d) =>
           d.properties.ISO_A3 === hover
-            ? "rgba(255, 255,255, 0.3)"
-            : "rgba(255, 255,255, 0)"
+            ? "rgba(0, 0, 0, 0.8)"
+            : "rgba(255, 235, 205, 0.2)"
         }
-        polygonSideColor={() => "rgba(255, 255, 255, 0)"}
+        polygonLabel={({properties : d}) => `<b>${d.ADMIN}</b><br/>`}
+        onPolygonClick={({properties:d})=> onclicker(d.ADMIN)}
         onPolygonHover={onHoverHandler}
       />
     );

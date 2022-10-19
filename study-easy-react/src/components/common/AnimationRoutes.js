@@ -3,7 +3,9 @@ import {  Routes, Route, useLocation } from "react-router-dom";
 
 import {AnimatePresence} from 'framer-motion';
 import { Home } from './home/home';
-import { Country } from './countries/countries';
+// import { Country } from './countries/countries';
+import { Selection_countries } from './countries/selection_countries';
+import { Login } from './login/login';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -12,7 +14,8 @@ function AnimationRoutes() {
     <AnimatePresence>
         <Routes location={location} key={location.pathname} basename = {process.env.PUBLIC_URL}>
         <Route path="/" exact element={<Home/>} />
-        <Route path="/Countries" exact element={<Country/>} />
+        <Route path="/Countries" exact element={<Selection_countries/>} />
+        <Route path="/Login" exact element={ <Login/> } />
         </Routes>
     </AnimatePresence>
   )

@@ -42,7 +42,15 @@ export const Country = () => {
                         {/* <div key={index}>
                             <img src={flagdata.canada} />
                         </div> */}
-                        <Map />
+
+                        <div className='back'>
+                        {/* <Routerdisplay title="Selection"/> */}
+                        </div>
+                        
+                        <div className='map'>
+                            <Map />
+                        </div>
+                      
                         </>
 
                     )
