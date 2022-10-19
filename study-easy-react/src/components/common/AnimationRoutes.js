@@ -6,6 +6,7 @@ import { Home } from './home/home';
 // import { Country } from './countries/countries';
 import { Selection_countries } from './countries/selection_countries';
 import { Login } from './login/login';
+import { University } from './universities/university';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -16,6 +17,7 @@ function AnimationRoutes() {
         <Route path="/" exact element={<Home/>} />
         <Route path="/Countries" exact element={<Selection_countries/>} />
         <Route path="/Login" exact element={ <Login/> } />
+        <Route path="/University" exact element={ <University/> } />
         </Routes>
     </AnimatePresence>
   )
