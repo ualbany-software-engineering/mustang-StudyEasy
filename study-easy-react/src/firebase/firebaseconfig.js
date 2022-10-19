@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import {getFirestore} from "@firebase/firestore";
-
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { useNavigate } from 'react-router-dom'
 
 const firebaseConfig = {
     apiKey: "AIzaSyCnShKPKieY-ozV82CqAH4pzN87aYCf41U",
@@ -13,6 +14,11 @@ const firebaseConfig = {
   };
   
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+  export const app = initializeApp(firebaseConfig);
+  export const auth = getAuth(app);
   const db =  getFirestore(app);
   export default db;
+
+  
+  
+

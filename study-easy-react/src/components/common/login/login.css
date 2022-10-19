@@ -1,55 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *
 {
     box-sizing: border-box;
+    /* font-family: "Bebas Neue"; */
     
-    
-}
-.loginsection
-{
-    margin-top: -6%;
-    background-image: url("../../../images/login.jpg");
-    background-color: rgba(234,224,223,255);
-    background-size:contain ;
-    background-repeat: no-repeat;
-    overflow-y: hidden;
-   
-}
-.footer
-{
-    background-color: rgba(234,224,223,255);
-}
-.loginbody
-{
-    padding-top: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Roboto", sans-serif;
-    height: 100vh;
-    margin: -20px 0 50px;
-
 }
 
-h1
+
+.loginbody h1
 {
     font-weight: bold;
+    font-family: "Bebas Neue";
 }
 
-h2
+.loginbody h2
 {
     text-align: center;
+    font-family: "Bebas Neue";
 }
 
-p
+.loginbody p
 {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
     letter-spacing: 1px;
     margin: 20px 0 30px;
+    font-family: "Bebas Neue";
 }
 
 span
@@ -67,6 +44,7 @@ span
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
+    font-family: "Bebas Neue";
 }
 
 .loginbody>button:active
@@ -256,4 +234,33 @@ input
     margin: 0 5px;
     height: 40px;
     width: 40px;
+  }
+
+  .google
+  {
+    top: 50%;
+    box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
+    backdrop-filter: "blur(10px)"; 
+    background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
+    border: solid;
+    border-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+  }
+
+  .or
+  {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .border
+  {
+    color: black;
+    background-color: black;
+    height: 1px;
+    width: 80px;
+    padding-right: 2px;
+    padding-left: 2px;
   }

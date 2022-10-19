@@ -43,7 +43,7 @@
 .Hom #heading
 {
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
     margin: 0;
     padding: 0;
 }

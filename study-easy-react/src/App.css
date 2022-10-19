@@ -180,8 +180,33 @@ p
     width: 100% !important;
 }
 
+
+.loginsection
+{
+    margin-top: -12%;
+    background-image: url("./images/login.jpg");
+    background-color: rgba(234,224,223,255);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: hidden;
+   
+}
+.loginbody
+{
+    padding-top: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+
+}
+
 .App
 {
-
+    scroll-behavior: smooth;
 }
 
