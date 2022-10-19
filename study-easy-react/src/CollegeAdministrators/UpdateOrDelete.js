@@ -19,6 +19,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 export default function UpdateDeleteMajor() {
   const majorCollectionsRef = collection(db, "college");
   const [majorsData, setmajorsData] = useState([]);
+  const [run, setrun] = useState(0);
 
   useEffect(() => {
     const getMajors = async () => {
@@ -29,10 +30,8 @@ export default function UpdateDeleteMajor() {
       console.log(majorsData, "HAHHAHA");
     };
     getMajors();
-  }, []);
-  const [underGradCourse, setCourse] = useState([
-    { id: "", courseName: "", dispersion: "" },
-  ]);
+  }, [run]);
+
   return (
     <div>
       {majorsData.map((mj, index) => {
@@ -132,6 +131,7 @@ export default function UpdateDeleteMajor() {
 
                                 await updateDoc(updatecoruse, updateFildes);
                                 alert("AN Update has been made");
+                                setrun(run + 1);
                               }}
                             >
                               Update{" "}
@@ -171,6 +171,7 @@ export default function UpdateDeleteMajor() {
                                   };
                                   await updateDoc(updatecoruse, deleteItems);
                                   alert("A DELETE has been made");
+                                  setrun(run + 1);
                                   // removeArray();
                                 }}
                               ></Button>
@@ -224,6 +225,7 @@ export default function UpdateDeleteMajor() {
                                   };
                                   await updateDoc(updatecoruse, addMore);
                                   alert("New Value has been added");
+                                  setrun(run + 1);
                                 }}
                               >
                                 Add Course
@@ -311,6 +313,7 @@ export default function UpdateDeleteMajor() {
 
                                 await updateDoc(updatecoruse, updateFildes);
                                 alert("AN Update has been made");
+                                setrun(run + 1);
                               }}
                             >
                               Update{" "}
@@ -350,6 +353,7 @@ export default function UpdateDeleteMajor() {
                                   };
                                   await updateDoc(updatecoruse, deleteItems);
                                   alert("A DELETE has been made");
+                                  setrun(run + 1);
                                   // removeArray();
                                 }}
                               ></Button>
@@ -403,6 +407,7 @@ export default function UpdateDeleteMajor() {
                                   };
                                   await updateDoc(updatecoruse, addMore);
                                   alert("New Value has been added");
+                                  setrun(run + 1);
                                 }}
                               >
                                 Add Course
@@ -422,6 +427,7 @@ export default function UpdateDeleteMajor() {
                         alert("About Delete Whole Major ");
                         const deleteMajor = doc(db, "college", mj.id);
                         await deleteDoc(deleteMajor);
+                        setrun(run + 1);
                       }}
                     >
                       Delete
