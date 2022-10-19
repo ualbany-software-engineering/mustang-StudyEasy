@@ -2,7 +2,14 @@
 import React,{ useState } from 'react'
 import Chatbot from 'react-chatbot-kit';
 import 'react-chatbot-kit/build/main.css'
-
+import {
+    ComposableMap,
+    ZoomableGroup,
+    Geographies,
+    Geography
+  } from "react-simple-maps";
+  import { Spring, config } from "react-spring";
+  import chroma from "chroma-js";
 // import { useState } from "react";
 
 
@@ -12,15 +19,28 @@ import { Button } from '@mui/material';
 // import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 
 //chatbot imports
-import config from "./Chatbot/bots/docsbot/config";
 import MessageParser from "./Chatbot/bots/docsbot/MessageParser";
 import ActionProvider from "./Chatbot/bots/docsbot/ActionProvider";
 import { ConditionallyRender } from "react-util-kit";
 import { ReactComponent as ButtonIcon } from "./Chatbot/images/bot.svg";
 
 
+const geoPaths = ["/world.json", "/ch.json"];
+const getRandomInt = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1) + min);
+
+const colorScale = chroma.brewer.Oranges.slice(1);
+const scl = chroma
+  .scale(["#FFF", "#FF5419", "#000"])
+  .mode("lch")
+  .colors(8);
+
+const colors = Array(180)
+  .fill()
+  .map(d => colorScale[getRandomInt(0, colorScale.length - 1)]);
 
 export const Country = () => {  
+    
     
     // var countryOptions = [
     //     {value: 'USA', label: "United States of America"},
@@ -52,10 +72,10 @@ export const Country = () => {
       
         </div>
         <div>
-        
+        <br/><br/><br/>
       
        
-      
+      Hello Wordl!
      
 
 

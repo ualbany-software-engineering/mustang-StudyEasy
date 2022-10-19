@@ -2,7 +2,7 @@ import React from 'react'
 import {  Routes, Route, useLocation } from "react-router-dom";
 import {Country} from "../Pages/Country";
 import Home from '../Pages/Home';
-import About from "../Pages/AboutLowercase";
+import About from "../Pages/AboutLowercase.js";
 import Extra from '../Pages/Extra';
 // import {University} from '../pages/University';
 import {Majors}from '../components/Majors';
@@ -43,6 +43,8 @@ import UO from '../adminreq/UK/UO';
 import Peking from '../adminreq/CHINA/Peking';
 import Shanghai from '../adminreq/CHINA/Shanghai';
 
+
+import Images from '../Pages/Images.js';
 function AnimationRoutes() {
     const location = useLocation();
   return (
@@ -82,7 +84,6 @@ function AnimationRoutes() {
                <Route path="/UO" element={<UO />}/>
                <Route path="/Peking" element={<Peking />}/>
                <Route path="/Shanghai" element={<Shanghai />}/>
-              
               
                <Route path ="/Home1" exact element = {<Home1/>}/>
                <Route path ="/Resources" exact element = {<Home1/>}/>

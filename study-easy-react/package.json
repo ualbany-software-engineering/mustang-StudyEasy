@@ -13,6 +13,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "chatbot": "^1.2.3",
+    "chroma-js": "^2.4.2",
+    "d3-geo": "^3.0.1",
     "framer-motion": "^7.3.6",
     "react": "^18.2.0",
     "react-anim-kit": "^1.0.19",
@@ -22,9 +24,14 @@
     "react-scripts": "5.0.1",
     "react-select": "^5.4.0",
     "react-simple": "^1.2.3",
+    "react-simple-maps": "^3.0.0",
+    "react-slideshow-image": "^4.0.5",
+    "react-spring": "^9.5.5",
     "react-transition-group": "^4.4.5",
     "react-util-kit": "^0.0.15",
     "styled-components": "^5.3.5",
+    "topojson": "^3.0.2",
+    "topojson-client": "^3.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -55,6 +62,7 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
+    "json-loader": "^0.5.7",
     "react-router-dom": "^6.3.1"
   }
 }
