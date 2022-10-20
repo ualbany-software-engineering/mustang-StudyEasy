@@ -28,7 +28,8 @@ import Home1 from "../Pages/Home1";
 import Gmat from "../Pages/Gmat";
 import Gre from "../Pages/Gre";
 import Ielts from "../Pages/Ielts";
-
+import CreateComment from '../Pages/CreateComment';
+import Comment from '../Pages/Comment';
 import Ualbany from "../adminreq/US/UAB";
 import SBU from "../adminreq/US/SBU";
 
@@ -101,6 +102,8 @@ function AnimationRoutes() {
         <Route path="/Gmat" exact element={<Gmat />} />
         <Route path="/Gre" exact element={<Gre />} />
         <Route path="/Ielts" exact element={<Ielts />} />
+        <Route path ="/CreateComment" exact element = {<CreateComment/>}/>
+        <Route path ="/Comment" exact element = {<Comment/>}/>
       </Routes>
     </AnimatePresence>
   );

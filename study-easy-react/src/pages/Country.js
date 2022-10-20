@@ -4,6 +4,8 @@ import React from 'react'
 import Datacard from "../designpages/Datacard";
 import '../styling/Country.css';
 import {motion} from 'framer-motion';
+import Comment from './Comment';
+import { useNavigate } from "react-router-dom";
 // import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 
 export const Country = () => {
@@ -20,8 +22,13 @@ export const Country = () => {
     // {
     //     userselectedCountry();
     // }
-
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+        
+        navigate("/Comment");
+      };
     return (
+        <>
         <motion.div className="Country"
         initial={{width: 0}}
          animate={{width:'100%'}} 
@@ -38,7 +45,10 @@ export const Country = () => {
             <Datacard title="UK" logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" name = '/Univ/UK'/>
              <Datacard title="Australia" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/250px-Flag_of_Australia_%28converted%29.svg.png" name = '/Univ/AUS'/>         
             {/* {<University country = {selectedCountry}/>} */}
-        </motion.div>);
+        </motion.div>
+        <button className='button' onClick={routeChange}>See USer Reviews</button>;
+        </>
+        );
 };
 
 // const Temp =()=>{
