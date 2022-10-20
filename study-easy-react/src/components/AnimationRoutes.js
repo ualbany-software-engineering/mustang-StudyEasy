@@ -3,7 +3,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Country } from "../Pages/Country";
 import Home from "../Pages/Home";
 import About from "../Pages/AboutLowercase";
-import Extra from "../Pages/Extra";
+import Extra from '../Pages/Extra';
+import LOGIN  from '../Pages/Login';
+import ProfileInfo  from '../components/ProfileInfo';
 // import {University} from '../pages/University';
 import { Majors } from "../components/Majors";
 import { Courses } from "../components/Courses";
@@ -72,6 +74,7 @@ function AnimationRoutes() {
         <Route path="/canadavisa" exact element={<CANADAVISA />} />
         <Route path="/chinavisa" exact element={<CHINAVISA />} />
         <Route path="/ukvisa" exact element={<UKVISA />} />
+        <Route path ="/Login" exact element = {<LOGIN/>}/>
         <Route path="/Majors" exact element={<Majors />} />
         <Route path="Courses" exact element={<Courses />} />
         <Route path="/AddMajors" exact element={<AddMajors />} />
@@ -94,6 +97,7 @@ function AnimationRoutes() {
         <Route path="/Shanghai" element={<Shanghai />} />
         <Route path="/Home1" exact element={<Home1 />} />
         <Route path="/Resources" exact element={<Home1 />} />
+        <Route path="/ProfileInfo" exact element={<ProfileInfo />} />
         <Route path="/Gmat" exact element={<Gmat />} />
         <Route path="/Gre" exact element={<Gre />} />
         <Route path="/Ielts" exact element={<Ielts />} />

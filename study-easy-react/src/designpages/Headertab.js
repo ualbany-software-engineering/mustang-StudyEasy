@@ -40,14 +40,18 @@ function Headertab() {
             <p>Resources</p>
           </div>
         </Link>
-
-        <div className="header_icon">
+        <Link to='/Login'>
+        <div className='header_icon'>
           <AccountBoxIcon />
           <p>Profile</p>
         </div>
+        </Link>
       </div>
 
+
       <img src={logo} alt="" />
+
+
     </div>
   );
 }
