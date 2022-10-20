@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { db } from "../firbase-config";
+import { db } from "../../firbase-config";
+// import {db} from "..."
 import {
   collection,
   getDocs,
@@ -17,7 +18,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 // import {Form, Formik, Field, FieldArray} from 'formik';
 // import { async } from '@firebase/util';
 export default function UpdateDeleteMajor() {
-  const majorCollectionsRef = collection(db, "college");
+  const majorCollectionsRef = collection(db, "stonyBrookAdmi");
   const [majorsData, setmajorsData] = useState([]);
   const [run, setrun] = useState(0);
 
@@ -63,8 +64,8 @@ export default function UpdateDeleteMajor() {
                       <Grid container spacing={1}>
                         <Grid item>
                           <p>
-                            course Name: {e?.courseName} & course dispersion:{" "}
-                            {e?.dispersion}
+                            course Name: {e.courseName} & course dispersion:{" "}
+                            {e.dispersion}
                           </p>
                         </Grid>
 
@@ -77,7 +78,7 @@ export default function UpdateDeleteMajor() {
                         >
                           <Grid item>
                             <TextField
-                              label={e?.courseName + " update"}
+                              label={e.courseName + " update"}
                               onChange={(e) => {
                                 c = e.target.value;
                                 console.log(c, " = c");
@@ -99,7 +100,11 @@ export default function UpdateDeleteMajor() {
                               color="secondary"
                               onClick={async () => {
                                 console.log("My Indx is ", ind);
-                                const updatecoruse = doc(db, "college", mj.id);
+                                const updatecoruse = doc(
+                                  db,
+                                  "stonyBrookAdmi",
+                                  mj.id
+                                );
                                 // const updateFildes = {
                                 //   values:{undergrad: { courseName: c, dispersion: d },}
                                 // };
@@ -159,7 +164,7 @@ export default function UpdateDeleteMajor() {
                                   }
                                   const updatecoruse = doc(
                                     db,
-                                    "college",
+                                    "stonyBrookAdmi",
                                     mj.id
                                   );
                                   const deleteItems = {
@@ -213,7 +218,7 @@ export default function UpdateDeleteMajor() {
                                   }
                                   const updatecoruse = doc(
                                     db,
-                                    "college",
+                                    "stonyBrookAdmi",
                                     mj.id
                                   );
                                   const addMore = {
@@ -248,8 +253,8 @@ export default function UpdateDeleteMajor() {
                       <Grid container spacing={1}>
                         <Grid item>
                           <p>
-                            course Name: {e?.courseName} & course dispersion:{" "}
-                            {e?.dispersion}
+                            course Name: {e.courseName} & course dispersion:{" "}
+                            {e.dispersion}
                           </p>
                         </Grid>
 
@@ -284,7 +289,11 @@ export default function UpdateDeleteMajor() {
                               color="secondary"
                               onClick={async () => {
                                 console.log("My Indx is ", ind);
-                                const updatecoruse = doc(db, "college", mj.id);
+                                const updatecoruse = doc(
+                                  db,
+                                  "stonyBrookAdmi",
+                                  mj.id
+                                );
                                 // const updateFildes = {
                                 //   values:{grad: { courseName: c, dispersion: d },}
                                 // };
@@ -341,7 +350,7 @@ export default function UpdateDeleteMajor() {
                                   }
                                   const updatecoruse = doc(
                                     db,
-                                    "college",
+                                    "stonyBrookAdmi",
                                     mj.id
                                   );
                                   const deleteItems = {
@@ -395,7 +404,7 @@ export default function UpdateDeleteMajor() {
                                   }
                                   const updatecoruse = doc(
                                     db,
-                                    "college",
+                                    "stonyBrookAdmi",
                                     mj.id
                                   );
                                   const addMore = {
@@ -425,7 +434,7 @@ export default function UpdateDeleteMajor() {
                       startIcon={<DeleteIcon />}
                       onClick={async () => {
                         alert("About Delete Whole Major ");
-                        const deleteMajor = doc(db, "college", mj.id);
+                        const deleteMajor = doc(db, "stonyBrookAdmi", mj.id);
                         await deleteDoc(deleteMajor);
                         setrun(run + 1);
                       }}

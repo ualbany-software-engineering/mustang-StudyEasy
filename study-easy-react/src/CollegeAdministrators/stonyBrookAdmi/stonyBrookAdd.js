@@ -2,12 +2,12 @@ import React from "react";
 import { Form, Formik, Field, FieldArray } from "formik";
 import Grid from "@mui/material/Grid";
 import { object, number, string } from "yup";
-import { async } from "@firebase/util";
+// import { async } from "@firebase/util";
 import { Typography } from "@mui/material";
 import TextField from "@mui/material/TextField";
 // import { TextField } from 'formik-material-ui';
 
-import { db } from "../firbase-config";
+import { db } from "../../firbase-config";
 import { collection, addDoc } from "firebase/firestore";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
@@ -21,6 +21,7 @@ export default function AddMajors() {
       maxWidth
       sx={{ bgcolor: "#cfe8fc" }}
     >
+      <h1>Welcome Stony Brook </h1>
       <Formik
         initialValues={{
           majorName: "",
@@ -32,7 +33,7 @@ export default function AddMajors() {
         })}
         onSubmit={async (values, { resetForm }) => {
           console.log("My Values from addMajors .js ", values);
-          const myDBCollectionRef = collection(db, "college");
+          const myDBCollectionRef = collection(db, "stonyBrookAdmi");
           await addDoc(myDBCollectionRef, { values });
           resetForm({
             values: {
@@ -48,7 +49,7 @@ export default function AddMajors() {
             <alert>success alert An Update Has been made to Database</alert>;
             setTimeout(res, 3000);
 
-            // window.location.reload(false);
+            window.location.reload(false);
           });
         }}
       >

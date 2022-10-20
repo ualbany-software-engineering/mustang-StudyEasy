@@ -13,7 +13,7 @@ function CreateComment() {
     const userCollectionRef=collection(db,"Comments");
     const createUser=async()=>{
         await addDoc(userCollectionRef,{name:newName,age:(newAge)});
-        navigate("/Country");
+        navigate("/Comment");
       };
   return (
    <div className="createPostPage">

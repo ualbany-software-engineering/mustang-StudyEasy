@@ -57,7 +57,7 @@ const College = (props) => {
         return (
           <div style={{ backgroundColor: "white" }}>
             <h2>id : {mj?.id}</h2>
-            <h2>major : {mj?.values.majorName}</h2>
+            <h2>major : {mj.values?.majorName}</h2>
             <h2>undergrad : </h2>
             {mj.values.undergrad?.map((e) => (
               <p>
