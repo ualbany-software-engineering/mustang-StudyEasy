@@ -3,9 +3,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Country } from "../Pages/Country";
 import Home from "../Pages/Home";
 import About from "../Pages/AboutLowercase";
-import Extra from '../Pages/Extra';
-import LOGIN  from '../Pages/Login';
-import ProfileInfo  from '../components/ProfileInfo';
+import Extra from "../Pages/Extra";
+import LOGIN from "../Pages/Login";
+import ProfileInfo from "../components/ProfileInfo";
 // import {University} from '../pages/University';
 import { Majors } from "../components/Majors";
 import { Courses } from "../components/Courses";
@@ -28,8 +28,8 @@ import Home1 from "../Pages/Home1";
 import Gmat from "../Pages/Gmat";
 import Gre from "../Pages/Gre";
 import Ielts from "../Pages/Ielts";
-import CreateComment from '../Pages/CreateComment';
-import Comment from '../Pages/Comment';
+import CreateComment from "../Pages/CreateComment";
+import Comment from "../Pages/Comment";
 import Ualbany from "../adminreq/US/UAB";
 import SBU from "../adminreq/US/SBU";
 
@@ -47,6 +47,8 @@ import Shanghai from "../adminreq/CHINA/Shanghai";
 
 import AddMajors from "../CollegeAdministrators/addMajors";
 import UpdateDeleteMajor from "../CollegeAdministrators/UpdateOrDelete";
+import AdminAdd from "../CollegeAdministrators/stonyBrookAdmi/stonyBrookAdd";
+import AdminUpdateOrDelete from "../CollegeAdministrators/stonyBrookAdmi/stonyBrookUpdateOrDelete";
 
 function AnimationRoutes() {
   const location = useLocation();
@@ -75,7 +77,7 @@ function AnimationRoutes() {
         <Route path="/canadavisa" exact element={<CANADAVISA />} />
         <Route path="/chinavisa" exact element={<CHINAVISA />} />
         <Route path="/ukvisa" exact element={<UKVISA />} />
-        <Route path ="/Login" exact element = {<LOGIN/>}/>
+        <Route path="/Login" exact element={<LOGIN />} />
         <Route path="/Majors" exact element={<Majors />} />
         <Route path="Courses" exact element={<Courses />} />
         <Route path="/AddMajors" exact element={<AddMajors />} />
@@ -84,6 +86,12 @@ function AnimationRoutes() {
           exact
           element={<UpdateDeleteMajor />}
         />
+        <Route
+          path="/AdminUpdateOrDelete"
+          exact
+          element={<AdminUpdateOrDelete />}
+        />
+        <Route path="/AdminAdd" exact element={<AdminAdd />} />
         <Route path="/ualbany" element={<Ualbany />} />
         <Route path="/SBU" element={<SBU />} />
         <Route path="/UM" element={<UM />} />
@@ -102,8 +110,8 @@ function AnimationRoutes() {
         <Route path="/Gmat" exact element={<Gmat />} />
         <Route path="/Gre" exact element={<Gre />} />
         <Route path="/Ielts" exact element={<Ielts />} />
-        <Route path ="/CreateComment" exact element = {<CreateComment/>}/>
-        <Route path ="/Comment" exact element = {<Comment/>}/>
+        <Route path="/CreateComment" exact element={<CreateComment />} />
+        <Route path="/Comment" exact element={<Comment />} />
       </Routes>
     </AnimatePresence>
   );

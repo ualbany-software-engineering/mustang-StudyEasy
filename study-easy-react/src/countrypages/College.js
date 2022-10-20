@@ -56,10 +56,10 @@ const College = (props) => {
       {majorsData.map((mj) => {
         return (
           <div style={{ backgroundColor: "white" }}>
-            <h2>id : {mj.id}</h2>
-            <h2>major : {mj.values.majorName}</h2>
+            <h2>id : {mj?.id}</h2>
+            <h2>major : {mj.values?.majorName}</h2>
             <h2>undergrad : </h2>
-            {mj.values.undergrad.map((e) => (
+            {mj.values.undergrad?.map((e) => (
               <p>
                 course Name: {e.courseName} & course dispersion: {e.dispersion}
               </p>
