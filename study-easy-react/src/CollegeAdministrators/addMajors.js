@@ -14,7 +14,12 @@ import Container from "@mui/material/Container";
 
 export default function AddMajors() {
   return (
-    <Container variant="contained" spacing={2}>
+    <Container
+      variant="contained"
+      spacing={2}
+      maxWidth
+      sx={{ bgcolor: "#cfe8fc" }}
+    >
       <Formik
         initialValues={{
           majorName: "",
