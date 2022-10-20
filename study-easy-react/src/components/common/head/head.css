@@ -1,0 +1,140 @@
+.head
+{
+    padding: 20px 0;
+    color: black;
+}
+
+img
+{
+    width: 20%;
+}
+.head 
+{
+    margin-left: 10px ;
+}
+
+ul
+{
+    display: flex !important;
+}
+
+li{
+    display: block !important;
+}
+
+.Social 
+{
+   
+    margin-left: 10px;
+    width: 10;
+    height: 10;
+}
+
+/*----------------header--------------------------*/
+
+header
+{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    margin: 0 30px;
+}
+header .nav
+{
+    display: flex;
+}
+
+header ul
+{
+    padding: 30px 20px;
+}
+
+header li
+{
+    margin-right: 40px ;
+}
+
+header ul li a 
+{
+    color: black;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+header ul li a:hover
+{
+    font-weight: bolder;
+    color: rgba(0,116,217,255);
+}
+
+.start
+{
+    background-color: black;
+    padding: 30px 70px;
+    color: white;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style-type: none;
+    letter-spacing: 3px;
+}
+
+.toggle
+{
+   display: none;
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .start
+    {
+        clip-path: none;
+    }
+    header 
+    {
+        color: black;
+        margin: 0;
+        background-color: black ;
+        position: relative;
+    }
+    .felxSB 
+    {
+        display: none;
+    }
+    .start>button
+    {
+        display: none;
+    }
+
+    header ul li
+    {
+        margin-bottom: 20px;
+    }
+    .toggle
+    {
+        display: none;
+        background-color: white;
+        /* color: white; */
+        font-size: 30px;
+        position: absolute;
+        right: 0px;
+        top: -20px;
+    }
+
+    .movile-nav
+    {
+        display: inline;
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+}

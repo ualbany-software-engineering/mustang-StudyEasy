@@ -1,17 +1,269 @@
-html
-{
-     width: 100vw; 
-    /* background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%); */
-    background-image: linear-gradient(to left, #262d2f 50%, #727776 100%);
-    overflow-x: hidden !important;
-    /* overflow: hidden !important; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
 }
-.App
+body
 {
-    width: 100vw; 
-    /* background-image: linear-gradient(to left, #000000 55%, rgb(15, 34, 116) 100%); */
-    background-image: linear-gradient(to left, #262d2f 50%, #727776 100%);
-    overflow-x: hidden !important;
-    /* overflow: hidden !important; */
+    font-family: "Roboto", sans-serif;
+    /* background-color: white; */
+    /* background-color: antiquewhite; */
+}
+.container
+{
+    max-width: 85%;
+    margin: auto;
+}
+.flexSB
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Social
+{
+    /* display: inline-block !important; */
+    line-height: 40px;
+    border-radius: 200%;
+    text-align: center;
+    background-color: rgb(255, 255 , 255,0.3);
+    color: skyblue;
+    transition: 0.2s;
+
+}
+.Social:hover
+{
+    cursor: pointer;  
+    background-color: black;  
 }
 
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    text-decoration: none;
+}
+
+button
+{
+    border: none;
+}
+
+.row
+{
+    width: 50%;
+}
+
+button
+{
+    padding: 17px 30px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border: none;
+    margin: 30px 10px 0 0;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 24px 36px -11px rgba(0, 0, 0, 9%);
+}
+
+button i
+{
+    margin-left: 20px;
+}
+
+button:hover
+{
+    box-shadow: none;
+}
+
+.primary-btn
+{
+    background-color: rgba(0, 116, 217, 1);
+    color: white;
+}
+
+#heading
+{
+    text-align: center;
+    padding: 40px 0;  
+}
+
+#heading h3
+{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#heading h2
+{
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#heading h1
+{
+    font-size: 30px;
+    font-weight: 200;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+p
+{
+    line-height: 30px;
+    font-size: 18px;
+}
+
+
+.back
+{
+    background-image: url("./images/countbg2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 22%;
+    /* padding-left: 30px; */
+    /* padding-right: 50px; */
+    color:white;
+    image-rendering: optimizeQuality;
+    text-align: left;
+}
+
+.back h1
+{
+    font-size: 80px;
+    text-transform:capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 30px;
+
+}
+
+.back h2
+{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align:left;
+    padding-left: 30px;
+}
+
+.primary-btn1
+{
+    background-color: rgba(0, 116, 217, 1);
+    color: white;
+    margin-left: 2.2%;
+}
+
+.map
+{
+    background-color: black;
+    margin-top: 8.5%;
+    width: 100% !important;
+}
+
+
+.loginsection
+{
+    margin-top: -12%;
+    background-image: url("./images/login.jpg");
+    background-color: rgba(234,224,223,255);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: hidden;
+   
+}
+.loginbody
+{
+    padding-top: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+
+}
+
+.App
+{
+    scroll-behavior: smooth;
+}
+.app-chatbot-container {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 9999;
+    box-shadow: 5px 5px 13px rgba(91, 81, 81, 0.4);
+    border-radius: 5px;
+  }
+  
+  .app-chatbot-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: url("./components/Chatbot/images/geekyicon.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 130%;
+    border: none;
+    position: fixed;
+    bottom: 15px;
+    z-index: 9999;
+    right: 40px;
+  }
+ .app-chatbot-button:hover{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+ }
+  .app-chatbot-button-icon {
+    width: 0px;
+    height: 0px;
+    fill: #fff;
+  }
+.react-chatbot-kit-chat-bot-avatar-letter {
+    visibility: hidden;
+   
+}
+.react-chatbot-kit-chat-bot-avatar-container{
+    background-image: url('./components/Chatbot/images/geekyicon.png');
+    background-position: 0%;
+    width: 40px;
+    height: 40px;
+    margin-top: 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.react-chatbot-kit-chat-btn-send-icon:hover{
+width: 20px;
+cursor: pointer;
+}
+  @media (max-width: 600px) {
+    .app-chatbot-container {
+      transform: scale(0.9) translateY(26px);
+    }
+  }

@@ -1,0 +1,5 @@
+.gallery__item img
+{
+    size: 100vh;
+    size-adjust: cover;
+}

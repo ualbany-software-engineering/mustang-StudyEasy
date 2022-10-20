@@ -1,0 +1,14 @@
+.slide{
+    /* margin: 0 auto; */
+    /* padding: 0 15vh; */
+    align-items: center; 
+    position: relative;
+    background-size: contain;
+    margin-top: -1.1% ;
+}
+
+.slide img
+{
+    width: 300%;
+    height: auto;
+}

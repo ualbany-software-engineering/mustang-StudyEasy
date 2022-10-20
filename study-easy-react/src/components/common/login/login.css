@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*
+{
+    box-sizing: border-box;
+    /* font-family: "Bebas Neue"; */
+    
+}
+
+
+.loginbody h1
+{
+    font-weight: bold;
+    font-family: "Bebas Neue";
+}
+
+.loginbody h2
+{
+    text-align: center;
+    font-family: "Bebas Neue";
+}
+
+.loginbody p
+{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 20px 0 30px;
+    font-family: "Bebas Neue";
+}
+
+span
+{
+    font-size: 12px;
+}
+
+.loginbody>button
+{
+    border-radius: 20px;
+    border: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    font-family: "Bebas Neue";
+}
+
+.loginbody>button:active
+{
+    transform: scale(0.95);
+}
+
+.loginbody>button:focus
+{
+    background-color: transparent;
+    border-color: white;
+}
+.loginbody>button.displayer
+{
+    background-color: whitesmoke;
+    border: white;
+}
+form
+{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+input
+{
+    background-color: white;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.login
+{
+    background-color: rgba(234,224,223,255);
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.formbody
+{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.signindata
+{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.signup .signindata
+{
+    transform: translateX(100%);
+}
+
+.signupdata
+{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.signup .signupdata
+{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.overlayer
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.signup .overlayer
+{
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background: white;
+    background: -webkit-linear-gradient(to right,#0070b8, #000000);
+    background: linear-gradient(to right, #0070b8, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .signup .overlay {
+    transform: translateX(50%);
+  }
+  
+  .overdiv
+  {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .overlay-left
+  {
+    transform: translateX(-5%);
+  }
+
+  .singup .overlay-left
+  {
+    transform: translateX(0);
+  }
+
+  .overlay-right
+  {
+    right: 0;
+    transform: translateX(0);
+  }
+
+  .signup .overlay-right
+  {
+    transform: translateX(20%);
+  }
+
+  .othersignups
+  {
+    margin: 20px 0 ;
+  }
+
+  .othersignups a
+  {
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .google
+  {
+    top: 50%;
+    box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
+    backdrop-filter: "blur(10px)"; 
+    background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
+    border: solid;
+    border-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+  }
+
+  .or
+  {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .border
+  {
+    color: black;
+    background-color: black;
+    height: 1px;
+    width: 80px;
+    padding-right: 2px;
+    padding-left: 2px;
+  }
