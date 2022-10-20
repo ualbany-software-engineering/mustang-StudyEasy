@@ -31,16 +31,25 @@ export default function AddMajors() {
           return new Promise((res) => setTimeout(res, 3000));
         }}
       >
-        {({ values, errors, isSubmitting }) => (
+        {({ values, errors, isSubmitting, handleChange }) => (
           <Form autoComplete="off">
-            <Grid container direction="column" spacing={4}>
+            <Grid container direction="column" spacing={5}>
               <Grid item>
-                <Field
+                {/* <Field
                   name="majorName"
                   label="Field of Study"
                   placeholder="Math"
                   fullWidth
+                /> */}
+                <Typography>Add the major name</Typography>
+                <TextField
+                  id="majorName"
+                  label="Field of Study"
+                  placeholder="Math"
+                  onChange={handleChange}
+                  value={values.majorName}
                 />
+
                 {/* <TextField id="majorName" name="majorName" label="Field of Study" fullWidth  onChange={values.majorName}/> */}
               </Grid>
 
@@ -56,17 +65,29 @@ export default function AddMajors() {
                     {values.undergrad.map((_val, ind) => (
                       <Grid container item spacing={2}>
                         <Grid item>
-                          <Field
+                          {/* <Field
                             name={`undergrad.${ind}.courseName`}
                             placeholder="mat 101"
+                          /> */}
+                          <TextField
+                            name={`undergrad.${ind}.courseName`}
+                            placeholder="mat 101"
+                            onChange={handleChange}
+                            fullWidth
                           />
                         </Grid>
 
                         <Grid item xs={12}>
-                          <Field
+                          {/* <Field
                             name={`undergrad.${ind}.dispersion`}
                             placeholder="In this class student will learn How to add numbers"
                             width={10}
+                          /> */}
+                          <TextField
+                            name={`undergrad.${ind}.dispersion`}
+                            placeholder="In this class student will learn How to add numbers"
+                            onChange={handleChange}
+                            fullWidth
                           />
                         </Grid>
                         {ind > 0 && (
@@ -110,17 +131,27 @@ export default function AddMajors() {
                     {values.grad.map((_val, ind) => (
                       <Grid container item spacing={2}>
                         <Grid item>
-                          <Field
+                          {/* <Field
                             name={`grad.${ind}.courseName`}
                             placeholder="mat 518"
+                          /> */}
+                          <TextField
+                            name={`grad.${ind}.courseName`}
+                            placeholder="mat 518"
+                            onChange={handleChange}
                           />
                         </Grid>
 
                         <Grid item>
-                          <Field
+                          {/* <Field
                             name={`grad.${ind}.dispersion`}
                             placeholder="In this class student will expiring DIp"
                             width={10}
+                          /> */}
+                          <TextField
+                            name={`grad.${ind}.dispersion`}
+                            placeholder="In this class student will expiring DIp"
+                            onChange={handleChange}
                           />
                         </Grid>
                         {ind > 0 && (
