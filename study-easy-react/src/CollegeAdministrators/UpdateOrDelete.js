@@ -54,7 +54,7 @@ export default function UpdateDeleteMajor() {
 
                   <Grid item></Grid>
 
-                  {mj.values.undergrad.map((e, ind) => {
+                  {mj.values.undergrad?.map((e, ind) => {
                     let c = ""; // course name
                     let d = "";
                     let nc = ""; // course  new name value
@@ -63,8 +63,8 @@ export default function UpdateDeleteMajor() {
                       <Grid container spacing={1}>
                         <Grid item>
                           <p>
-                            course Name: {e.courseName} & course dispersion:{" "}
-                            {e.dispersion}
+                            course Name: {e?.courseName} & course dispersion:{" "}
+                            {e?.dispersion}
                           </p>
                         </Grid>
 
@@ -77,7 +77,7 @@ export default function UpdateDeleteMajor() {
                         >
                           <Grid item>
                             <TextField
-                              label={e.courseName + " update"}
+                              label={e?.courseName + " update"}
                               onChange={(e) => {
                                 c = e.target.value;
                                 console.log(c, " = c");
@@ -238,7 +238,7 @@ export default function UpdateDeleteMajor() {
                   })}
 
                   <h2>Grad : </h2>
-                  {mj.values.grad.map((e, ind) => {
+                  {mj.values.grad?.map((e, ind) => {
                     let c = ""; // course name
                     let d = "";
                     let nc = ""; // course  new name value
@@ -248,8 +248,8 @@ export default function UpdateDeleteMajor() {
                       <Grid container spacing={1}>
                         <Grid item>
                           <p>
-                            course Name: {e.courseName} & course dispersion:{" "}
-                            {e.dispersion}
+                            course Name: {e?.courseName} & course dispersion:{" "}
+                            {e?.dispersion}
                           </p>
                         </Grid>
 
