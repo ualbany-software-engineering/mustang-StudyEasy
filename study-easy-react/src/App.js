@@ -6,7 +6,7 @@ import AnimationRoutes from './components/common/AnimationRoutes';
 import  Header  from '../src/components/common/head/header.jsx' ;
 
 function App() {
- 
+  window.scrollTo(0,0);
   return (
     <BrowserRouter basename = {process.env.PUBLIC_URL}>
       <Header/>

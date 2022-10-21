@@ -1,5 +1,12 @@
-.gallery__item img
+.photo img
 {
-    size: 100vh;
-    size-adjust: cover;
+    /* width: 10vw; */
+    height: 120vh;
+}
+
+.h
+{
+    position: absolute;
+    color: white;
+    font: 100px;
 }

@@ -7,6 +7,7 @@ import { Home } from './home/home';
 import { Selection_countries } from './countries/selection_countries';
 import { Login } from './login/login';
 import { University } from './universities/university';
+import { Team } from './teams/team';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -18,6 +19,7 @@ function AnimationRoutes() {
         <Route path="/Countries" exact element={<Selection_countries/>} />
         <Route path="/Login" exact element={ <Login/> } />
         <Route path="/University" exact element={ <University/> } />
+        <Route path="/Team" exact element={ <Team/> } />
         </Routes>
     </AnimatePresence>
   )

@@ -1,87 +1,43 @@
 
-import React, { useState, useEffect, Suspense, lazy } from "react";
-import { unsplash } from "./api.js";
+import React, {useRef, useState, useEffect, Suspense, lazy } from "react";
 import Spinner from "./img.js";
-import AwesomeSlider from 'react-awesome-slider';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import 'react-awesome-slider/dist/styles.css';
 import "./university.css";
+import { useLocation, useNavigate } from "react-router";
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+import { Slider } from "./slider.js";
 
-const Photos = lazy(() => import("./photos"));
 export const University = () => {
-//IMAGE SEARCH
-const [query, setQuery] = useState("canada");
-  const [photos, setPhotos] = useState([]);
-  const [isLoading, setLoading] = useState(true);
-  const [page, setPage] = useState(1);
-  const [total, setTotal] = useState("");
-  const perPage = 10;
+  
+  window.scrollTo(0,0);
 
-  const getMorePhotos = async (page) => {
-    try {
-      await unsplash.search
-        .getPhotos({
-          query: query,
-          page: page,
-          per_page: perPage
-        })
-        .then((result) => {
-          setTotal(result.response.total);
-          setPage(page);
-          photos.length ? 
-          setPhotos([...photos, ...result.response.results]) : setPhotos(result.response.results)
-        });
-    } catch (err) {
-      console.log("Unable to retrieve photos. Reason: " + err);
-    }
-  };
-
-  useEffect(() => {
-    setPage(1);
-    getMorePhotos(1);
-  }, [query]); 
-
-  const slideimages=
-  [
-        {
-           image:  <Photos photos={photos.slice(1,2)}/>
-
-        },
-        
-        {
-            image:  <Photos photos={photos.slice(2,3)}/>
-         },
-         
-        {
-            image:  <Photos photos={photos.slice(3,4)}/>
-         },
-         
-        {
-            image:  <Photos photos={photos.slice(5,6)}/>
-         },
-         
-        {
-            image:  <Photos photos={photos.slice(7,8)}/>
-         },
-         {
-            image:  <Photos photos={photos.slice(9,10)}/>
-         },
-  ];
-  const AutoplaySlider = withAutoplay(AwesomeSlider);
+  const location = useLocation();
+  const ref = useRef(null);
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behaviour: 'smooth'});
+  }
 
   return (
     <div>
-      <Suspense fallback={<Spinner />}>
-              <div className="slide">
-                <AutoplaySlider className="slideshow" play={true} cancelonInteraction={false} interval={2000}>
-                <div><Photos photos={photos.slice(1,2)}/></div>
-                <div><Photos photos={photos.slice(2,3)}/></div>
-                <div><Photos photos={photos.slice(3,4)}/></div>
-                <div><Photos photos={photos.slice(4,5)}/></div>
-                <div><Photos photos={photos.slice(9,10)}/></div>
-              </AutoplaySlider>
+      <div className="university">
+        <h2>Country/University</h2>
+        <h1>{location.state.country}</h1>
+        <h1 className="scroll"></h1>
+      </div>
+      <div className="breaker">
+      <br/>
+      </div>
+      <Suspense className= "slider" fallback={<Spinner />}>
+              <div  className="slide">
+                <Slider country = {location.state.country}/>
               </div>
       </Suspense>
+      <br/>
+      <br/>
+      <div>
+        <h1>jasdhdkjdshfkjgkjshgkjadshfkjdshfkjdshafkjdshdfkjadsflkadfhkjahfkjasd</h1>
+      </div>
+
+
     </div>
   )
 }

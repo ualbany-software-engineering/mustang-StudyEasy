@@ -4,7 +4,7 @@ import "./selection_countries.css";
 
   
 export const Selection_countries = () => {
-
+  window.scrollTo(0,0);
   const ref = useRef(null);
   const handleClick = () => {
     ref.current?.scrollIntoView({behaviour: 'smooth'});
