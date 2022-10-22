@@ -258,11 +258,6 @@ p
     padding: 80px 0;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 100px, 100px,100px, 100px;
-    grid-gap: 30px;
-  }
   .shadow {
     box-shadow: 0 5px 25px -2px rgb(0 0 0 / 10%);
     background-color: #fff;
@@ -275,7 +270,7 @@ p
 
 .back1
 {
-    background-image: url("./images/countbg2.png");
+    background-image: url("./images/teambg.png");
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
@@ -288,7 +283,7 @@ p
     /* padding-left: 30px; */
     /* padding-right: 50px; */
     image-rendering: optimizeQuality;
-    text-align: center;
+    text-align: left;
 }
 
 .back1 h1
@@ -297,9 +292,9 @@ p
     text-transform:capitalize;
     font-weight: 500;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: left;
     padding-left: 30px;
-    color: white;
+    color: black;
 }
 
 .back1 h2
@@ -308,9 +303,9 @@ p
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-align:center;
+    text-align:left;
     padding-left: 30px;
-    color: white;
+    color: black;
 }
 
 .back1 h3

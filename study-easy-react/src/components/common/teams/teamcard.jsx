@@ -1,8 +1,6 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import {team} from "../../../data"
-
-
 import "./team.css";
 
 export const Teamcard = () => {
@@ -11,12 +9,12 @@ export const Teamcard = () => {
         {team.map((val) => (
         <div className='items shadow'>
           <div className='img'>
-            <img src={val.cover} alt='' />
+            <div className='image'>{val.cover}</div> 
             <div className='overl'>
             <div className='social'>
-            <li className = "Social"><SocialIcon  url="" network='linkedin'/></li>
-            <li className = "Social"><SocialIcon  url="" network='github'/></li>
-            <li className = "Social"><SocialIcon  url="" network='instagram'/></li>
+            <li className = "Social"><SocialIcon  url={val.linkedin} network='linkedin'/></li>
+            <li className = "Social"><SocialIcon  url={val.github} network='github'/></li>
+            <li className = "Social"><SocialIcon  url={val.insta} network='instagram'/></li>
             </div>
             </div>
           </div>

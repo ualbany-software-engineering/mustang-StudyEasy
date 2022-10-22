@@ -60,8 +60,7 @@ const slideimages=
 return (
   <div>
  <BackgroundSlider images = {slideimages} duration={5} transition={3}/>
-
-</div>
+ </div>
 )
 }
 

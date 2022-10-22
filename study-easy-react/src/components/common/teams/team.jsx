@@ -11,11 +11,10 @@ export const Team = () => {
     <div>
         <div className='back1'>
         <h2>Home/Team</h2>
-        <h1>Campus Ambassadors</h1>
+        <h1>Campus<br/>Ambassadors</h1>
         <button type="button" class="primary-btn1" onClick={handleClick}>
               Scroll Down<i class = "bi bi-arrow-down-circle-fill"></i>
         </button>
-
         <div className='team'>
         <section className='team padding'>
         <div ref = {ref} className='container grid'>
