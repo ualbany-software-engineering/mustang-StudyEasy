@@ -2,7 +2,6 @@ import { auth, db } from '../firbase-config';
 import { collection, getDocs, updateDoc, doc, deleteDoc } from "firebase/firestore";
 import {useEffect, useState} from "react";
 
-
 export default function UserProfile(){
     const[getUser,setGetUser] = useState([])
     const usersPersonalDataCollectionRef = collection(db, "usersPersonalData")
@@ -27,7 +26,6 @@ export default function UserProfile(){
                             <h2>phonenumber = {e.PhoneNumber}</h2>
                         </div>
                     )
-                    
                 }
             })}
         </div>
