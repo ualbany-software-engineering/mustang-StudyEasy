@@ -20,12 +20,14 @@ export const USA = () => {
             zipCode={12345}
             url="https://albany.edu/"
             number={1}
+            link="https://www.suny.edu/applysuny/"
           />
           <College2
             collegeName="Stonybrook University"
             Logo="https://news.stonybrook.edu/wp-content/uploads/2018/09/featured-campus.jpg"
             name="/sbu"
             number={2}
+            link="https://graduateadmissions.stonybrook.edu/apply/"
           />
         </div>
       </div>

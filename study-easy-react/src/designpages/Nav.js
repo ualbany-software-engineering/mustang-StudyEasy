@@ -12,6 +12,7 @@ const Nav = (props) =>
       <div className='nav'>
         <h2><Link style={{ textDecoration: 'none' , color: 'white'}} to={Linker1}>Universities</Link></h2>
         <h2><Link style={{ textDecoration: 'none' , color: 'white'}} to={Linker}> Visa Data</Link></h2>
+        <h2><Link style={{ textDecoration: 'none' , color: 'white'}} to='/Comment'> User Reviews</Link></h2>
       </div>
     );
   }
