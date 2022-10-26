@@ -43,7 +43,7 @@
     --slider-transition-duration: 500ms;
     /* --organic-arrow-color:black; */
     /* --organic-arrow-border-radius: 0; */
-      margin-top: -5%;
+      margin-top: -8%;
       margin-bottom: -1%;
 }
   
@@ -349,7 +349,7 @@
       --timer-background-color: transparent;
       width: 100%;
       height: var(--timer-height);
-      background-color: var(--timer-background-color);
+      /* background-color: var(--timer-background-color); */
       position: absolute;
       top: 0;
       left: 0;

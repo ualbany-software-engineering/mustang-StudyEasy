@@ -6,7 +6,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import { useLocation, useNavigate } from "react-router";
 import './styles.css';
-// import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
 
 const Photos = lazy(() => import("./photos"));
@@ -53,7 +53,7 @@ export const Slider = ({country}) => {
     <br/>
     <br/>
     <br/>
-    <AutoplaySlider play={true}
+    <AutoplaySlider play={true} animation = "cubeAnimation"
     cancelOnInteraction={false} // should stop playing on user interaction
     interval={2000}>
     <div><Photos photos={photos.slice(0,1)}/></div>
