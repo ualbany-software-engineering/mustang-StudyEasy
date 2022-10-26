@@ -5,6 +5,7 @@ import "./university.css";
 import { useLocation, useNavigate } from "react-router";
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import { Slider } from "./slider.js";
+import { Scraper } from "./forscraping/wikiscraper.jsx";
 
 export const University = () => {
   
@@ -35,6 +36,7 @@ export const University = () => {
       <br/>
       <div>
         <h1>jasdhdkjdshfkjgkjshgkjadshfkjdshfkjdshafkjdshdfkjadsflkadfhkjahfkjasd</h1>
+        <Scraper wikiData={location.state.country}/>
       </div>
 
 

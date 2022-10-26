@@ -60,7 +60,8 @@
     "three-glow-mesh": "^0.1.2",
     "topojson-client": "^3.1.0",
     "unsplash-js": "^7.0.15",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "wikipedia": "^1.1.9"
   },
   "scripts": {
     "predeploy": "npm run build",

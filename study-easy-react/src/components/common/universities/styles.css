@@ -14,46 +14,43 @@
   .awssld img
   {
 
-    transition: all .2s ease;
+    /* transition: all .01s ease; */
     overflow: hidden;
     z-index: -1;
-    width: 300%;
-    height: 100vh;
+    /* width:max-content; */
+    height: 118vh;
     vertical-align: middle;
-    margin-top: -45% ;
+    image-rendering: optimizeQuality;
+    image-resolution:from-image 300dpi;
 
   }
   .awssld {
       background: rgba( 255, 255, 255, 0.25 );
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-      backdrop-filter: blur( 4px );
-      -webkit-backdrop-filter: blur( 4px );
-      /* border-radius: 10px; */
-      /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-    --organic-arrow-thickness: 4px;
-    --organic-arrow-height: 40px;
-    --slider-height-percentage: 60%;
-    --loader-bar-color: black;
-    --loader-bar-height: 6px;
-    --control-button-width: 10%;
-    --control-button-height: 25%;
-    --control-button-opacity: 0.5;
-    --control-button-hover-opacity: 0.75;
-    --control-button-background: transparent;
+      /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 ); */
+      /* backdrop-filter: blur( 4px ); */
+      /* -webkit-backdrop-filter: blur( 4px ); */
+    /* --organic-arrow-thickness: 4px; */
+    /* --organic-arrow-height: 40px; */
+    --slider-height-percentage: 50%;
+    /* --loader-bar-color: black; */
+    /* --loader-bar-height: 6px; */
+    /* --control-button-width: 10%; */
+    /* --control-button-height: 25%; */
+    /* --control-button-opacity: 0.5; */
+    /* --control-button-hover-opacity: 0.75; */
+    /* --control-button-background: rgba( 0, 0, 0, 0.1); */
     --transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
-    --slider-transition-duration: 575ms;
-    --organic-arrow-color:black;
-    --organic-arrow-border-radius: 0;
-    /* --control-bullet-color:rgba( 255, 255, 255, 0.9); */
-    /* --control-bullet-active-color: black; */
-      margin-top: -4%;
+    --slider-transition-duration: 500ms;
+    /* --organic-arrow-color:black; */
+    /* --organic-arrow-border-radius: 0; */
+      margin-top: -5%;
       margin-bottom: -1%;
 }
   
   .awssld {
     display:flex;
     position: relative;
-    width: 100%;
+    width: 200%;
     max-width: 100%; }
     .awssld__wrapper {
       display: flex;
@@ -349,7 +346,7 @@
       --timer-delay: 2000ms;
       --timer-release: 200ms;
       --timer-height: 4px;
-      --timer-background-color: white;
+      --timer-background-color: transparent;
       width: 100%;
       height: var(--timer-height);
       background-color: var(--timer-background-color);

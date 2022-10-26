@@ -1,9 +1,12 @@
 .photo img
 {
     /* width: 10vw; */
-    height: 120vh;
+    width: max-content;
 }
 
+.edit{
+    padding-top: 10px;
+}
 .h
 {
     position: absolute;
