@@ -19,7 +19,7 @@ export default function UserProfile(){
 
     let navigate = useNavigate();
     const routeChange = () => {
-        let path = `/`;
+        let path = `/Login`;
         navigate(path);
     }
 
