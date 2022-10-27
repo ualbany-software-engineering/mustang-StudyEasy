@@ -430,7 +430,7 @@ export default function UpdateDeleteMajor() {
                         setrun(run + 1);
                       }}
                     >
-                      Delete
+                      Delete {mj.values.majorName}
                     </Button>
                   </React.Fragment>
                 </Box>

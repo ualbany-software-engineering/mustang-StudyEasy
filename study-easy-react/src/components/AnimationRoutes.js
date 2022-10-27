@@ -49,6 +49,7 @@ import AddMajors from "../CollegeAdministrators/addMajors";
 import UpdateDeleteMajor from "../CollegeAdministrators/UpdateOrDelete";
 import AdminAdd from "../CollegeAdministrators/stonyBrookAdmi/stonyBrookAdd";
 import AdminUpdateOrDelete from "../CollegeAdministrators/stonyBrookAdmi/stonyBrookUpdateOrDelete";
+import Admin from "../Pages/Admin";
 
 function AnimationRoutes() {
   const location = useLocation();
@@ -64,7 +65,7 @@ function AnimationRoutes() {
         <Route path="/About" exact element={<About />} />
         <Route path="/Extra" exact element={<Extra />} />
         <Route path="*" exact element={<Error />} />
-        to capture all the error from user input links 404 page not found
+        {/* to capture all the error from user input links 404 page not found */}
         <Route path="/Country" exact element={<Country />} />
         <Route path="/Univ/USA" exact element={<USA />} />
         <Route path="/Univ/IND" exact element={<INDIA />} />
@@ -92,6 +93,7 @@ function AnimationRoutes() {
           element={<AdminUpdateOrDelete />}
         />
         <Route path="/AdminAdd" exact element={<AdminAdd />} />
+        <Route path="/Admin" exact element={<Admin />} />
         <Route path="/ualbany" element={<Ualbany />} />
         <Route path="/SBU" element={<SBU />} />
         <Route path="/UM" element={<UM />} />

@@ -46,9 +46,9 @@ export default function AddMajors() {
               success alert An Update Has been made to Database
             </Alert>;
             <alert>success alert An Update Has been made to Database</alert>;
-            setTimeout(res, 3000);
+            setTimeout(res, 5000);
 
-            // window.location.reload(false);
+            window.location.reload(false);
           });
         }}
       >

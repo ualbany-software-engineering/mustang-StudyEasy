@@ -8,7 +8,7 @@ import PageviewIcon from "@mui/icons-material/Pageview";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import FlashOnIcon from "@mui/icons-material/FlashOn";
-
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 function Headertab() {
   return (
     <div className="headertab">
@@ -40,18 +40,21 @@ function Headertab() {
             <p>Resources</p>
           </div>
         </Link>
-        <Link to='/Login'>
-        <div className='header_icon'>
-          <AccountBoxIcon />
-          <p>Profile</p>
-        </div>
+        <Link to="/Login">
+          <div className="header_icon">
+            <AccountBoxIcon />
+            <p>Profile</p>
+          </div>
+        </Link>
+
+        <Link to="/Admin">
+          <div className="header_icon">
+            <AdminPanelSettingsIcon fontSize="large" color="error" />
+          </div>
         </Link>
       </div>
 
-
       <img src={logo} alt="" />
-
-
     </div>
   );
 }
