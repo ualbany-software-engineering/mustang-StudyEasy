@@ -6,6 +6,8 @@ import { useLocation, useNavigate } from "react-router";
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import { Slider } from "./slider.js";
 import { Scraper } from "./forscraping/wikiscraper.jsx";
+import { Unirecord } from "./forjson/unirecord.jsx";
+import { Statedata } from "./forjson/statedata.jsx";
 
 export const University = () => {
   
@@ -37,6 +39,11 @@ export const University = () => {
       <div>
         <h1>jasdhdkjdshfkjgkjshgkjadshfkjdshfkjdshafkjdshdfkjadsflkadfhkjahfkjasd</h1>
         <Scraper wikiData={location.state.country}/>
+      </div>
+
+      <div>
+        <Unirecord gcountry= {location.state.country}/>
+        {/* <Statedata gcountry={location.state.country}/> */}
       </div>
 
 

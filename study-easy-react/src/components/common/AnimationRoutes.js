@@ -9,6 +9,7 @@ import { Login } from './login/login';
 import { University } from './universities/university';
 import { Team } from './teams/team';
 import { Search } from './search/search';
+import { Unirecord } from './universities/forjson/unirecord';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -22,6 +23,7 @@ function AnimationRoutes() {
         <Route path="/University" exact element={ <University/> } />
         <Route path="/Team" exact element={ <Team/> } />
         <Route path="/Search" exact element={ <Search/> } />
+        <Route path="statewiseuni" exact element = {<Unirecord/>}/>
         </Routes>
     </AnimatePresence>
   )

@@ -10,10 +10,10 @@ const wiki = require("wikipedia");
     
     try {
       const page = await wiki.page(givenquery);
-      console.log(wikiData.toString());
+      // console.log(wikiData.toString());
       //Response of type @Page object
       const summary = await page.intro();
-      console.log(summary);
+      // console.log(summary);
       setData(summary);
       //Response of type @wikiSummary - contains the intro and the main image
     } catch (error) {
