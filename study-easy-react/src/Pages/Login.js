@@ -1,5 +1,5 @@
 import "../styling/Login.css";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { app, auth } from '../firbase-config'
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
