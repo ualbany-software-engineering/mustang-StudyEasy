@@ -8,7 +8,7 @@ import { Slider } from "./slider.js";
 import { Scraper } from "./forscraping/wikiscraper.jsx";
 import { Unirecord } from "./forjson/unirecord.jsx";
 import { Statedata } from "./forjson/statedata.jsx";
-import Visaglobe from "../visadata/globe.jsx";
+import Visaglobe, { Visadata } from "../visadata/visadata.jsx";
 import { Navbar } from "./navbar.jsx";
 
 export const University = () => {
@@ -44,10 +44,11 @@ export const University = () => {
       </div>
 
       <div>
-        {/* <Unirecord gcountry= {location.state.country}/> */}
+        <Unirecord gcountry= {location.state.country}/>
         {/* <Statedata gcountry={location.state.country}/> */}
         {/* <Visaglobe/> */}
-        <Navbar/>
+        {/* <Navbar/> */}
+        {/* <Visadata/> */}
       </div>
 
 

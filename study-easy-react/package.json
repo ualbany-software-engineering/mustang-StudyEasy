@@ -57,6 +57,7 @@
     "react-slideshow-image": "^4.0.5",
     "react-social-icons": "^5.15.0",
     "react-transition-group": "^4.4.5",
+    "react-ui-cards": "^3.0.2",
     "sass": "^1.55.0",
     "simple-google-image-search": "^1.2.0",
     "styled-components": "^5.3.5",

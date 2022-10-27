@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Unicard } from './unicard';
 import { useLocation } from 'react-router';
+import "./uni.css";
 
 export const Unirecord = ({gcountry}) => {
 
@@ -28,15 +29,15 @@ export const Unirecord = ({gcountry}) => {
     console.log(given);
 
   return (
-    <div>
+    <div className='container datarec'>
         {data && data.length>0 && data.map((item)=> {
             var check = given.includes(item.country.toLowerCase());
             console.log(check);
             if(check)
             {
-              var temp = item.name.toString().toLowerCase();
-              console.log(temp);
-              // return <Unicard uni={temp}/>
+              var temp = item.name.toString();
+              // console.log(temp);
+              return <Unicard uni={temp} link={item.web_pages[0]}/>
             }
         }
         )}
