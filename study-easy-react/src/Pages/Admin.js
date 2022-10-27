@@ -23,7 +23,6 @@ export default function Admin() {
         alignItems="center"
         // style={{ minHeight: "100" }}
         // sx={{ width: "100%" }}
-        fullwidth
       >
         {/* Empty Grid */}
         <Grid item> </Grid>
