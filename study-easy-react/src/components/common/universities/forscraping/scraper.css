@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.description{
+    font-size: 10;
+    font-family: "Roboto" sans-serif;
+    
+}
+
+.description .show-more-less-clickable
+{
+    color: rgba(0, 116, 217, 1);
+    font-family: "Roboto" sans-serif;
+}

@@ -36,7 +36,7 @@ export const Unirecord = ({gcountry}) => {
             {
               var temp = item.name.toString().toLowerCase();
               console.log(temp);
-              return <Unicard uni={temp}/>
+              // return <Unicard uni={temp}/>
             }
         }
         )}

@@ -16,7 +16,7 @@ export const Search = () => {
   }
   
   return (
-   <><div className='search'>
+   <><div className='searcher'>
       <div className='searchbg'>
         <h2>Home/Search</h2>
         <h1>Scan is what we do</h1>
