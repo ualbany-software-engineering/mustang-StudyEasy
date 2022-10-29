@@ -17,11 +17,11 @@ const Photos = ({ photos }) => {
     !!photos.length &&
     photos.map((photo, index) => {
       return (
-        <div key={index} className="gallery__item">
-          <img src={photo.urls.regular}/>
-          <div className="item-details">
-          </div>
-        </div>
+        
+        <img src={photo.urls.regular} />
+        // <div style={{height: '160vh', width: '500vw', imageRendering: "auto"}}>
+           
+        // </div>
       );
     });
 

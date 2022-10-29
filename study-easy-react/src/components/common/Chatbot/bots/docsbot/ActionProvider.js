@@ -12,7 +12,7 @@ class ActionProvider {
     }
     handleMessageParserDocs = () => {
       const messages = this.createChatBotMessage(
-        "Choose the Country",
+        "Select a Country from the following link!",
         { widget: "messageParser", withAvatar: true }
       );
   
@@ -29,16 +29,31 @@ class ActionProvider {
   
       this.addMessageToBotState(messages);
     };
-  
-    handleConfigDocs = () => {
-      const messages = this.createChatBotMessage(
-        "Visa Details",
-        { widget: "config", withAvatar: true }
-      );
+    handleTrendingDocs = () => {
+      const messages = [
+        this.createChatBotMessage(
+          "Clck here to view the Trending Colleges",
+          { widget: "TrendingDocs", withAvatar: true }
+        ),
+      ];
   
       this.addMessageToBotState(messages);
     };
-  
+    handleConfigDocs = () => {
+      const messages = this.createChatBotMessage(
+        "Select a Country from the following link to view Visa Details",
+        { widget: "config", withAvatar: true }
+      );
+      this.addMessageToBotState(messages);
+    };
+    
+    handleLoginDocs=()=>{
+      const messages=this.createChatBotMessage(
+        "Click here to Login/SignUp!", 
+        {widget: "LoginDocs", withAvatar:true}
+      );
+      this.addMessageToBotState(messages);
+    };
   
   
     handleDefault = () => {

@@ -13,14 +13,19 @@ const MessageParserDocs = ({ gist, setState }) => {
   const showActionProviderGist = gist === "config";
 
   return (
+    // const onclicker = (a) =>
+    // {
+    //   navigate("/University", {state : {country : a}})
+    // }
+    //navigate("/University", {state : {country : a}})
     <div>
-      <Link to= "/Univ/USA"
+      <Link to= "/Countries"
         //target="_blank"
         rel="noopener noreferrer"
         className={styles.configLink}>
-        USA
+        University and visa information
       </Link>
-      <Link to="/Univ/IND"
+      {/* <Link to="/Univ/IND"
         //target="_blank"
         rel="noopener noreferrer"
         className={styles.configLink}
@@ -58,7 +63,7 @@ const MessageParserDocs = ({ gist, setState }) => {
       <ConditionallyRender
         ifTrue={showActionProviderGist}
         //show={<GistContainer gistId="af04e2e30407671412af08fa3c429409" />}
-      />
+      /> */}
     </div>
   );
 };

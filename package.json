@@ -1,7 +1,11 @@
 {
   "dependencies": {
     "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3"
+    "@material-ui/icons": "^4.11.3",
+    "react-anim": "^0.2.1",
+    "react-anim-kit": "^1.0.19",
+    "react-chatbot-kit": "^2.1.0",
+    "react-geocode": "^0.2.3",
+    "react-util-kit": "^0.0.15"
   }
-  
 }

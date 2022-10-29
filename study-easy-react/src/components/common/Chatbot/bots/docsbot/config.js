@@ -3,7 +3,9 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import Overview from "./widgets/Overview/Overview";
 import MessageParserDocs from "./widgets/docs/MessageParserDocs/MessageParserDocs";
 import ActionProviderDocs from "./widgets/docs/ActionProviderDocs/ActionProviderDocs";
+import LoginDocs from "./widgets/docs/LoginDocs/LoginDocs"
 import Config from "./widgets/docs/Config/Config";
+import TrendingDocs from "./widgets/docs/TrendingDocs/TrendingDocs";
 const botName ='GeekyBot';
 const config = {
     botName: 'GeekyBot',
@@ -31,7 +33,7 @@ infoBox: "",
         }
     }, 
     customComponents: {
-        header: () => <div style={{cursor:"default",backgroundColor: '#0066CC', padding: "5px", borderRadius: "3px", height: '30px', color: "white" , fontWeight: "bold", letterSpacing:"2.5px", fontSize:"18px"}}>GeekyBot</div>,
+        header: () => <div style={{cursor:"default",backgroundColor: '#0066CC', padding: "7px", borderRadius: "5px", color: "white" , fontWeight: "bold", letterSpacing:"3.5px", fontSize:"27px", height:"44px", fontFamily:"Bebas Neue"}}>GeekyBot</div>,
        
     },
     widgets: [
@@ -51,8 +53,18 @@ infoBox: "",
             mapStateToProps: ["infoBox"],
           },
           {
+            widgetName: "LoginDocs",
+            widgetFunc: (props) => <LoginDocs {...props} />,
+            mapStateToProps: ["infoBox"],
+          },
+          {
             widgetName: "config",
             widgetFunc: (props) => <Config {...props} />,
+            mapStateToProps: ["infoBox"],
+          },
+          {
+            widgetName: "TrendingDocs",
+            widgetFunc: (props) => <TrendingDocs {...props} />,
             mapStateToProps: ["infoBox"],
           },
     ],

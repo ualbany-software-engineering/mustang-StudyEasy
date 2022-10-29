@@ -3,15 +3,16 @@ import React, {
     useEffect,
     useRef,
     useCallback,
-    useMemo
+    useMemo,
   } from "react";
-  
+  import { useNavigate } from 'react-router-dom'
   import Globe from "react-globe.gl";
   import * as THREE from "three";
   import clouds from "./globe/clouds.png";
   import bump from "./globe/bump-large.jpg";
   import { Home } from '../home/home.jsx';
   import {Link} from "react-router-dom";
+import { University } from "../universities/university";
 
 
   //refered: https://codesandbox.io/s/react-globegl-4snxx?file=/src/App.js
@@ -22,7 +23,9 @@ import React, {
     const [hover, setHover] = useState();
     const [rotation, setRotation] = useState(true);
     const [hoverD, sethoverD] = useState();
+
   
+
     useEffect(() => {
       fetch(
         "https://raw.githubusercontent.com/vasturiano/react-globe.gl/master/example/datasets/ne_110m_admin_0_countries.geojson"
@@ -88,10 +91,12 @@ import React, {
   
       return globeMaterialTemp;
     }, []);
-  
+
+    const navigate = useNavigate();
+
     const onclicker = (a) =>
     {
-       alert(a);
+      navigate("/University", {state : {country : a}})
     }
     // const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlOrRd);
     // const maxVal = useMemo(

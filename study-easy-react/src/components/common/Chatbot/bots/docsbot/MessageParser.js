@@ -20,8 +20,15 @@ class MessageParser {
       if (lowerCase.includes("visa")) {
         return this.actionProvider.handleConfigDocs();
       }
+      if (lowerCase.includes("Login")||lowerCase.includes("login")) {
+        return this.actionProvider.handleLoginDocs();
+      }
+
       if(lowerCase.includes("hi")||lowerCase.includes("hello")||lowerCase.includes("hey")){
         return this.actionProvider.handleHello();
+      }
+      if (lowerCase.includes("Trending")||lowerCase.includes("trending")) {
+        return this.actionProvider.handleTrendingDocs();
       }
       
       return this.actionProvider.handleDefault();
