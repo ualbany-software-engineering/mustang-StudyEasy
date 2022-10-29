@@ -1,0 +1,19 @@
+.configLink {
+    padding: 8px;
+    display: block;
+    margin: 15px auto;
+    width: 150px;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    color: black;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+  }
+  .configLink:hover{
+   
+    font-weight: bold;
+    background-color: black;
+    color: white;
+  }
