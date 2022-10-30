@@ -10,6 +10,14 @@ import { University } from './universities/university';
 import { Team } from './teams/team';
 import { Search } from './search/search';
 import { Unirecord } from './universities/forjson/unirecord';
+import CreateComment from "../../Pages/CreateComment";
+import Comment from "../../Pages/Comment";
+
+import AddMajors from '../../CollegeAdministrators/addMajors';
+import UpdateDeleteMajor from '../../CollegeAdministrators/UpdateOrDelete';
+import AdminAdd from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookAdd";
+import AdminUpdateOrDelete from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookUpdateOrDelete";
+import Admin from "../../Pages/Admin";
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -24,6 +32,25 @@ function AnimationRoutes() {
         <Route path="/Team" exact element={ <Team/> } />
         <Route path="/Search" exact element={ <Search/> } />
         <Route path="statewiseuni" exact element = {<Unirecord/>}/>
+
+{/* review edit */}
+        <Route path="/CreateComment" exact element={<CreateComment/>} />
+        <Route path="/Comment" exact element={<Comment />} />
+
+{/* srujan work */}
+        <Route path="/AddMajors" exact element={<AddMajors />} />
+        <Route
+          path="/UpdateDeleteMajor"
+          exact
+          element={<UpdateDeleteMajor />}
+        />
+        <Route
+          path="/AdminUpdateOrDelete"
+          exact
+          element={<AdminUpdateOrDelete />}
+        />
+        <Route path="/AdminAdd" exact element={<AdminAdd />} />
+        <Route path="/Admin" exact element={<Admin />} />
         </Routes>
     </AnimatePresence>
   )

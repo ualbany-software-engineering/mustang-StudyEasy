@@ -110,21 +110,7 @@
     text-decoration: underline;
   }
   
-  body {
-    padding: 0%;
-    margin: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
  
-  
-  a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 25px;
-  }
-  
   .createPostPage {
     width: 100%;
     height: calc(100vh - 80px);
@@ -183,15 +169,5 @@
   textarea {
     margin-top: 5px;
   }
-  .button{
-    background-color:  #008CBA; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 16px;
-  }
+
   

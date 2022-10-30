@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState,useEffect} from "react";
 import {db} from '../firbase-config';
-import pic from '../assets/ets.png';
+// import pic from '../assets/ets.png';
 import '../styling/Comment.css';
 import { useNavigate } from "react-router-dom";
 import {collection,getDocs,addDoc,updateDoc,doc,deleteDoc} from 'firebase/firestore';
@@ -37,7 +37,7 @@ function CreateComment() {
             }}
           />
         </div>
-        <button onClick={createUser}> Submit Review</button>
+        <button className= "primary-btn"onClick={createUser}> Submit Review</button>
       </div>
     </div>
   )
