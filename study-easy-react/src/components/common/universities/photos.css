@@ -1,0 +1,15 @@
+.photo img
+{
+    /* width: 10vw; */
+    width: max-content;
+}
+
+.edit{
+    padding-top: 10px;
+}
+.h
+{
+    position: absolute;
+    color: white;
+    font: 100px;
+}
