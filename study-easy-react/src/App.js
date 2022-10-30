@@ -16,30 +16,30 @@ function App() {
   window.scrollTo(0,0);
   return (
     <BrowserRouter basename = {process.env.PUBLIC_URL}>
-      <Header/>
-    <div className="App">
-      <AnimationRoutes/>
-    </div>
-    <div>
-    <div className='app-chatbot-container'>
+    <Header/>
+  <div className="App">
+    <AnimationRoutes/>
+  </div>
+  <div>
+  <div className='app-chatbot-container'>
 
-            <ConditionallyRender ifTrue={showChatbot}
-            show={
-              <Chatbot
-              config={config}
-              messageParser = {MessageParser}
-              actionProvider = {ActionProvider} 
-              />
-            }
+          <ConditionallyRender ifTrue={showChatbot}
+          show={
+            <Chatbot
+            config={config}
+            messageParser = {MessageParser}
+            actionProvider = {ActionProvider} 
             />
-    </div>
-    <button className='app-chatbot-button' 
-        onClick={() => toggleChatbot((prev) => !prev)}
-        >
-          <ButtonIcon className="app-chatbot-button-icon" />
-        </button>
-    </div>
-    </BrowserRouter>
+          }
+          />
+  </div>
+  <button className='app-chatbot-button' 
+      onClick={() => toggleChatbot((prev) => !prev)}
+      >
+        <ButtonIcon className="app-chatbot-button-icon" />
+      </button>
+  </div>
+  </BrowserRouter>
   );
 }
 
