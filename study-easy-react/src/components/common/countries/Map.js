@@ -62,7 +62,7 @@ import { University } from "../universities/university";
   
     useEffect(() => {
       globeEl.current.controls().autoRotate = true;
-      globeEl.current.controls().autoRotateSpeed = 4;
+      globeEl.current.controls().autoRotateSpeed = 1;
   
       globeEl.current.pointOfView({ altitude: 1.8 },2000);
   
