@@ -1,0 +1,14 @@
+/* .back
+{
+    background-image: url("../../../images/countbg.png");
+} */
+
+/* .map
+{
+    margin-top: 10%;
+} */
+
+.map
+{
+    overflow-x: hidden;
+}

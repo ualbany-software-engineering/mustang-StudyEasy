@@ -11,6 +11,7 @@ function Datacard({title, logo, name}) {
         <h1>{title}</h1>
         <img src = {logo} alt=""/>
         <Button component={Link} to={name} variant = "contained" color="success">Check admisssion requirements</Button>
+        
 
     </div>
   )

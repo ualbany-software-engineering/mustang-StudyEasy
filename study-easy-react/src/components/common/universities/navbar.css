@@ -1,0 +1,9 @@
+.innernav
+{
+    margin-top: 1%;
+}
+
+.form-inline
+{
+   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
