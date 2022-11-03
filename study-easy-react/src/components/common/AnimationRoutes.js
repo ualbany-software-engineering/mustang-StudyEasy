@@ -51,6 +51,11 @@ function AnimationRoutes() {
         />
         <Route path="/AdminAdd" exact element={<AdminAdd />} />
         <Route path="/Admin" exact element={<Admin />} />
+
+        
+
+
+
         </Routes>
     </AnimatePresence>
   )
