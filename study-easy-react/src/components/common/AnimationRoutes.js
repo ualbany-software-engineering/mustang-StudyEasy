@@ -19,6 +19,14 @@ import AdminAdd from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookAdd";
 import AdminUpdateOrDelete from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookUpdateOrDelete";
 import Admin from "../../Pages/Admin";
 
+import Resources from "./Resources/Resources"
+import Ielts from './Resources/data/ielts';
+import Gre from './Resources/data/gre';
+import Gmat from './Resources/data/gmat';
+import Sat from './Resources/data/sat';
+import Toefl from './Resources/data/toefl';
+import Bitsat from './Resources/data/bitsat';
+
 function AnimationRoutes() {
     const location = useLocation();
   return (
@@ -51,6 +59,15 @@ function AnimationRoutes() {
         />
         <Route path="/AdminAdd" exact element={<AdminAdd />} />
         <Route path="/Admin" exact element={<Admin />} />
+
+        {/* resources */}
+        <Route path="/Resources" exact element={<Resources/>}/>
+        <Route path="/ielts" exact element={<Ielts/>}/>
+        <Route path="/gre" exact element={<Gre/>}/>
+        <Route path="/gmat" exact element={<Gmat/>}/>
+        <Route path="/toefl" exact element={<Toefl/>}/>
+        <Route path="/sat" exact element={<Sat/>}/>
+        <Route path="/bitsat" exact element={<Bitsat/>}/>
         </Routes>
     </AnimatePresence>
   )
