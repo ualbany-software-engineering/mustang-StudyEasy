@@ -8,14 +8,13 @@ function Login() {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [firstname, setFirstname] = useState("")
+    const [lastname, setLastname] = useState("")
+    const [phonenumber, setPhonenumber] = useState("")
 
     let navigate = useNavigate();
     const routeChange = () => {
         let path = `/`;
-        navigate(path);
-    }
-    const routeChange2 = () => {
-        let path = `/Register`;
         navigate(path);
     }
 
@@ -37,26 +36,9 @@ function Login() {
             });
     }
 
-    const signIn = () => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                console.log(user)
-                alert("Successfully signed in")
-                routeChange()
-                // ...
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                //const errorMessage = error.message;
-                alert(errorCode)
-            });
-    }
-
     return (
-        <div className="loginCreateAccount">
-            <div classsName='login'>
+        <div className="Create Account">
+            <div classsName='Create Acc'>
                 <div>
                     <h1>Please enter login information below</h1>
                 </div>
@@ -67,10 +49,7 @@ function Login() {
                     <TextField type={"password"} label="please enter your password" style={{width:275}} onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <div>
-                    <button variant="contained" onClick={routeChange2}>Create Account</button>
-                </div>
-                <div>
-                    <button variant="contained" onClick={signIn}>Sign in</button>
+                    <button variant="contained" onClick={signUp}>Create Account</button>
                 </div>
             </div>
         </div>

@@ -6,6 +6,7 @@ import About from "../Pages/AboutLowercase";
 import Extra from "../Pages/Extra";
 import LOGIN from "../Pages/Login";
 import ProfileInfo from "../components/ProfileInfo";
+import Register from "../Pages/Register";
 // import {University} from '../pages/University';
 import { Majors } from "../components/Majors";
 import { Courses } from "../components/Courses";
@@ -109,6 +110,7 @@ function AnimationRoutes() {
         <Route path="/Home1" exact element={<Home1 />} />
         <Route path="/Resources" exact element={<Home1 />} />
         <Route path="/ProfileInfo" exact element={<ProfileInfo />} />
+        <Route path="/Register" exact element={<Register />} />
         <Route path="/Gmat" exact element={<Gmat />} />
         <Route path="/Gre" exact element={<Gre />} />
         <Route path="/Ielts" exact element={<Ielts />} />
