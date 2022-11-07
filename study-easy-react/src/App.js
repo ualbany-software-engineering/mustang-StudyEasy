@@ -12,7 +12,7 @@ import MessageParser from "./components/common/Chatbot/bots/docsbot/MessageParse
 import ActionProvider from "./components/common/Chatbot/bots/docsbot/ActionProvider";
 
 function App() {
-  const [showChatbot, toggleChatbot] = useState(true);
+  const [showChatbot, toggleChatbot] = useState(false);
   window.scrollTo(0,0);
   return (
     <BrowserRouter basename = {process.env.PUBLIC_URL}>

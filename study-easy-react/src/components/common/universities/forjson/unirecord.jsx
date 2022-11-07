@@ -7,8 +7,10 @@ export const Unirecord = ({gcountry}) => {
 
      const location = useLocation(); 
     const [data,setData]=useState([]);
-    const [state, setState] = useState([]);
     var given = "";
+    // let array_name = new Array(10000);
+    // let array_link = new Array(10000);
+
     if(gcountry.toString().toLowerCase().includes("ivory coast"))
     {
      given = "côte d'ivoire";
@@ -41,7 +43,7 @@ export const Unirecord = ({gcountry}) => {
      given = gcountry.toString().toLowerCase();
     }
   
-    const getData=()=>{
+    const getData= async ()=>{
       fetch("https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json")
         .then(function(response){
         //   console.log(response)
@@ -49,14 +51,14 @@ export const Unirecord = ({gcountry}) => {
         })
         .then(function(myJson) {
         //   console.log(myJson);
-        //due to json  issues had to manipulate data a bit.
+        //due to json  issues had to manipulate data a bit
             setData(myJson)
         });
     }
     useEffect(()=>{
       getData()
     },[])
-    console.log(given);
+   // console.log(given);
 
   return (
     <div className='container datarec'>
@@ -68,7 +70,7 @@ export const Unirecord = ({gcountry}) => {
             {
               var temp = item.name.toString();
               // console.log(temp);
-              return <Unicard uni={temp} link={item.web_pages[0]}/>
+              return <Unicard count = {given} uni={temp} link={item.web_pages[0]}/>
             }
         }
         )}

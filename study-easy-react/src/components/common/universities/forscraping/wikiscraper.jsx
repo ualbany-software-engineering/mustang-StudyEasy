@@ -27,13 +27,11 @@ export const Scraper = ({wikiData}) => {
       //Response of type @wikiSummary - contains the intro and the main image
     } catch (error) {
       console.log(error);
-
       //=> Typeof wikiError
     }
     })();
 
-
-
+    
   return (
     <div>
              <ShowMoreText
