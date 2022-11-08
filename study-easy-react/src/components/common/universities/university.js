@@ -22,6 +22,7 @@ export const University = () => {
   }
 
   return (
+    <>
     <div>
       <div className="university">
         <h2>Country/University</h2>
@@ -38,20 +39,30 @@ export const University = () => {
       </Suspense>
       <br/>
       <br/>
-      <div className="container">
+
+      <ol class="navol">
+  <li ><a class="active navli">Overview</a></li>
+  <li><a class="navli">Colleges</a></li>
+  <li><a class="navli" >Requirements</a></li>
+  <li><a class="navli" >Estimated Cost</a></li>
+  <li><a class="navli">Visa</a></li>
+</ol>
+
+<div className="container">
         <h1>Overview</h1>
         <Scraper wikiData={location.state.country}/>
       </div>
-
-      <div>
-        <Unirecord gcountry= {location.state.country}/>
-        {/* <Statedata gcountry={location.state.country}/> */}
+      
+      {/* <div>
+        <Unirecord gcountry= {location.state.country}/> 
+        <Statedata gcountry={location.state.country}/>
         {/* <Visaglobe/> */}
         {/* <Navbar/> */}
-        {/* <Visadata/> */}
-      </div>
-
+         {/* <Visadata/> */}
+        {/* </div>    */}
 
     </div>
+ 
+        </>
   )
 }
