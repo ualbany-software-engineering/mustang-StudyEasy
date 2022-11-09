@@ -10,6 +10,7 @@ import { Unirecord } from "./forjson/unirecord.jsx";
 import { Statedata } from "./forjson/statedata.jsx";
 import Visaglobe, { Visadata } from "../visadata/visadata.jsx";
 import { Navbar } from "./navbar.jsx";
+import Sidenav from "../SideNav/SideNav.js";
 
 export const University = () => {
   
@@ -23,7 +24,8 @@ export const University = () => {
 
   return (
     <>
-    <div>
+  
+      <div>
       <div className="university">
         <h2>Country/University</h2>
         <h1>{location.state.country}</h1>
@@ -39,16 +41,22 @@ export const University = () => {
       </Suspense>
       <br/>
       <br/>
-
-      <ol class="navol">
-  <li ><a class="active navli">Overview</a></li>
+    
+      {/* <ol class="navol">
+  <li ><a class="active navli" href="#overview">Overview</a></li>
   <li><a class="navli">Colleges</a></li>
   <li><a class="navli" >Requirements</a></li>
   <li><a class="navli" >Estimated Cost</a></li>
   <li><a class="navli">Visa</a></li>
-</ol>
+</ol> */}
 
-<div className="container">
+
+<div>
+<Sidenav />
+
+<div className="container" id="overview">
+
+
         <h1>Overview</h1>
         <Scraper wikiData={location.state.country}/>
       </div>
@@ -59,10 +67,10 @@ export const University = () => {
         {/* <Visaglobe/> */}
         {/* <Navbar/> */}
          {/* <Visadata/> */}
-        {/* </div>    */}
+       {/* </div>     */}
 
     </div>
- 
+    </div>
         </>
   )
 }

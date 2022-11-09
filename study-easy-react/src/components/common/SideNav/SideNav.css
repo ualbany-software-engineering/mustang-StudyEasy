@@ -1,0 +1,27 @@
+.sidenav{
+    height: 100vmax !important;
+    display: block;
+    width: 15%;
+    margin-left: 0%;
+    padding-left: 0%;
+    /* background-color: black; */
+    /* color: white; */
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    top: 0%;
+    left: 0%;
+    position: sticky;
+    overflow-y: auto;
+    overflow: auto;
+}
+
+.navli{
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .2em;
+    line-height: 3em;
+    font-size: 20px; 
+    padding: 0.2em;
+}
