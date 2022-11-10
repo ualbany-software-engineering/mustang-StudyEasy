@@ -19,6 +19,7 @@ import AdminAdd from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookAdd";
 import AdminUpdateOrDelete from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookUpdateOrDelete";
 import Admin from "../../Pages/Admin";
 import { Collegedetails } from './details/collegedetails';
+import { Trending } from './trendingcolleges/trending';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -34,7 +35,7 @@ function AnimationRoutes() {
         <Route path="/Search" exact element={ <Search/> } />
         <Route path="/statewiseuni" exact element = {<Unirecord/>}/>
         <Route path="/uni" exact element = {<Collegedetails/>}/>
-
+        <Route path="/Trending" exact element = {<Trending/>}/>
 {/* review edit */}
         <Route path="/CreateComment" exact element={<CreateComment/>} />
         <Route path="/Comment" exact element={<Comment />} />
