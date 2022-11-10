@@ -24,7 +24,16 @@ export default function Admin() {
         // style={{ minHeight: "100" }}
         // sx={{ width: "100%" }}
       >
+        <Grid item></Grid>
+        <Grid>
+          <Link to="/viewstu">
+            {" "}
+            <Button>View Students profile</Button>
+          </Link>
+        </Grid>
+
         {/* Empty Grid */}
+
         <Grid item> </Grid>
         <Grid sx={{ bgcolor: "purple" }} item xs justify="space-around">
           <Link to="/UpdateDeleteMajor">
@@ -77,6 +86,7 @@ export default function Admin() {
             </Button>
           </Link>
         </Grid>
+
         <Grid item sx={{ bgcolor: "white" }}>
           <Grid container direction={"row"} justify="flex-end" spacing={2}>
             <Grid item>

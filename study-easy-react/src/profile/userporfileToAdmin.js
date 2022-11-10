@@ -1,12 +1,19 @@
 import { Alert, Button, Card, TextField } from "@mui/material";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  getDocs,
+  updateDoc,
+  setDoc,
+} from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { db, auth } from "../firbase-config";
 
 export default function UserporfileToAdmin() {
   // let read from the firestore where user profile info is saved for the Admin
   // const uid= firebase.auth().currentUser.uid
-  const collectionRef = collection(db, "UserProfileToAdmin");
+  const dbName = "UserProfileToAdmin";
+  const collectionRef = collection(db, dbName);
   // .withConverter(
   //   "id",
   //   "==",
@@ -16,7 +23,7 @@ export default function UserporfileToAdmin() {
   console.log("current user " + auth.currentUser.uid);
 
   const [userProfile, setUserProfile] = useState();
-  const [pName, setPName] = useState();
+  const [dataExits, setDataExits] = useState(false);
   useEffect(() => {
     const getCurrentUserProfile = async () => {
       const data = await getDocs(collectionRef);
@@ -24,7 +31,7 @@ export default function UserporfileToAdmin() {
       setUserProfile(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
       console.log(userProfile, " Only user");
       const tempUserdata = userProfile;
-      let k;
+      // let k;
       tempUserdata.map((e) => {
         console.log(
           e.uid,
@@ -46,52 +53,60 @@ export default function UserporfileToAdmin() {
           //   gpa: e.gpa,
           // });
           // setUserProfile("Hello it worked");
-          // setName(e.name);
-          k = {
-            uid: e.uid,
-            name: e.name,
-            email: e.email,
-            awards: e.awards,
-            exam: e.exam,
-            gpa: e.gpa,
-          };
-          console.log(k, " END of k");
-          return setPName(k);
+          setName(e.name);
+          setEmail(e.email);
+          setGpa(e.gpa);
+          setAwards(e.awards);
+          setExam(e.exam);
+          setDataExits(e.id);
+
+          // k = {
+          //   uid: e.uid,
+          //   name: e.name,
+          //   email: e.email,
+          //   awards: e.awards,
+          //   exam: e.exam,
+          //   gpa: e.gpa,
+          // };
+          // console.log(k, " END of k");
+          // return setPName(k);
+
           // t = k;
+          return;
         }
       });
-      if (k !== undefined) {
-        console.log("k not  null");
-        // setUserProfile(k);
-        setPName(k);
-        // setUserProfile("hello");
-        console.log(k, " k is");
+      // if (k !== undefined) {
+      //   console.log("k not  null");
+      //   // setUserProfile(k);
+      //   setPName(k);
+      //   // setUserProfile("hello");
+      //   console.log(k, " k is");
 
-        console.log(userProfile, "user profile");
-      } else {
-        console.log("AM here");
-        k = {
-          uid: "",
-          name: "",
-          email: "",
-          awards: "",
-          exam: "",
-          gpa: "",
-        };
-        // setUserProfile(k);
-        setPName(k);
-        console.log(k, " User has not made the profile page yet!");
-      }
+      //   console.log(userProfile, "user profile");
+      // } else {
+      //   console.log("AM here");
+      //   k = {
+      //     uid: "",
+      //     name: "",
+      //     email: "",
+      //     awards: "",
+      //     exam: "",
+      //     gpa: "",
+      //   };
+      //   // setUserProfile(k);
+      //   setPName(k);
+      //   console.log(k, " User has not made the profile page yet!");
+      // }
       console.log("tempUserData", tempUserdata);
       console.log("new Only user", userProfile);
     };
     // let o
     if (auth.currentUser.uid !== null) {
       console.log(
-        "*********************************************8\n&& userProfile === undefined"
+        "*******************************************8\n&& userProfile === undefined"
       );
-      getCurrentUserProfile();
     }
+    getCurrentUserProfile();
   }, []);
   // const [upadteProfile, setUpdateProfile] = useState();
   const [name, setName] = useState();
@@ -100,12 +115,14 @@ export default function UserporfileToAdmin() {
   const [email, setEmail] = useState();
   const [awards, setAwards] = useState();
   const [error, setError] = useState("");
+  const [successMessage, setSuccessMessage] = useState("none");
 
   useEffect(() => {
-    console.log(pName, "hello UserProfile");
-    if (pName !== null) {
-      console.log("helloworld");
-    }
+    // console.log(pName, "hello UserProfile");
+    // if (pName !== null) {
+    //   console.log("helloworld");
+    // }
+    console.log(name, email, awards, gpa, exam, " values");
   }, [name]);
   return (
     <div>
@@ -113,6 +130,7 @@ export default function UserporfileToAdmin() {
         <Card item>
           <TextField
             name="Name"
+            label={name}
             placeholder="full name"
             onChange={(e) => {
               setName(e.target.value);
@@ -127,6 +145,7 @@ export default function UserporfileToAdmin() {
         <Card item>
           <TextField
             name="Exam score"
+            label={exam}
             placeholder="sat"
             onChange={(e) => {
               setExam(e.target.value);
@@ -144,6 +163,7 @@ export default function UserporfileToAdmin() {
           )}
           <TextField
             name="GPA"
+            label={gpa}
             placeholder="scale 0.0 to 4.0 "
             type="number"
             sx={{
@@ -169,6 +189,7 @@ export default function UserporfileToAdmin() {
         <Card item>
           <TextField
             name="email"
+            label={email}
             placeholder="email address"
             sx={{
               width: 300,
@@ -181,6 +202,7 @@ export default function UserporfileToAdmin() {
         </Card>
         <Card item>
           <TextField
+            label={awards}
             name="Awards"
             placeholder="Awards"
             onChange={(e) => {
@@ -190,24 +212,49 @@ export default function UserporfileToAdmin() {
           />
         </Card>
         <Card item>
-          <Button
-            variant="contained"
-            onClick={() => {
-              async function update() {
-                await addDoc(collectionRef, {
-                  uid: auth.currentUser.uid,
-                  name: name,
-                  email: email,
-                  gpa: gpa,
-                  exam: exam,
-                  awards: awards,
-                });
-              }
-              update();
-            }}
-          >
-            Update your profile
-          </Button>
+          {dataExits === false ? (
+            <Button
+              variant="contained"
+              onClick={() => {
+                async function add() {
+                  await addDoc(collectionRef, {
+                    uid: auth.currentUser.uid,
+                    name: name,
+                    email: email,
+                    gpa: gpa,
+                    exam: exam,
+                    awards: awards,
+                  });
+                }
+                add();
+              }}
+            >
+              Add your profile
+            </Button>
+          ) : (
+            <Button
+              variant="contained"
+              onClick={() => {
+                async function update() {
+                  let tempCollection = { db, dbName, dataExits };
+                  console.log("Name of collection ref", tempCollection);
+                  const newValues = {
+                    uid: auth.currentUser.uid,
+                    name: name,
+                    email: email,
+                    gpa: gpa,
+                    exam: exam,
+                    awards: awards,
+                  };
+                  console.log("update values are ", newValues);
+                  await updateDoc(tempCollection, newValues);
+                }
+                update();
+              }}
+            >
+              update your profile
+            </Button>
+          )}
         </Card>
       </Card>
     </div>

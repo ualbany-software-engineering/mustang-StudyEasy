@@ -19,6 +19,7 @@ import AdminAdd from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookAdd";
 import AdminUpdateOrDelete from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookUpdateOrDelete";
 import Admin from "../../Pages/Admin";
 import Profile from "../../Pages/profile";
+import AdminViewStudents from "../../CollegeAdministrators/adminViewStudents";
 
 function AnimationRoutes() {
   const location = useLocation();
@@ -57,6 +58,7 @@ function AnimationRoutes() {
         <Route path="/AdminAdd" exact element={<AdminAdd />} />
         <Route path="/Admin" exact element={<Admin />} />
         <Route path="/Profile" exact element={<Profile />} />
+        <Route path="/viewStu" exact element={<AdminViewStudents />} />
       </Routes>
     </AnimatePresence>
   );
