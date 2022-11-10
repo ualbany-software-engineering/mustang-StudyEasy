@@ -17,7 +17,7 @@ export const Head = () => {
                 <i className = "Social"><SocialIcon  url="" network='email'/></i></ul>
             </div>
         </div>
-        </section> 
+        </section>
     </div>
   )
 }

@@ -19,8 +19,8 @@ const Header = () => {
                     <li><Link to = "/Search ">Search</Link></li>
                     <li><Link to = "/Trending">Trending</Link></li>
                     <li><Link to = "/Team">Team</Link></li>
+                    <li><Link to = "/Comment">Reviews</Link></li>
                     <li><Link to = "/Login">Login</Link></li>
-                    <li><Link to = "/Review">Reviews</Link></li>
                 </ul>
                 <div className='start'>
                     <div className='button'>
