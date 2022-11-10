@@ -1,4 +1,4 @@
-
+import { Button } from "@mui/material";
 import React, {useRef, useState, useEffect, Suspense, lazy } from "react";
 import Spinner from "./img.js";
 import "./university.css";
