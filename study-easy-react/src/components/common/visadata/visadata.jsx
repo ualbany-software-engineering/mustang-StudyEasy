@@ -1,32 +1,49 @@
-import React, { useState } from 'react'
+// fetch("https://raw.githubusercontent.com/DheerajKumarT/visadata/main/Visa.json")
+import React, { useEffect, useState } from 'react'
+import { Visacard } from './visacard';
+import { useLocation } from 'react-router';
 
-export const Visadata = (wikicountry) => {
+export const Visadata = ({gcountry}) => {
 
-    const [data, setData] = useState();
-  const links = [];
-//   const givenquery = wikiData;
-  const wiki = require("wikipedia");
+     const location = useLocation(); 
+    const [data,setData]=useState([]);
+    const [state, setState] = useState([]);
 
-(async () => {
-  try {
-    const page = await wiki.page(
-      "Visa requirements for United States citizens"
-    );
-    console.log(page);
-    //Response of type @Page object
-    const summary = await page.intro();
-    // const pdf = await page.pdf();
-    console.log(summary);
-    setData(summary);
-    //Response of type @wikiSummary - contains the intro and the main image
-  } catch (error) {
-    console.log(error);
-    //=> Typeof wikiError
-  }
-})();
+    const getData=()=>{
+      fetch("https://raw.githubusercontent.com/DheerajKumarT/visadata/main/Visa.json")
+        .then(function(response){
+        //   console.log(response)
+          return response.json();
+        })
+        .then(function(myJson) {
+        //   console.log(myJson);
+            setData(myJson)
+        });
+    }
+    useEffect(()=>{
+      getData()
+    },[])
+
+
+    const given = gcountry.toString().toLowerCase();
+    console.log(given);
+
   return (
-    <div>
-        {data}
+    <div className='container datarec'>
+        {data && data.length>0 && data.map((item)=> {
+            var check = given.includes(item.country.toLowerCase());
+            //console.log(check);
+            if(check)
+            {
+              var temp = item.country.toString();
+              var data=item.data.toString();
+              var necessary=item.necessary.toString();
+               console.log(data);
+              return <Visacard uni={temp} data={data} necessary={necessary}/>
+            }
+        }
+        )}
     </div>
   )
 }
+   

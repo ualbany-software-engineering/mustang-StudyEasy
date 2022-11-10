@@ -8,7 +8,7 @@ import { Slider } from "./slider.js";
 import { Scraper } from "./forscraping/wikiscraper.jsx";
 import { Unirecord } from "./forjson/unirecord.jsx";
 import { Statedata } from "./forjson/statedata.jsx";
-import Visaglobe, { Visadata } from "../visadata/visadata.jsx";
+import {Visadata} from "../visadata/visadata.jsx";
 import { Navbar } from "./navbar.jsx";
 import Sidenav from "../SideNav/SideNav.js";
 
@@ -69,9 +69,13 @@ export const University = () => {
         {/* <Navbar/> */}
          {/* <Visadata/> */}
         </div>     
-<div id="requirements">requirements hi irovnoineoifneoi fejsniofesnfoiesnf eo;ifneis</div>
-<div id="estimatedcost"> cost ksgihenoiesgpsjegohi irovnoineoifneoi fejsniofesnfoiesnf eo;ifneis</div>
-<div id="visa"> visa ksgihenoiesgpsjegohi irovnoineoifneoi fejsniofesnfoiesnf eo;ifneis</div>
+{/* <div id="requirements">requirements hi irovnoineoifneoi fejsniofesnfoiesnf eo;ifneis</div>
+<div id="estimatedcost"> cost ksgihenoiesgpsjegohi irovnoineoifneoi fejsniofesnfoiesnf eo;ifneis</div> */}
+
+<div id="visa" className="visaclass"> 
+<h1>Visa Information</h1>
+<Visadata gcountry= {location.state.country}/> 
+</div>
     </div>
     </div>
         </>
