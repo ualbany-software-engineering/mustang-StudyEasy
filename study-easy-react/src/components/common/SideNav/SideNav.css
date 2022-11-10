@@ -1,5 +1,5 @@
 .sidenav{
-    height: 100vmax !important;
+    height: 100vh !important;
     display: block;
     width: 15%;
     margin-left: 0%;
@@ -8,12 +8,14 @@
     /* color: white; */
     float: left;
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     top: 0%;
     left: 0%;
     position: sticky;
     overflow-y: auto;
     overflow: auto;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+
 }
 
 .navli{
@@ -24,4 +26,14 @@
     line-height: 3em;
     font-size: 20px; 
     padding: 0.2em;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.navli:active{
+    border-left: 5px solid rgb(0, 102, 204);
+}
+.navli:hover{
+    color: rgb(0, 102, 204);
+    font-weight: 500;
 }

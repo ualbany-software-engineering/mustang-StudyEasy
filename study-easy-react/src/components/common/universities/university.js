@@ -54,21 +54,24 @@ export const University = () => {
 <div>
 <Sidenav />
 
-<div className="container" id="overview">
+<div className="" id="overview">
 
 
         <h1>Overview</h1>
         <Scraper wikiData={location.state.country}/>
       </div>
       
-      {/* <div>
+      <div id="colleges">
+      <h1>Colleges</h1>
         <Unirecord gcountry= {location.state.country}/> 
-        <Statedata gcountry={location.state.country}/>
+        {/* <Statedata gcountry={location.state.country}/> */}
         {/* <Visaglobe/> */}
         {/* <Navbar/> */}
          {/* <Visadata/> */}
-       {/* </div>     */}
-
+        </div>     
+<div id="requirements">requirements hi irovnoineoifneoi fejsniofesnfoiesnf eo;ifneis</div>
+<div id="estimatedcost"> cost ksgihenoiesgpsjegohi irovnoineoifneoi fejsniofesnfoiesnf eo;ifneis</div>
+<div id="visa"> visa ksgihenoiesgpsjegohi irovnoineoifneoi fejsniofesnfoiesnf eo;ifneis</div>
     </div>
     </div>
         </>
