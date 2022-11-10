@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField } from "@mui/material";
 
+// 1: fixing create account
+// 2: get profileInfo to display
+
 function Login() {
 
     const [email, setEmail] = useState("")
