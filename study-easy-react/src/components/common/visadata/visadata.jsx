@@ -8,9 +8,9 @@ export const Visadata = ({gcountry}) => {
      const location = useLocation(); 
     const [data,setData]=useState([]);
     const [state, setState] = useState([]);
-
+  console.log(location);
     const getData=()=>{
-      fetch("https://raw.githubusercontent.com/DheerajKumarT/visadata/main/Visa.json")
+      fetch("https://raw.githubusercontent.com/DheerajKumarT/visadata/main/Visa1.json")
         .then(function(response){
         //   console.log(response)
           return response.json();
