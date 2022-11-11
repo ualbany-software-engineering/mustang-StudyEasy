@@ -17,6 +17,10 @@ export const Trending = () => {
       console.log(doc.id, "=>", doc.data());
     });
     // e.preventDefault();
+
+
+
+    
   } 
 
   useEffect(()=>{
