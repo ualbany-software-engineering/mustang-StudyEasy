@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* monochrome */
-html {
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  filter: gray; /* IE6-9 */
-  filter: grayscale(100%);
-}
+
 
 *{
   padding: 0;
