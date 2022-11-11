@@ -21,8 +21,7 @@ export const Country = () => {
     // }
 
     return (
-        <div className="Country"
-    >
+        <div className="Country">
             {/* <Select options={countryOptions} value={selectedCountry} onChange={update} />  */}
             {/* {countryOptions.map((country) => (<option value = {country.value}>{country.label}</option>))} */}
             {/* </Select> */}
