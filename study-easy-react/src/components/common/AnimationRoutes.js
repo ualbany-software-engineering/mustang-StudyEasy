@@ -26,6 +26,8 @@ import Gmat from './Resources/data/gmat';
 import Sat from './Resources/data/sat';
 import Toefl from './Resources/data/toefl';
 import Bitsat from './Resources/data/bitsat';
+import { Collegedetails } from './details/collegedetails';
+import { Trending } from './trendingcolleges/trending';
 
 function AnimationRoutes() {
     const location = useLocation();
@@ -41,6 +43,9 @@ function AnimationRoutes() {
         <Route path="/Search" exact element={ <Search/> } />
         <Route path="statewiseuni" exact element = {<Unirecord/>}/>
 
+        <Route path="/statewiseuni" exact element = {<Unirecord/>}/>
+        <Route path="/uni" exact element = {<Collegedetails/>}/>
+        <Route path="/Trending" exact element = {<Trending/>}/>
 {/* review edit */}
         <Route path="/CreateComment" exact element={<CreateComment/>} />
         <Route path="/Comment" exact element={<Comment />} />

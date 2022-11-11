@@ -23,9 +23,7 @@ export const University = () => {
   }
 
   return (
-    <>
-  
-      <div>
+    <div>
       <div className="university">
         <h2>Country/University</h2>
         <h1>{location.state.country}</h1>
@@ -78,6 +76,6 @@ export const University = () => {
 </div>
     </div>
     </div>
-        </>
+    
   )
 }
