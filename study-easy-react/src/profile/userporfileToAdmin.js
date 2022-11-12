@@ -1,13 +1,14 @@
-import { Alert, Button, Card, TextField } from "@mui/material";
+import { Alert, Button, Card, Skeleton, TextField } from "@mui/material";
 import {
   addDoc,
   collection,
   getDocs,
   updateDoc,
-  setDoc,
+  doc,
 } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { db, auth } from "../firbase-config";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function UserporfileToAdmin() {
   // let read from the firestore where user profile info is saved for the Admin
@@ -18,13 +19,37 @@ export default function UserporfileToAdmin() {
   //   "id",
   //   "==",
   //   auth.currentUser.uid
-  // );
+  // );// doe
 
   console.log("current user " + auth.currentUser.uid);
+  const [user, loading, errorAuth] = useAuthState(auth);
 
   const [userProfile, setUserProfile] = useState();
   const [dataExits, setDataExits] = useState(false);
+  // const [displaySkeleton, setSkeleton] = useState(false);
+  const delay = (ms) => new Promise((res) => setTimeout(res, ms));
   useEffect(() => {
+    console.log(
+      "***********8888user",
+      user,
+      "loading",
+      loading,
+      "errorAuth",
+      errorAuth
+    );
+
+    // if (loading) {
+    //   setSkeleton(true);
+    //   const waitingSkeleton = async () => {
+    //     await delay(5000);
+    //     console.log("Waited 5s");
+    //   };
+    //   waitingSkeleton();
+
+    //   return;
+    // } else {
+    //   setSkeleton(false);
+    // }
     const getCurrentUserProfile = async () => {
       const data = await getDocs(collectionRef);
       console.log(data, " dat from useEffect");
@@ -43,7 +68,7 @@ export default function UserporfileToAdmin() {
         let inComeingUid = e.uid;
         let currentUidofUser = auth.currentUser.uid;
         if (inComeingUid === currentUidofUser) {
-          console.log("Why work here");
+          console.log("Why worsk heres");
           // setUserProfile({
           //   uid: e.uid,
           //   name: e.name,
@@ -97,13 +122,13 @@ export default function UserporfileToAdmin() {
       //   setPName(k);
       //   console.log(k, " User has not made the profile page yet!");
       // }
-      console.log("tempUserData", tempUserdata);
-      console.log("new Only user", userProfile);
+      // console.log("tempUserData", tempUserdata);
+      // console.log("new Only user", userProfile);
     };
     // let o
     if (auth.currentUser.uid !== null) {
       console.log(
-        "*******************************************8\n&& userProfile === undefined"
+        "********************************************8\n&& userProfile === undefined"
       );
     }
     getCurrentUserProfile();
@@ -123,7 +148,7 @@ export default function UserporfileToAdmin() {
     //   console.log("helloworld");
     // }
     console.log(name, email, awards, gpa, exam, " values");
-  }, [name]);
+  }, []);
   return (
     <div>
       <Card>
@@ -207,7 +232,7 @@ export default function UserporfileToAdmin() {
             placeholder="Awards"
             onChange={(e) => {
               setAwards(e.target.value);
-              console.log("Award is " + awards);
+              console.log("Award is  " + awards);
             }}
           />
         </Card>
@@ -236,7 +261,7 @@ export default function UserporfileToAdmin() {
               variant="contained"
               onClick={() => {
                 async function update() {
-                  let tempCollection = { db, dbName, dataExits };
+                  let tempCollection = doc(db, dbName, dataExits);
                   console.log("Name of collection ref", tempCollection);
                   const newValues = {
                     uid: auth.currentUser.uid,
@@ -265,3 +290,29 @@ export default function UserporfileToAdmin() {
 //   setUserProfile("hello");
 //   console.log(userProfile, "hello UserProfile");
 // }, [name]);
+
+// const waitForAuth = async () => {
+//   setSkeleton(true);
+//   await delay(5000);
+//   console.log("Waited 5s");
+//   setSkeleton(1);
+// };
+// waitForAuth();
+
+// {displaySkeleton ? (
+//   <Card>
+//     <Skeleton>loading {displaySkeleton}</Skeleton>
+//     <Skeleton variant="circular" width={40} height={40} />
+//     <Skeleton variant="rectangular" width={210} height={60} />
+//     <Skeleton variant="rounded" width={210} height={60} />
+//     <Button
+//       onClick={() => {
+//         setSkeleton(false);
+//       }}
+//     >
+//       {" "}
+//       Click here{" "}
+//     </Button>
+//     {name !== undefined || (exam !== undefined && setSkeleton(false))}
+//   </Card>
+// ) : }

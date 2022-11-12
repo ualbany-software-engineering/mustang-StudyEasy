@@ -19,8 +19,11 @@ import { db } from "../firbase-config";
 export default function AdminViewStudents() {
   const dbName = "UserProfileToAdmin";
   const [studentProfile, setStudetProfile] = useState();
+  const [userProfile, setUserProfile] = useState();
   const [open, setOpen] = useState(false);
+  const [show, setshow] = useState(false);
   const collectionRef = collection(db, dbName);
+  const collectionRef2 = collection(db, "savedColleges");
   useEffect(() => {
     const getUsers = async () => {
       const data = await getDocs(collectionRef);
@@ -29,15 +32,23 @@ export default function AdminViewStudents() {
       console.log(studentProfile, "data end ");
     };
     getUsers();
+
+    const getCurrentUserProfile = async () => {
+      const data = await getDocs(collectionRef2);
+      console.log(data, " dat from useEffect");
+      setUserProfile(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      console.log(userProfile, " Only userasdasfasd");
+    };
+    getCurrentUserProfile();
   }, []);
   return (
-    <div>
+    <div style={{ padding: 30 }}>
       <Grid>
         <Dialog></Dialog>
       </Grid>
-      <Card>
+      <Card container spacing={10} justify="center">
         {studentProfile !== undefined && (
-          <Card>
+          <Card item variant="outlined" sx={{ width: "75%" }}>
             {studentProfile.map((student, index) => {
               return (
                 <div key={index}>
@@ -70,6 +81,10 @@ export default function AdminViewStudents() {
                           {" "}
                           awards : {student?.awards}
                         </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          {" "}
+                          Email address :{student?.email}
+                        </Typography>
                       </CardContent>
                     </CardActionArea>
                     <CardActionArea>
@@ -95,7 +110,7 @@ export default function AdminViewStudents() {
                             computer. SmartPhone users have to be diligent
                             watching for possible fake text messages they
                             receive, just as they do when watching for phish
-                            emails they might receive.
+                            emails they might receive.{student?.email} kfghf
                           </DialogContentText>
                         </DialogContent>
                         <DialogActions>
@@ -110,6 +125,31 @@ export default function AdminViewStudents() {
                       </Dialog>
                     </CardActionArea>
                   </Card>{" "}
+                  <Button
+                    variant="contained"
+                    onClick={() => {
+                      setshow(!show);
+                    }}
+                  >
+                    {show ? (
+                      <p>hide interested college</p>
+                    ) : (
+                      <p>Show interested college </p>
+                    )}
+                  </Button>
+                  {show && (
+                    <Card>
+                      {userProfile?.map((e) => {
+                        if (e.uid === student.uid) {
+                          return (
+                            <Card>
+                              <Typography>{e?.CollegeName}</Typography>
+                            </Card>
+                          );
+                        }
+                      })}
+                    </Card>
+                  )}
                 </div>
               );
             })}

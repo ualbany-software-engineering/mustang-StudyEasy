@@ -1,10 +1,16 @@
 import { Button, Card } from "@mui/material";
 import React from "react";
+import { Suspense } from "react";
+import { lazy } from "react";
 import { useState } from "react";
-import UserDeatiledProfile from "../profile/userporfileToAdmin";
+
 export default function Profile() {
   const [typeOfProfile, setTypeOfProfile] = useState("1");
   const [showDefalut, setShowDefalut] = useState(true);
+  const UserDeatiledProfile = lazy(() =>
+    import("../profile/userporfileToAdmin")
+  );
+  //import UserDeatiledProfile from "../profile/userporfileToAdmin";
 
   return (
     <div>
@@ -60,8 +66,11 @@ export default function Profile() {
           Go Back to profile
         </Button>
       )}
-
-      {typeOfProfile === "Detailed" && <UserDeatiledProfile />}
+      {typeOfProfile === "Detailed" && (
+        <Suspense fallback={<h1>Loading...</h1>}>
+          <UserDeatiledProfile />
+        </Suspense>
+      )}
     </div>
   );
 }
