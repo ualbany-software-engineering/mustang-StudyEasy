@@ -3,7 +3,7 @@ import React from "react";
 import { Suspense } from "react";
 import { lazy } from "react";
 import { useState } from "react";
-
+import SavedCollegesProfile from "../profile/savedColleges";
 export default function Profile() {
   const [typeOfProfile, setTypeOfProfile] = useState("1");
   const [showDefalut, setShowDefalut] = useState(true);
@@ -47,8 +47,12 @@ export default function Profile() {
           </Card>
 
           <Card item sx={{ borderRadius: "30px" }}>
-            <Button disabled outlined="error">
-              Public Profile
+            <Button
+            onClick={() => {
+              setTypeOfProfile("Detailed2");
+              setShowDefalut(false);
+            }}>
+              Saved Colleges
             </Button>
           </Card>
 
@@ -71,6 +75,8 @@ export default function Profile() {
           <UserDeatiledProfile />
         </Suspense>
       )}
+
+      {typeOfProfile === "Detailed2" && <SavedCollegesProfile />}
     </div>
   );
 }
