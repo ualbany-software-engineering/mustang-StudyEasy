@@ -1,4 +1,11 @@
-import { Alert, Button, Card, Skeleton, TextField } from "@mui/material";
+import {
+  Alert,
+  Button,
+  Card,
+  Skeleton,
+  Snackbar,
+  TextField,
+} from "@mui/material";
 import {
   addDoc,
   collection,
@@ -28,9 +35,21 @@ export default function UserporfileToAdmin() {
   const [dataExits, setDataExits] = useState(false);
   // const [displaySkeleton, setSkeleton] = useState(false);
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+  // var Scraper = require("images-scraper");
+
+  // const google = new Scraper({
+  //   puppeteer: {
+  //     headless: false,
+  //   },
+  // });
+
+  // (async () => {
+  //   const results = await google.scrape("banana", 200);
+  //   console.log("results", results);
+  // })();
   useEffect(() => {
     console.log(
-      "***********8888user",
+      "***********8888ser",
       user,
       "loading",
       loading,
@@ -128,7 +147,7 @@ export default function UserporfileToAdmin() {
     // let o
     if (auth.currentUser.uid !== null) {
       console.log(
-        "********************************************8\n&& userProfile === undefined"
+        "*********************************************8\n&& userProfile === undefined"
       );
     }
     getCurrentUserProfile();
@@ -275,10 +294,15 @@ export default function UserporfileToAdmin() {
                   await updateDoc(tempCollection, newValues);
                 }
                 update();
+                setSuccessMessage("Update");
               }}
             >
               update your profile
             </Button>
+          )}
+          {/* <Snackbar open={successMessage} autoHideDuration={6000} onClose={()=>{setSuccessMessage("none")}}></Snackbar> */}
+          {successMessage === "Update" && (
+            <Alert severity="success">This is a success message!</Alert>
           )}
         </Card>
       </Card>

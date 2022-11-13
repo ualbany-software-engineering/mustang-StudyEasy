@@ -18,8 +18,8 @@ import UpdateDeleteMajor from "../../CollegeAdministrators/UpdateOrDelete";
 import AdminAdd from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookAdd";
 import AdminUpdateOrDelete from "../../CollegeAdministrators/stonyBrookAdmi/stonyBrookUpdateOrDelete";
 import Admin from "../../Pages/Admin";
-import { Collegedetails } from './details/collegedetails';
-import { Trending } from './trendingcolleges/trending';
+import { Collegedetails } from "./details/collegedetails";
+import { Trending } from "./trendingcolleges/trending";
 import Profile from "../../Pages/profile";
 import AdminViewStudents from "../../CollegeAdministrators/adminViewStudents";
 
@@ -28,19 +28,23 @@ function AnimationRoutes() {
   return (
     //animation reuser
     <AnimatePresence>
-        <Routes location={location} key={location.pathname} basename = {process.env.PUBLIC_URL}>
-        <Route path="/" exact element={<Home/>} />
-        <Route path="/Countries" exact element={<Selection_countries/>} />
-        <Route path="/Login" exact element={ <Login/> } />
-        <Route path="/University" exact element={ <University/> } />
-        <Route path="/Team" exact element={ <Team/> } />
-        <Route path="/Search" exact element={ <Search/> } />
-        <Route path="/statewiseuni" exact element = {<Unirecord/>}/>
-        <Route path="/uni" exact element = {<Collegedetails/>}/>
-        <Route path="/Trending" exact element = {<Trending/>}/>
-{/* review edit */}
-        <Route path="/CreateComment" exact element={<CreateComment/>} />
-     
+      <Routes
+        location={location}
+        key={location.pathname}
+        basename={process.env.PUBLIC_URL}
+      >
+        <Route path="/" exact element={<Home />} />
+        <Route path="/Countries" exact element={<Selection_countries />} />
+        <Route path="/Login" exact element={<Login />} />
+        <Route path="/University" exact element={<University />} />
+        <Route path="/Team" exact element={<Team />} />
+        <Route path="/Search" exact element={<Search />} />
+        <Route path="/statewiseuni" exact element={<Unirecord />} />
+        <Route path="/uni" exact element={<Collegedetails />} />
+        <Route path="/Trending" exact element={<Trending />} />
+        {/* review edit */}
+        <Route path="/CreateComment" exact element={<CreateComment />} />
+
         <Route path="/" exact element={<Home />} />
         <Route path="/Countries" exact element={<Selection_countries />} />
         <Route path="/Login" exact element={<Login />} />
@@ -76,31 +80,10 @@ function AnimationRoutes() {
 
 export default AnimationRoutes;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- {/* <Routes
+{
+  /* <Routes
         location={location}
         key={location.pathname}
         basename={process.env.PUBLIC_URL}
-      > */}
+      > */
+}
