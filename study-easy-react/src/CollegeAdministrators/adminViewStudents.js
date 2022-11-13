@@ -110,7 +110,7 @@ export default function AdminViewStudents() {
                             computer. SmartPhone users have to be diligent
                             watching for possible fake text messages they
                             receive, just as they do when watching for phish
-                            emails they might receive.{student?.email} kfghf
+                            emails they might receive.{student?.email}
                           </DialogContentText>
                         </DialogContent>
                         <DialogActions>
