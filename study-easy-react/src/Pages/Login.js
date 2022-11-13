@@ -1,9 +1,11 @@
-import "../styling/Login.css";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { app, auth } from '../firbase-config'
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField } from "@mui/material";
+
+// 1: fixing create account
+// 2: get profileInfo to display
 
 function Login() {
 
@@ -13,6 +15,10 @@ function Login() {
     let navigate = useNavigate();
     const routeChange = () => {
         let path = `/`;
+        navigate(path);
+    }
+    const routeChange2 = () => {
+        let path = `/Register`;
         navigate(path);
     }
 
@@ -64,7 +70,7 @@ function Login() {
                     <TextField type={"password"} label="please enter your password" style={{width:275}} onChange={(e) => setPassword(e.target.value)} />
                 </div>
                 <div>
-                    <button variant="contained" onClick={signUp}>Create Account</button>
+                    <button variant="contained" onClick={routeChange2}>Create Account</button>
                 </div>
                 <div>
                     <button variant="contained" onClick={signIn}>Sign in</button>

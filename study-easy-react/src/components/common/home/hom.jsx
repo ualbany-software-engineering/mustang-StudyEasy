@@ -11,7 +11,7 @@ export const Hom = () => {
         <div className='container'>
           <div className='box'>
             <div className='row'>
-              <Title subtitle="WELCOME TO" subtitle1="STUDY EASY" title="Because you are worth it :)" />
+              <Title subtitle="WELCOME TO" subtitle1="STUDY EASY" title="Your college search helper :)" />
               <div className='button'>
                 <button className='primary-btn'>
                 <Link to="/Countries" style={{color: "white"}}>

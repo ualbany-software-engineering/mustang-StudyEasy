@@ -128,7 +128,7 @@ export default function UserporfileToAdmin() {
     // let o
     if (auth.currentUser.uid !== null) {
       console.log(
-        "********************************************8\n&& userProfile === undefined"
+        "*******************************************8\n&& userProfile === undefined"
       );
     }
     getCurrentUserProfile();

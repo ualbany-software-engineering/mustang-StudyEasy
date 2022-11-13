@@ -74,7 +74,7 @@ const Header = () => {
             {isUserlogin ? (
               <li>
                 <Link onClick={() => this.signOut()}>
-                  Sing out {currentUser.displayName}
+                  Sign out {currentUser.displayName}
                 </Link>
               </li>
             ) : (
