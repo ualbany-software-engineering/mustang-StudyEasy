@@ -12,6 +12,11 @@ import { Search } from "./search/search";
 import { Unirecord } from "./universities/forjson/unirecord";
 import CreateComment from "../../Pages/CreateComment";
 import Comment from "../../Pages/Comment";
+import Resources from "../../Pages/Resources";
+import Resources2 from "../../Pages/Resources2";
+import ResourceAdmin from "../../Pages/ResourceAdmin";
+import AddResource from "../../Pages/AddResource";
+import Temp from "../../Pages/Temp";
 
 import AddMajors from "../../CollegeAdministrators/addMajors";
 import UpdateDeleteMajor from "../../CollegeAdministrators/UpdateOrDelete";
@@ -56,7 +61,11 @@ function AnimationRoutes() {
         {/* review edit */}
         <Route path="/CreateComment" exact element={<CreateComment />} />
         <Route path="/Comment" exact element={<Comment />} />
-
+        <Route path="/Resources" exact element={<Resources />} />
+        <Route path="/Resources2" exact element={<Resources2 />} />
+        <Route path="/ResourceAdmin" exact element={<ResourceAdmin/>}/>
+        <Route path="/AddResource" exact element={<AddResource/>}/>
+        <Route path="/Temp" exact element={<Temp/>}/>
         {/* srujan work */}
         <Route path="/AddMajors" exact element={<AddMajors />} />
         <Route
