@@ -6,7 +6,7 @@ import AnimationRoutes from './components/common/AnimationRoutes';
 import  Header  from '../src/components/common/head/header.jsx' ;
 import Chatbot1 from "./Chatbot1"
 import { html } from 'wikipedia/dist';
-import Toggle from 'react-toggle'
+import { Mono } from './mono';
 function App() {
   const [showChatbot, toggleChatbot] = useState(false);
   window.scrollTo(0,0);
@@ -20,8 +20,9 @@ function myfunction(){
 
   return (
   <>
-  
-    <button onClick={myfunction}>Blind</button>
+    <div>
+    <Mono/>
+    </div>
     <BrowserRouter basename = {process.env.PUBLIC_URL}>
     <Header/>
   <div className="App">
