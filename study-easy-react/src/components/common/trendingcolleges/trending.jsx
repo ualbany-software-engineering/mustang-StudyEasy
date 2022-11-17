@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { doc, query, where, getDocs, collection, orderBy, limit } from "firebase/firestore";
 import {db} from "../../../firbase-config.js";
 import { async } from '@firebase/util';
+import { ProductCard, UserCard } from 'react-ui-cards';
+import img from "../../../images/unibg.jpg";
 
 export const Trending = () => {
 
@@ -31,10 +33,17 @@ export const Trending = () => {
 
   console.log(data);
   return (
-    <div>
-      <p>most visited colleges from this website</p>
+    <div className='container datarec'>
       {
-        print
+        print.map((item) => {
+          return <UserCard
+          float
+          name={item}
+          header = {img}
+          avatar="https://cdn3.vectorstock.com/i/1000x1000/53/22/college-symbol-icon-design-vector-31955322.jpg"
+          // onClick = {onclicker}
+          />
+        })
       }
     </div>
   )
