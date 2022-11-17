@@ -1,6 +1,8 @@
 .datarec{
     display: flex;
     flex-wrap: wrap;
+    max-width: 85%;
+    width: auto !important;
     /* max-width: 85%; */
 }
 .pagecount

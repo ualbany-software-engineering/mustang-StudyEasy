@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import ShowMoreText from "react-show-more-text";
 import "./scraper.css";
 
-
 const executeOnClick = (isExpanded)=>{
   console.log(isExpanded);
 }

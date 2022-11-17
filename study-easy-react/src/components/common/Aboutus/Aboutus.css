@@ -1,0 +1,20 @@
+.aboutuscontent {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 90%;
+margin: 20px;
+padding: 20px;
+text-align: justify;
+font-family: "Roboto", sans-serif;
+}
+.aboutuslist{
+    margin-right: 30px;
+    text-align: left !important;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}
