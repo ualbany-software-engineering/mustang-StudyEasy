@@ -72,6 +72,9 @@ const Header = () => {
               <Link to="/Comment">Reviews</Link>
             </li>
             <li>
+              <Link to="/Posts">User Posts</Link>
+            </li>
+            <li>
               <Link to="/Resources">Resources</Link>
             </li>
             {isUserlogin ? (

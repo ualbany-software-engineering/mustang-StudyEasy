@@ -2,14 +2,30 @@ import { Button, Card } from "@mui/material";
 import React from "react";
 import { Suspense } from "react";
 import { lazy } from "react";
+import '../styling/Profile.css';
+import { auth, db } from '../firbase-config';
+import { collection, getDocs, updateDoc, doc, deleteDoc, onSnapshot, addDoc, serverTimestamp } from "firebase/firestore";
 import { useState } from "react";
 import SavedCollegesProfile from "../profile/savedColleges";
+import { useNavigate } from "react-router-dom";
 export default function Profile() {
   const [typeOfProfile, setTypeOfProfile] = useState("1");
   const [showDefalut, setShowDefalut] = useState(true);
+  const [posts,setPosts]= useState([]);
+  const currentUser = auth.currentUser;
+    const postCollectionRef=collection(db,"Posts");
+  let navigate = useNavigate();
   const UserDeatiledProfile = lazy(() =>
     import("../profile/userporfileToAdmin")
   );
+  const handlePost = () => {
+    navigate('/AddPosts');
+}
+const handleDelete = (id) => {
+  deleteDoc(doc(db,"Posts", id))
+  document.getElementById(id).style.display = "none"
+  alert("Deleted Successfully!")
+}
   //import UserDeatiledProfile from "../profile/userporfileToAdmin";
 
   return (
@@ -77,6 +93,40 @@ export default function Profile() {
       )}
 
       {typeOfProfile === "Detailed2" && <SavedCollegesProfile />}
+      <div class="col-md-12">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center experience"><span>User Posts</span></div><br/>
+
+                        {posts.map((item)=>{
+                            if (item.uid === currentUser.uid) {
+                                return(
+                                    <div id={item.id}>
+                                    <div className='tbox-resource d-flex align-items-center'>
+                                        <div className="d-inline-block image-part">
+                                        <img alt="not fount" className="post-image" src={item.image} />
+                                        </div>
+
+                                        <div className="d-inline-block main-part">
+                                            <div className='box-top'>
+                                                <h5><strong>{item.title}</strong></h5>
+                                            </div>
+                                            <div className='client-comment'>
+                                                <p>{item.description}</p>
+                                            </div>
+
+                                            <div className="box-bottom">
+                                                <button className="btn-warning" onClick={e => {e.preventDefault(); e.stopPropagation(); handleDelete(item.id)}}>Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                )
+                            }
+                        })}
+
+                        <div class="mt-5 text-center"><button class="btn btn-info" type="button" onClick={handlePost}>New Post</button></div>
+                    </div>
+                </div>
     </div>
   );
 }

@@ -16,7 +16,8 @@ import Resources from "../../Pages/Resources";
 import Resources2 from "../../Pages/Resources2";
 import ResourceAdmin from "../../Pages/ResourceAdmin";
 import AddResource from "../../Pages/AddResource";
-
+import Posts from "../../Pages/Posts";
+import AddPosts from "../../Pages/AddPosts";
 
 import AddMajors from "../../CollegeAdministrators/addMajors";
 import UpdateDeleteMajor from "../../CollegeAdministrators/UpdateOrDelete";
@@ -65,7 +66,8 @@ function AnimationRoutes() {
         <Route path="/Resources2" exact element={<Resources2 />} />
         <Route path="/ResourceAdmin" exact element={<ResourceAdmin/>}/>
         <Route path="/AddResource" exact element={<AddResource/>}/>
-       
+        <Route path="/Posts" exact element={<Posts/>}/>
+        <Route path="/AddPosts" exact element={<AddPosts/>}/>
         {/* srujan work */}
         <Route path="/AddMajors" exact element={<AddMajors />} />
         <Route
