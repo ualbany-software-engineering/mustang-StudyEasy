@@ -10,7 +10,7 @@ export const Visadata = ({gcountry}) => {
     const [state, setState] = useState([]);
   console.log(location);
     const getData=()=>{
-      fetch("https://raw.githubusercontent.com/DheerajKumarT/visadata/main/Visa1.json")
+      fetch("https://raw.githubusercontent.com/DheerajKumarT/visadata/main/visa2.json")
         .then(function(response){
         //   console.log(response)
           return response.json();
@@ -35,11 +35,11 @@ export const Visadata = ({gcountry}) => {
             //console.log(check);
             if(check)
             {
-              var temp = item.country.toString();
+             // var temp = item.country.toString();
               var data=item.data.toString();
               var necessary=item.necessary.toString();
                console.log(data);
-              return <Visacard uni={temp} data={data} necessary={necessary}/>
+              return <Visacard  data={data} necessary={necessary}/>
             }
         }
         )}

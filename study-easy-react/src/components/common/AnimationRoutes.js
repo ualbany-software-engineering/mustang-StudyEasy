@@ -28,7 +28,7 @@ import Toefl from './Resources/data/toefl';
 import Bitsat from './Resources/data/bitsat';
 import { Collegedetails } from './details/collegedetails';
 import { Trending } from './trendingcolleges/trending';
-
+import {Aboutus} from './Aboutus/Aboutus';
 function AnimationRoutes() {
     const location = useLocation();
   return (
@@ -73,6 +73,9 @@ function AnimationRoutes() {
         <Route path="/toefl" exact element={<Toefl/>}/>
         <Route path="/sat" exact element={<Sat/>}/>
         <Route path="/bitsat" exact element={<Bitsat/>}/>
+
+        {/* Aboutus */}
+        <Route path='/Aboutus' exact element={<Aboutus />} />
         </Routes>
     </AnimatePresence>
   )
