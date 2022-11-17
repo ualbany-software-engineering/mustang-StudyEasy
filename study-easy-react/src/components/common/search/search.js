@@ -58,7 +58,7 @@ export const Search = () => {
       </div>
       <input value = {searchval} onChange={handleChange}  className=" container searchbox" type="text" placeholder='search' />
     </div>
-    <div className='btn'><button className='primary-btn' onClick={manageclick}>search</button> <p>please look console</p></div>
+    <div className='btn'><button className='primary-btn' onClick={manageclick}>search</button></div>
    
     </>
   )
