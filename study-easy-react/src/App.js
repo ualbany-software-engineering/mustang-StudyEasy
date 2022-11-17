@@ -10,6 +10,7 @@ import {ConditionallyRender} from "react-util-kit";
 import config from "./components/common/Chatbot/bots/docsbot/config"
 import MessageParser from "./components/common/Chatbot/bots/docsbot/MessageParser";
 import ActionProvider from "./components/common/Chatbot/bots/docsbot/ActionProvider";
+import Chatbot1 from './Chatbot1';
 
 function App() {
   const [showChatbot, toggleChatbot] = useState(false);
@@ -21,26 +22,9 @@ function App() {
     <AnimationRoutes/>
   </div>
   <div>
-  <div className='app-chatbot-container'>
-
-          <ConditionallyRender ifTrue={showChatbot}
-          show={
-            <Chatbot
-            config={config}
-            messageParser = {MessageParser}
-            actionProvider = {ActionProvider} 
-            />
-          }
-          />
-  </div>
-  <button className='app-chatbot-button' 
-      onClick={() => toggleChatbot((prev) => !prev)}
-      >
-        <ButtonIcon className="app-chatbot-button-icon" />
-      </button>
+    <Chatbot1 />
   </div>
   </BrowserRouter>
   );
 }
-
 export default App;
