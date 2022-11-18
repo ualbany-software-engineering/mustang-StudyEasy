@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styling/UserPost.css';
 import {auth, db} from '../firbase-config';
-import pic from '../assets/scu.jpg';
+
 import {useState,useEffect} from "react";
 import {collection,getDocs,addDoc,updateDoc,doc,deleteDoc} from 'firebase/firestore';
 function UserPost({isAuth}) {
