@@ -46,7 +46,8 @@ function AnimationRoutes() {
 {/* review edit */}
         <Route path="/CreateComment" exact element={<CreateComment/>} />
         <Route path="/Comment" exact element={<Comment />} />
-        <Route path="/Resources" exact element={<Resources2 />} />
+        <Route path="/Resources" exact element={<Resources/>} />
+        <Route path="/Resources2" exact element={<Resources2 />} />
         <Route path="/ResourceAdmin" exact element={<ResourceAdmin/>}/>
         <Route path="/AddResource" exact element={<AddResource/>}/>
        
