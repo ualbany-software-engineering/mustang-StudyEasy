@@ -92,7 +92,8 @@ const Header = () => {
             )}
           </ul>
           <div className="start">
-            <div className="button">ABOUT US</div>
+            <div className="button">
+              <Link to="/Aboutus" className="aboutus">ABOUT US</Link></div>
           </div>
           <button className="toggle" onClick={() => setclick(!click)}>
             {click ? (

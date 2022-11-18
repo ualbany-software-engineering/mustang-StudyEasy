@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate} from 'react-router';
-import * as JsSearch from "js-search";
+import { useEffect } from 'react';
 import { Unicard } from '../universities/forjson/unicard';
 
 export const Search = () => {

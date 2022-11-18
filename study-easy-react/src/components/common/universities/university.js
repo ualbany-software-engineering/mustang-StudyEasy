@@ -8,9 +8,10 @@ import { Slider } from "./slider.js";
 import { Scraper } from "./forscraping/wikiscraper.jsx";
 import { Unirecord } from "./forjson/unirecord.jsx";
 import { Statedata } from "./forjson/statedata.jsx";
-import Visaglobe, { Visadata } from "../visadata/visadata.jsx";
+// import Visaglobe, { Visadata } from "../visadata/visadata.jsx";
 import { Navbar } from "./navbar.jsx";
-
+import Sidenav from "../SideNav/SideNav.js";
+import {Visadata} from "../visadata/visadata.jsx";
 export const University = () => {
   
   window.scrollTo(0,0);
@@ -38,12 +39,14 @@ export const University = () => {
       </Suspense>
       <br/>
       <br/>
-      <div className="container">
+      <div>
+      <Sidenav />
+      <div id="overview">
         <h1>Overview</h1>
         <Scraper wikiData={location.state.country}/>
       </div>
 
-      <div>
+      <div className="container" id="colleges">
         <Unirecord gcountry= {location.state.country}/>
         {/* <Statedata gcountry={location.state.country}/> */}
         {/* <Visaglobe/> */}
@@ -51,7 +54,11 @@ export const University = () => {
         {/* <Visadata/> */}
       </div>
 
-
+      <div id="visa" className="visaclass"> 
+<h1>Visa Information</h1>
+<Visadata gcountry= {location.state.country}/> 
+</div>
+    </div>
     </div>
   )
 }
