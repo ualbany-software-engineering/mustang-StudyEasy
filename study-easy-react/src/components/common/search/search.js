@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate} from 'react-router';
 import * as JsSearch from "js-search";
+import { Unicard } from '../universities/forjson/unicard';
 
 export const Search = () => {
   const [searchval, setsearchval] = useState();
+  const [searchdata, setSearchData] = useState([]);
+  const [linker, setLink] = useState([]);
 
  const [data,setData]=useState([]);
   const getData= async ()=>{
@@ -31,7 +34,7 @@ export const Search = () => {
   // const result = queryJson.search(data, regrex);
   // console.log(result)
 
-
+  var given = " ";
   const handleChange = (event) =>
   {
    setsearchval(event.target.value);
@@ -41,11 +44,14 @@ export const Search = () => {
   function manageclick()
   {
     // window.open("https://letmegooglethat.com/?q="+searchval, "_blank");
-    getData();
+    // getData();
     data && data.length>0 && data.map((item) => {
-      if(item.name.toLowerCase().includes(searchval.toLowerCase()))
+      given = item.name.toLowerCase();
+      if(given.includes(searchval.toLowerCase()))
       {
         console.log(item.name);
+        setSearchData(arr => [...arr, item]);
+        // setLink(arr => [...arr, item.web_pages[0]]);
       }
     })
   }
@@ -56,10 +62,18 @@ export const Search = () => {
         <h2>Home/Search</h2>
         <h1>Scan is what we do</h1>
       </div>
-      <input value = {searchval} onChange={handleChange}  className=" container searchbox" type="text" placeholder='search' />
+      <div className='container box_edit'>
+      <input value = {searchval} onChange={handleChange}  className="searchbox" type="text" placeholder='search' />
+      </div>
     </div>
     <div className='btn'><button className='primary-btn' onClick={manageclick}>search</button></div>
-   
+    <div className='container datarec editor'>
+      {
+        searchdata.map((item) => {
+          return <Unicard count={item.country} uni = {item.name} link= {item.web_pages[0]}/>
+        })
+      }
+    </div>
     </>
   )
 }
