@@ -112,6 +112,8 @@ export const Collegedetails =() => {
               return <p>{item.Scholarship}</p>
             } )
           }
+
+          <a href = {Location.state.collegelink}>TO VISIT COLLEGE</a>
       </div>
 
     </div>
