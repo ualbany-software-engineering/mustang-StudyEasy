@@ -28,8 +28,19 @@ export const Trending = () => {
   }, [])
 
   return (
-    <div>
-      hey
+    <div className='container datarec'>
+      {
+        print.map((item) => {
+          return <UserCard
+          float
+          name={item}
+          header = {img}
+          avatar="https://cdn3.vectorstock.com/i/1000x1000/53/22/college-symbol-icon-design-vector-31955322.jpg"
+          // onClick = {onclicker}
+          />
+          
+        })
+      }
     </div>
   )
 }

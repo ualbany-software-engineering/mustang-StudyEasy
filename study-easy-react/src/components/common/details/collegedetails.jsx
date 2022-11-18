@@ -29,14 +29,11 @@ export const Collegedetails =() => {
     //   console.log(given.results[0].title);
       const page = await wiki.page(given.results[0].title);
       const page1 = await wiki.page(given.results[1].title);
-      const page2 = await wiki.page(given.results[2].title);
 
       //Response of type @Page object
       const summary = await page.intro();
       const total = await page.summary();
       const total1 = await page1.summary();
-      const total2 = await page2.summary();
-
 
         setData(summary);  
          console.log(total1);
@@ -49,11 +46,6 @@ export const Collegedetails =() => {
         {
           setImage2(total1.originalimage.source);
         }
-        if(total2.originalimage.source !== null)
-        {
-          setImage3(total2.originalimage.source);
-        }
-
       return;
       //Response of type @wikiSummary - contains the intro and the main image
     } catch (error) {
@@ -69,11 +61,19 @@ export const Collegedetails =() => {
 
   return (
     <div>
-        Collegedetails of {location.state.collegename}
-        <p>{data}</p>
-        <img src ={image}/>
-        <img src ={image1}/>
-        <img src ={image2}/>
+      <div className='collegedetailbg'> 
+      <h2>Home/Details</h2>
+      <h1>College details of <br/>{location.state.collegename}</h1>
+      </div>
+      <div className='container details'>
+        <h1>Description: </h1>
+           <p>{data}</p>
+           <img src ={image}/>
+           <img src ={image1}/>
+      </div>
+
+      
+      
     </div>
   )
 }

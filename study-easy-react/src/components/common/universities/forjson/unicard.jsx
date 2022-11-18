@@ -44,8 +44,7 @@ export const Unicard = ({count,uni, link}) => {
     }
 
     // const q = query(collection(db, "visitedData"), orderBy("count"));
-
-      // navigate("/uni", {state: {collegename: uni, collegelink: link, country: count}});
+    navigate("/uni", {state: {collegename: uni, collegelink: link, country: count}});
    }
 
   return (
@@ -59,6 +58,7 @@ export const Unicard = ({count,uni, link}) => {
         onClick = {onclicker}
         />
     </div>
+
     <Box textAlign='center'>
     <Button onClick={() => {
       const collectionRef = collection(db, "savedColleges");
