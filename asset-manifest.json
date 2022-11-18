@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mustang-StudyEasy/static/css/main.c9c5dc10.css",
-    "main.js": "/mustang-StudyEasy/static/js/main.92e9a0fa.js",
+    "main.css": "/mustang-StudyEasy/static/css/main.5be6674d.css",
+    "main.js": "/mustang-StudyEasy/static/js/main.bdaeb49a.js",
     "static/css/690.64bed31f.chunk.css": "/mustang-StudyEasy/static/css/690.64bed31f.chunk.css",
     "static/js/690.2435634d.chunk.js": "/mustang-StudyEasy/static/js/690.2435634d.chunk.js",
     "static/js/758.d1660d47.chunk.js": "/mustang-StudyEasy/static/js/758.d1660d47.chunk.js",
@@ -25,15 +25,15 @@
     "static/media/bot-overview.svg": "/mustang-StudyEasy/static/media/bot-overview.0764913e696288cdbacc8cadcec12395.svg",
     "static/media/bot.svg": "/mustang-StudyEasy/static/media/bot.968b21718b9bf698cc9fc9f6d3bb4472.svg",
     "index.html": "/mustang-StudyEasy/index.html",
-    "main.c9c5dc10.css.map": "/mustang-StudyEasy/static/css/main.c9c5dc10.css.map",
-    "main.92e9a0fa.js.map": "/mustang-StudyEasy/static/js/main.92e9a0fa.js.map",
+    "main.5be6674d.css.map": "/mustang-StudyEasy/static/css/main.5be6674d.css.map",
+    "main.bdaeb49a.js.map": "/mustang-StudyEasy/static/js/main.bdaeb49a.js.map",
     "690.64bed31f.chunk.css.map": "/mustang-StudyEasy/static/css/690.64bed31f.chunk.css.map",
     "690.2435634d.chunk.js.map": "/mustang-StudyEasy/static/js/690.2435634d.chunk.js.map",
     "758.d1660d47.chunk.js.map": "/mustang-StudyEasy/static/js/758.d1660d47.chunk.js.map",
     "787.c4b9f9eb.chunk.js.map": "/mustang-StudyEasy/static/js/787.c4b9f9eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9c5dc10.css",
-    "static/js/main.92e9a0fa.js"
+    "static/css/main.5be6674d.css",
+    "static/js/main.bdaeb49a.js"
   ]
 }
