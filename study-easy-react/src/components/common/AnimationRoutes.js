@@ -27,7 +27,7 @@ import { Collegedetails } from "./details/collegedetails";
 import { Trending } from "./trendingcolleges/trending";
 import Profile from "../../Pages/profile";
 import AdminViewStudents from "../../CollegeAdministrators/adminViewStudents";
-
+import Aboutus from "./Aboutus/Aboutus";
 function AnimationRoutes() {
   const location = useLocation();
   return (
@@ -67,6 +67,7 @@ function AnimationRoutes() {
         <Route path="/Admin" exact element={<Admin />} />
         <Route path="/Profile" exact element={<Profile />} />
         <Route path="/viewStu" exact element={<AdminViewStudents />} />
+        <Route path='/Aboutus' exact element={<Aboutus/>} />
       </Routes>
     </AnimatePresence>
   );
