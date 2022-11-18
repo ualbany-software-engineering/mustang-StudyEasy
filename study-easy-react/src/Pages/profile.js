@@ -4,9 +4,15 @@ import { Suspense } from "react";
 import { lazy } from "react";
 import { useState } from "react";
 import SavedCollegesProfile from "../profile/savedColleges";
+import {useNavigate, userNavigate} from 'react-router-dom';
 export default function Profile() {
   const [typeOfProfile, setTypeOfProfile] = useState("1");
   const [showDefalut, setShowDefalut] = useState(true);
+  let navigate=useNavigate();
+  const routeChange = () =>{ 
+        
+    navigate("/CreatePost");
+  };
   const UserDeatiledProfile = lazy(() =>
     import("../profile/userporfileToAdmin")
   );
@@ -53,6 +59,14 @@ export default function Profile() {
               setShowDefalut(false);
             }}>
               Saved Colleges
+            </Button>
+          </Card>
+          <Card item sx={{ borderRadius: "30px" }}>
+            <Button
+            onClick={() => {
+              routeChange();
+            }}>
+              Create a Post
             </Button>
           </Card>
 
