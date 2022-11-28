@@ -74,6 +74,9 @@ const Header = () => {
             <li>
               <Link to="/Resources">Resources</Link>
             </li>
+            <li>
+              <Link to="/UserPost">UserPosts</Link>
+            </li>
             {isUserlogin ? (
               <li>
                 <Link onClick={() => this.signOut()}>
