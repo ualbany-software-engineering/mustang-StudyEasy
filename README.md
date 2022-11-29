@@ -1,4 +1,7 @@
 # mustang-StudyEasy
+
+please check the code of conduct: <a href="https://github.com/ualbany-software-engineering/mustang-StudyEasy/blob/main/CODE_OF_CONDUCT.md">here</a>
+
 to run react .. make sure you are inside study-easy-react
 than run command
 ```
