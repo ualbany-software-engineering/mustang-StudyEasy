@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState,useEffect} from "react";
 import {db} from '../firbase-config';
-// import pic from '../assets/userIcon.png';
+ import pic from '../assets/userIcon.png';
 import '../styling/Comment.css';
 import { useNavigate } from "react-router-dom";
 import {collection,getDocs,addDoc,updateDoc,doc,deleteDoc} from 'firebase/firestore';
@@ -37,7 +37,7 @@ function Comment() {
                         <div className='box-top'>
                             <div className='profile'>
                                 <div className='profile-img'>
-                                    {/* <img src={pic} alt="fafs"/> */}
+                                   <img src={pic} alt="fafs"/>   
                                 </div>
                                 <div className='name-user'>
                                     <strong>{user.name}</strong>

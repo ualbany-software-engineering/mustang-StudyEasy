@@ -60,6 +60,9 @@
     transform: rotate(-45deg);
 }
 
+.visaclass{
+    margin-left: 20%;
+}
 @keyframes down {
 	0% {
 		transform: translate(0);

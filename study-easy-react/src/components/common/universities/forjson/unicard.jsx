@@ -23,7 +23,7 @@ export const Unicard = ({count,uni, link}) => {
     
     const docRef = doc(db, "visitedData", data);
     const docsnap = await getDoc(docRef);
-
+    var rand = Math.floor(1+Math.random()*10);
     if(docsnap.exists())
     {
       await updateDoc(docRef,{
@@ -44,9 +44,9 @@ export const Unicard = ({count,uni, link}) => {
     }
 
     // const q = query(collection(db, "visitedData"), orderBy("count"));
-
-      // navigate("/uni", {state: {collegename: uni, collegelink: link, country: count}});
+    navigate("/uni", {state: {collegename: uni, collegelink: link, country: count , num1: rand}});
    }
+
 
   return (
     <div>
@@ -59,6 +59,7 @@ export const Unicard = ({count,uni, link}) => {
         onClick = {onclicker}
         />
     </div>
+
     <Box textAlign='center'>
     <Button onClick={() => {
       const collectionRef = collection(db, "savedColleges");
