@@ -24,7 +24,6 @@ npm install gh-pages --save-dev
 npm run deploy
 ```
 ---
-# sprint 1 plan details
+# plan details
 Checkout our project plan in : <a href = "https://github.com/orgs/ualbany-software-engineering/projects/1"> Project Details </a>
 
-<img src = "/StudyEasyApp/Sprint1_planbuild.png" />
