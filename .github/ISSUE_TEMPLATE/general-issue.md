@@ -1,6 +1,6 @@
 ---
 name: General issue
-about: Describe this issue template's purpose here.
+about: Create any issue to let team know what is happening with project
 title: progress issue
 labels: ''
 assignees: ''
