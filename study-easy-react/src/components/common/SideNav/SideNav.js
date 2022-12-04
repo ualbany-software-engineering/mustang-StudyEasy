@@ -8,10 +8,10 @@ function Sidenav() {
             <ol>
     <li ><AnchorLink class="active navli" href="#overview">Overview</AnchorLink></li>
   <li><AnchorLink class="navli" href="#colleges">Colleges</AnchorLink></li>
-  <li><AnchorLink class="navli" href="#requirements">Requirements</AnchorLink></li>
-  <li><AnchorLink class="navli" href="#estimatedcost">Estimated Cost</AnchorLink></li>
+  {/* <li><AnchorLink class="navli" href="#requirements">Requirements</AnchorLink></li>
+  <li><AnchorLink class="navli" href="#estimatedcost">Estimated Cost</AnchorLink></li> */}
   <li><AnchorLink class="navli" href="#visa">Visa</AnchorLink></li>
- 
+
   {/* <>  <Link to="#overview" smooth>Overview </Link>
   <Link to="#colleges" smooth>Colleges </Link>
   </> */}

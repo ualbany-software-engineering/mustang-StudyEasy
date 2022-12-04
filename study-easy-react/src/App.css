@@ -380,16 +380,26 @@ p
 
 .searchbox
 {
-     margin-top: 15%;
-    margin-left: 8% ;
-    padding-top: 1.1%;
-    padding-bottom: 1.1%;
+    /* margin-top: 15%; */
+    /* margin-left: 1.1%; */
+    /* padding-left: 10%; */
+    /* padding-top: 1.1%; */
+    /* padding-bottom: 1.1%; */
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
-    border-radius: 10px;
+   border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.box_edit{
+  margin-top: 14%;
+  padding-bottom: 20px;
+}
+
+.editor{
+  padding-top: 20px;
 }
 
 input:hover
@@ -746,4 +756,51 @@ visibility: hidden;
 
 span{
   font-size: 15px !important;
+}
+
+
+
+.collegedetailbg{
+  background-image: url("./images/unibg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  padding-top: 17%;
+  /* padding-left: 30px; */
+  /* padding-right: 50px; */
+  image-rendering: optimizeQuality;
+  text-align: center;
+}
+
+
+
+.collegedetailbg h1
+{
+    font-size: 80px;
+    text-transform:capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 30px;
+    color: white;
+}
+
+.collegedetailbg h2
+{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align:center;
+    padding-left: 30px;
+    color: white;
+}
+
+.details{
+  margin-top: 47%;
 }

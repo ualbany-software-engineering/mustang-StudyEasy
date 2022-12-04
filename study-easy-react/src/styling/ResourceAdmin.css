@@ -1,0 +1,65 @@
+.Head{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 80px;
+    text-align: center;
+    background-color: green;
+    padding: 12px 20px;
+}
+
+.main-container{
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.gre-main-container{
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    margin-bottom: 25px;
+    border-color: rgb(255, 253, 208);
+}
+.gre-heading-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.my-gre-image{
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.gre-main-heading{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 26px;
+    color: black;
+}
+.gre-paragraph{
+    font-family: Roboto;
+    font-size: 16px;
+    color: black;
+}
+.knowMore-button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 14px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.home{
+    color: black !important;
+}
+.linka{
+    align-items: center;
+    color: hotpink;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}

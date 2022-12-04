@@ -1,0 +1,213 @@
+{
+    "Trend":[
+    {
+        "World Rank": 1,
+        "Institution": "Harvard University",
+        "Location": "USA",
+        "National Rank": 1,
+        "Education Rank": 1,
+        "Employability Rank": 1,
+        "Faculty Rank": 1,
+        "Research Rank": 1,
+        "Score": 100
+      },
+      {
+        "World Rank": 2,
+        "Institution": "Massachusetts Institute of Technology",
+        "Location": "USA",
+        "National Rank": 2,
+        "Education Rank": 4,
+        "Employability Rank": 12,
+        "Faculty Rank": 2,
+        "Research Rank": 7,
+        "Score": 96.7
+      },
+      {
+        "World Rank": 3,
+        "Institution": "Stanford University",
+        "Location": "USA",
+        "National Rank": 3,
+        "Education Rank": 11,
+        "Employability Rank": 4,
+        "Faculty Rank": 3,
+        "Research Rank": 2,
+        "Score": 95.1
+      },
+      {
+        "World Rank": 4,
+        "Institution": "University of Cambridge",
+        "Location": "United Kingdom",
+        "National Rank": 1,
+        "Education Rank": 3,
+        "Employability Rank": 25,
+        "Faculty Rank": 4,
+        "Research Rank": 10,
+        "Score": 94.1
+      },
+      {
+        "World Rank": 5,
+        "Institution": "University of Oxford",
+        "Location": "United Kingdom",
+        "National Rank": 2,
+        "Education Rank": 7,
+        "Employability Rank": 27,
+        "Faculty Rank": 9,
+        "Research Rank": 4,
+        "Score": 93.3
+      },
+      {
+        "World Rank": 6,
+        "Institution": "Princeton University",
+        "Location": "USA",
+        "National Rank": 4,
+        "Education Rank": 5,
+        "Employability Rank": 15,
+        "Faculty Rank": 6,
+        "Research Rank": 79,
+        "Score": 92.6
+      },
+      {
+        "World Rank": 7,
+        "Institution": "University of Chicago",
+        "Location": "USA",
+        "National Rank": 5,
+        "Education Rank": 8,
+        "Employability Rank": 16,
+        "Faculty Rank": 21,
+        "Research Rank": 22,
+        "Score": 92
+      },
+      {
+        "World Rank": 8,
+        "Institution": "Columbia University",
+        "Location": "USA",
+        "National Rank": 6,
+        "Education Rank": 12,
+        "Employability Rank": 14,
+        "Faculty Rank": 10,
+        "Research Rank": 14,
+        "Score": 91.5
+      },
+      {
+        "World Rank": 9,
+        "Institution": "University of Pennsylvania",
+        "Location": "USA",
+        "National Rank": 7,
+        "Education Rank": 14,
+        "Employability Rank": 8,
+        "Faculty Rank": 41,
+        "Research Rank": 11,
+        "Score": 91.1
+      },
+      {
+        "World Rank": 10,
+        "Institution": "California Institute of Technology",
+        "Location": "USA",
+        "National Rank": 8,
+        "Education Rank": 2,
+        "Employability Rank": 104,
+        "Faculty Rank": 7,
+        "Research Rank": 80,
+        "Score": 90.7
+      },
+      {
+        "World Rank": 11,
+        "Institution": "Yale University",
+        "Location": "USA",
+        "National Rank": 9,
+        "Education Rank": 6,
+        "Employability Rank": 36,
+        "Faculty Rank": 12,
+        "Research Rank": 20,
+        "Score": 90.4
+      },
+      {
+        "World Rank": 12,
+        "Institution": "University of California, Berkeley",
+        "Location": "USA",
+        "National Rank": 10,
+        "Education Rank": 9,
+        "Employability Rank": 59,
+        "Faculty Rank": 5,
+        "Research Rank": 16,
+        "Score": 90.1
+      },
+      {
+        "World Rank": 13,
+        "Institution": "University of Tokyo",
+        "Location": "Japan",
+        "National Rank": 1,
+        "Education Rank": 37,
+        "Employability Rank": 6,
+        "Faculty Rank": 112,
+        "Research Rank": 29,
+        "Score": 89.8
+      },
+      {
+        "World Rank": 14,
+        "Institution": "Cornell University",
+        "Location": "USA",
+        "National Rank": 11,
+        "Education Rank": 16,
+        "Employability Rank": 28,
+        "Faculty Rank": 18,
+        "Research Rank": 24,
+        "Score": 89.5
+      },
+      {
+        "World Rank": 15,
+        "Institution": "University of Michigan, Ann Arbor",
+        "Location": "USA",
+        "National Rank": 12,
+        "Education Rank": 29,
+        "Employability Rank": 40,
+        "Faculty Rank": 59,
+        "Research Rank": 6,
+        "Score": 89.2
+      },
+      {
+        "World Rank": 16,
+        "Institution": "Johns Hopkins University",
+        "Location": "USA",
+        "National Rank": 13,
+        "Education Rank": 24,
+        "Employability Rank": 192,
+        "Faculty Rank": 23,
+        "Research Rank": 8,
+        "Score": 89
+      },
+      {
+        "World Rank": 17,
+        "Institution": "Northwestern University",
+        "Location": "USA",
+        "National Rank": 14,
+        "Education Rank": 138,
+        "Employability Rank": 17,
+        "Faculty Rank": 47,
+        "Research Rank": 31,
+        "Score": 88.8
+      },
+      {
+        "World Rank": 18,
+        "Institution": "University of California, Los Angeles",
+        "Location": "USA",
+        "National Rank": 15,
+        "Education Rank": 42,
+        "Employability Rank": 63,
+        "Faculty Rank": 17,
+        "Research Rank": 15,
+        "Score": 88.6
+      },
+      {
+        "World Rank": 19,
+        "Institution": "PSL University",
+        "Location": "France",
+        "National Rank": 1,
+        "Education Rank": 17,
+        "Employability Rank": 30,
+        "Faculty Rank": 107,
+        "Research Rank": 86,
+        "Score": 88.4
+      }
+]
+}

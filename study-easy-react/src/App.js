@@ -4,12 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import React, {useState} from 'react';
 import AnimationRoutes from './components/common/AnimationRoutes';
 import  Header  from '../src/components/common/head/header.jsx' ;
-import Chatbot from 'react-chatbot-kit';
-import { ReactComponent as ButtonIcon } from "./components/common/Chatbot/images/bot.svg";
-import {ConditionallyRender} from "react-util-kit";
-import config from "./components/common/Chatbot/bots/docsbot/config"
-import MessageParser from "./components/common/Chatbot/bots/docsbot/MessageParser";
-import ActionProvider from "./components/common/Chatbot/bots/docsbot/ActionProvider";
 import Chatbot1 from './Chatbot1';
 
 function App() {
@@ -21,9 +15,7 @@ function App() {
   <div className="App">
     <AnimationRoutes/>
   </div>
-  <div>
-    <Chatbot1 />
-  </div>
+  <Chatbot1/>
   </BrowserRouter>
   );
 }
