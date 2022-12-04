@@ -14,14 +14,14 @@ const ActionProviderDocs = ({ gist, setState }) => {
 
   return (
     <div>
-      <Link to="/Gre"
+      <Link to="/Resources"
         //target="_blank"
         rel="noopener noreferrer"
         className={styles.configLink}
       >
-        GRE
+     Click here to view the study resources
       </Link>
-      <Link to="/Ielts"
+      {/* <Link to="/Ielts"
         //target="_blank"
         rel="noopener noreferrer"
         className={styles.configLink}
@@ -34,7 +34,7 @@ const ActionProviderDocs = ({ gist, setState }) => {
         className={styles.configLink}
       >
         GMAT
-      </Link>
+      </Link> */}
       <ConditionallyRender
         ifTrue={showActionProviderGist}
         //show={<GistContainer gistId="af04e2e30407671412af08fa3c429409" />}
