@@ -19,10 +19,11 @@ function ResourceAdmin() {
         getUsers();
       },[]);
       const deleteUser = async(id)=>{
-        const userDoc=doc(db,"Resources",id);
+        const userDoc=doc(db,"ExamResources",id);
         await deleteDoc(userDoc);
         alert(`Selected Resource is Deleted`)
-        await delay(2000);
+        await delay(500);
+        window.location.reload();
         //navigate('/');
       };
       const delay = (ms) => new Promise((res) => setTimeout(res, ms));

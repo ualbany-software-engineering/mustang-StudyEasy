@@ -43,6 +43,7 @@ export const Trending = () => {
           avatar="https://cdn3.vectorstock.com/i/1000x1000/53/22/college-symbol-icon-design-vector-31955322.jpg"
           // onClick = {onclicker}
           />
+          
         })
       }
     </div>

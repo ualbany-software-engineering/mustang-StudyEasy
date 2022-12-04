@@ -16,7 +16,8 @@ import Resources from "../../Pages/Resources";
 import Resources2 from "../../Pages/Resources2";
 import ResourceAdmin from "../../Pages/ResourceAdmin";
 import AddResource from "../../Pages/AddResource";
-
+import UserPost from "../../Pages/UserPost";
+import CreatePost from "../../Pages/CreatePost";
 
 import AddMajors from "../../CollegeAdministrators/addMajors";
 import UpdateDeleteMajor from "../../CollegeAdministrators/UpdateOrDelete";
@@ -27,45 +28,32 @@ import { Collegedetails } from "./details/collegedetails";
 import { Trending } from "./trendingcolleges/trending";
 import Profile from "../../Pages/profile";
 import AdminViewStudents from "../../CollegeAdministrators/adminViewStudents";
-
+import Aboutus from "./Aboutus/Aboutus";
 function AnimationRoutes() {
   const location = useLocation();
   return (
     //animation reuser
     <AnimatePresence>
-      <Routes
-        location={location}
-        key={location.pathname}
-        basename={process.env.PUBLIC_URL}
-      >
-        <Route path="/" exact element={<Home />} />
-        <Route path="/Countries" exact element={<Selection_countries />} />
-        <Route path="/Login" exact element={<Login />} />
-        <Route path="/University" exact element={<University />} />
-        <Route path="/Team" exact element={<Team />} />
-        <Route path="/Search" exact element={<Search />} />
-        <Route path="/statewiseuni" exact element={<Unirecord />} />
-        <Route path="/uni" exact element={<Collegedetails />} />
-        <Route path="/Trending" exact element={<Trending />} />
-        {/* review edit */}
-        <Route path="/CreateComment" exact element={<CreateComment />} />
-
-        <Route path="/" exact element={<Home />} />
-        <Route path="/Countries" exact element={<Selection_countries />} />
-        <Route path="/Login" exact element={<Login />} />
-        <Route path="/University" exact element={<University />} />
-        <Route path="/Team" exact element={<Team />} />
-        <Route path="/Search" exact element={<Search />} />
-        <Route path="statewiseuni" exact element={<Unirecord />} />
-
-        {/* review edit */}
-        <Route path="/CreateComment" exact element={<CreateComment />} />
+        <Routes location={location} key={location.pathname} basename = {process.env.PUBLIC_URL}>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/Countries" exact element={<Selection_countries/>} />
+        <Route path="/Login" exact element={ <Login/> } />
+        <Route path="/University" exact element={ <University/> } />
+        <Route path="/Team" exact element={ <Team/> } />
+        <Route path="/Search" exact element={ <Search/> } />   
+        <Route path="/statewiseuni" exact element = {<Unirecord/>}/>
+        <Route path="/uni" exact element = {<Collegedetails/>}/>
+        <Route path="/Trending" exact element = {<Trending/>}/>
+{/* review edit */}
+        <Route path="/CreateComment" exact element={<CreateComment/>} />
         <Route path="/Comment" exact element={<Comment />} />
-        <Route path="/Resources" exact element={<Resources />} />
+        <Route path="/Resources" exact element={<Resources/>} />
         <Route path="/Resources2" exact element={<Resources2 />} />
         <Route path="/ResourceAdmin" exact element={<ResourceAdmin/>}/>
         <Route path="/AddResource" exact element={<AddResource/>}/>
-       
+        <Route path="/UserPost" exact element={<UserPost/>}/>
+        <Route path="/CreatePost" exact element={<CreatePost/>}/>
+        
         {/* srujan work */}
         <Route path="/AddMajors" exact element={<AddMajors />} />
         <Route
@@ -82,6 +70,7 @@ function AnimationRoutes() {
         <Route path="/Admin" exact element={<Admin />} />
         <Route path="/Profile" exact element={<Profile />} />
         <Route path="/viewStu" exact element={<AdminViewStudents />} />
+        <Route path='/Aboutus' exact element={<Aboutus/>} />
       </Routes>
     </AnimatePresence>
   );

@@ -74,6 +74,9 @@ const Header = () => {
             <li>
               <Link to="/Resources">Resources</Link>
             </li>
+            <li>
+              <Link to="/UserPost">UserPosts</Link>
+            </li>
             {isUserlogin ? (
               <li>
                 <Link onClick={() => this.signOut()}>
@@ -92,7 +95,8 @@ const Header = () => {
             )}
           </ul>
           <div className="start">
-            <div className="button">ABOUT US</div>
+            <div className="button">
+              <Link to="/Aboutus" className="aboutus">ABOUT US</Link></div>
           </div>
           <button className="toggle" onClick={() => setclick(!click)}>
             {click ? (
