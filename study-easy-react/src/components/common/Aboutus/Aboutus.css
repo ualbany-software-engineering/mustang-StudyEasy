@@ -1,20 +1,50 @@
+
 .aboutuscontent {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: 0.3s;
     width: 90%;
     margin: 20px;
     padding: 20px;
     text-align: justify;
+    /* float: left; */
     /* font-family: "Roboto", sans-serif; */
+    background-color: rgba(234,243,250,255);
+    border: 1px solid black;
+    border-radius: 25px;
     }
     .aboutuslist{
         margin-right: 30px;
         text-align: left !important;
-        /* border: 1px solid black; */
+        border: 1px solid black;
         border-radius: 25px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         padding: 10px;
+        background-color: rgba(234,243,250,255);
     }
-    h2{
+    .generalh2{
         text-align: center;
+        margin-top: 10%;
+        font-family: "Cursive", "Lucida Handwriting";
+        /* background-color: whitesmoke; */
+    }
+    .aboutusdiv{
+        /* margin-top: 10%; */
+        float: left;
+        width: 33%;
+    }
+    .servicesdiv{
+       float: right;
+       margin-top: 0%;
+       /* font-family: "Cursive", "Lucida Handwriting"; */
+        /* margin-top: 10%; */
+    }
+    .whodiv{
+        float: left;
+        width: 33%;
+    }
+    .servicesh2{
+        text-align: center;
+        margin-top: 5%;
+        font-family: "Cursive", "Lucida Handwriting";
+        /* background-color: rgba(234,243,250,255);/ */
     }
