@@ -811,3 +811,100 @@ span{
    filter: grayscale(100%);
    height: 100vh;
   }
+
+
+.step{
+  background-color: rgba(237,222,220,255);
+  height: 26vh;
+  margin-top: -13%;
+}
+
+.steps
+{
+    background-image: url("https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/KHSR3UCAU4I6ZKEOFKSGGKXWTM.jpg");
+    background-color: rgba(237,222,220,255);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+   
+}
+
+.steps h1
+{
+    font-size: 80px;
+    text-transform:capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 30px;
+    color: black;
+}
+
+.steps h2
+{
+   padding-top: 40%;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align:center;
+    padding-left: 30px;
+    color: black;
+}
+
+.glass
+{
+  background: rgba( 0, 0, 0, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.trending
+{
+    background-image: url("https://socialpubli.com/blog/wp-content/uploads/2018/06/como-ser-trending-topic-en-twitter.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  padding-top: 17%;
+  /* padding-left: 30px; */
+  /* padding-right: 50px; */
+  image-rendering: optimizeQuality;
+  text-align: center;
+}
+
+.trend
+{
+  margin-top: 42%;
+}
+
+.trending h1
+{
+    font-size: 80px;
+    text-transform:capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 30px;
+    color: white;
+}
+
+.trending h2
+{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align:center;
+    padding-left: 30px;
+    color: white;
+}

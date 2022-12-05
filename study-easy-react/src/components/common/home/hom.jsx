@@ -18,14 +18,15 @@ export const Hom = () => {
                   Get Started <i class="bi bi-arrow-right"></i>
                 </Link>
                 </button>
-                <button>
-                  View Course <i class="bi bi-arrow-right"></i>
+                <button className='primary-btn'>
+                <Link to="/Steps" style={{color: "white"}}>
+                  View Steps <i class="bi bi-arrow-right"></i>
+                </Link>
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <Path/>
       </section>
       <div className='margin'>
 

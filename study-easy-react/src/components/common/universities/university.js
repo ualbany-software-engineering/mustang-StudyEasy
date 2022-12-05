@@ -55,8 +55,8 @@ export const University = () => {
       </div>
 
       <div id="visa" className="visaclass"> 
-<h1>Visa Information</h1>
-<Visadata gcountry= {location.state.country}/> 
+      <h1>Visa Information</h1>
+      <Visadata gcountry= {location.state.country}/> 
 </div>
     </div>
     </div>

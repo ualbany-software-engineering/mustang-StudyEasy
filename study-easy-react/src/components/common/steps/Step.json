@@ -1,0 +1,40 @@
+{
+    "flipData": [
+        {
+            "id": 1,
+            "imageURL": "https://media.istockphoto.com/photos/group-of-young-students-working-on-an-assignment-picture-id1071467916?b=1&k=20&m=1071467916&s=170667a&w=0&h=il5TdG20EgF8H-Jj5XfKVrLgOc-DH4UvwdCBO4mbaGQ=",
+            "title":  "Select a country",
+            "tag": "Selection"
+        },
+        {
+            "id": 2,
+            "imageURL": "https://www.goabroad.com/section_cloudinary/gaplabs/image/upload/images2/program_content/top-colleges-italy-4-1512055247.jpg",
+            "title":  "Select your Dream University",
+            "tag": "Selection"
+        },
+        {
+            "id": 3,
+            "imageURL": "https://www.englishradar.com/wp-content/uploads/2017/03/writing-tips-for-English-proficiency-exams.jpg",
+            "title":  "Quick Application Project",
+            "tag": "Application"
+        },
+        {
+            "id": 4,
+            "imageURL": "https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/woman-calculator-budget-finances_SOMN19162_869247602_is_1560x880.jpg",
+            "title":  "Scholarship Processing",
+            "tag": "Expense Operation"
+        },
+        {
+            "id": 5,
+            "imageURL": "https://www.hult.edu/blog/media/uploads/2014/10/visa_process.jpg",
+            "title":  "Visa Processing",
+            "tag": "Visa Application"
+        },
+        {
+            "id": 6,
+            "imageURL": "https://media.istockphoto.com/photos/passenger-airplane-flying-above-clouds-during-sunset-picture-id155439315?k=20&m=155439315&s=612x612&w=0&h=BvXCpRLaP5h1NnvyYI_2iRtSM0Xsz2jQhAmZ7nA7abA=",
+            "title":  "Fly & Enroll to \n your dream university",
+            "tag": "Bon Voyage"
+        }
+    ]
+  }

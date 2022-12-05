@@ -1,0 +1,56 @@
+.edit {
+    width: 100%;
+    height: 100%;
+  }
+
+.page-content
+{
+    /* background-image: url("https://www.harding.edu/assets/www/academics/study-abroad/index-slider/index/slidercopy%20of%20dsc_3900.jpg"); */
+    background-color: rgba(236,234,222,0.96);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: hidden;
+    height: 100%;
+
+
+}
+
+.Type
+{
+    font-size: 80px;
+    text-transform:capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 30px;
+    color: black;
+}
+
+.page-image
+{
+    width: 100%;
+    height: 100%;
+    padding-top: -10%;
+}   
+
+.glass
+{
+    padding-top: 80%;
+}
+
+.page-text h1
+{
+    margin-top: 2%;
+    color: white;
+}
+
+.page-text h2{
+    margin-top: -90%;
+    color: white;
+}
+
+.page-text button 
+{
+    margin-left: 45%;
+}

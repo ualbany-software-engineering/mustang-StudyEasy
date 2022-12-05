@@ -33,19 +33,19 @@ export const Trending = () => {
 
   console.log(data);
   return (
-    <div className='container datarec'>
-      {
-        print.map((item) => {
-          return <UserCard
+    <>
+     <div className="trending"> 
+      </div>
+
+    <div className='container datarec trend'>
+      {print.map((item) => {
+        return <UserCard
           float
           name={item}
-          header = {img}
-          avatar="https://cdn3.vectorstock.com/i/1000x1000/53/22/college-symbol-icon-design-vector-31955322.jpg"
-          // onClick = {onclicker}
-          />
-          
-        })
-      }
-    </div>
+          header={img}
+          avatar="https://cdn3.vectorstock.com/i/1000x1000/53/22/college-symbol-icon-design-vector-31955322.jpg" />;
+
+      })}
+    </div></>
   )
 }

@@ -18,7 +18,7 @@ export const Collegedetails =() => {
     var index2 = Number(requirement_index1-1);
     console.log(requirement_index1);
     console.log(index2);
-
+    const Location = useLocation();
     //string manipulation for a irrgularity in information.
     if(uni == "42 FR")
     {
@@ -41,8 +41,6 @@ export const Collegedetails =() => {
       getData()
     },[])
 
-
-   // console.log(given);
 
     const returner = async () => {
     try {

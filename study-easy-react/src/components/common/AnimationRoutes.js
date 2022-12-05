@@ -29,6 +29,7 @@ import { Trending } from "./trendingcolleges/trending";
 import Profile from "../../Pages/profile";
 import AdminViewStudents from "../../CollegeAdministrators/adminViewStudents";
 import Aboutus from "./Aboutus/Aboutus";
+import Steps  from "./steps/Steps";
 function AnimationRoutes() {
   const location = useLocation();
   return (
@@ -44,6 +45,7 @@ function AnimationRoutes() {
         <Route path="/statewiseuni" exact element = {<Unirecord/>}/>
         <Route path="/uni" exact element = {<Collegedetails/>}/>
         <Route path="/Trending" exact element = {<Trending/>}/>
+        <Route path="/Steps" exact element = {<Steps/>}/>
 {/* review edit */}
         <Route path="/CreateComment" exact element={<CreateComment/>} />
         <Route path="/Comment" exact element={<Comment />} />
