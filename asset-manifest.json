@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mustang-StudyEasy/static/css/main.1cf07e51.css",
-    "main.js": "/mustang-StudyEasy/static/js/main.8fa50caf.js",
+    "main.css": "/mustang-StudyEasy/static/css/main.a8ba4d77.css",
+    "main.js": "/mustang-StudyEasy/static/js/main.d11de706.js",
     "static/css/690.64bed31f.chunk.css": "/mustang-StudyEasy/static/css/690.64bed31f.chunk.css",
     "static/js/690.2435634d.chunk.js": "/mustang-StudyEasy/static/js/690.2435634d.chunk.js",
     "static/js/758.d1660d47.chunk.js": "/mustang-StudyEasy/static/js/758.d1660d47.chunk.js",
@@ -16,6 +16,7 @@
     "static/media/bump-large.jpg": "/mustang-StudyEasy/static/media/bump-large.a528dc07db214eef2886.jpg",
     "static/media/anudeep.jpeg": "/mustang-StudyEasy/static/media/anudeep.fbd10a1340409d5f69eb.jpeg",
     "static/media/unibg.jpg": "/mustang-StudyEasy/static/media/unibg.274a64a49273351796f7.jpg",
+    "static/media/bg.png": "/mustang-StudyEasy/static/media/bg.e83fb4daacc9ac5391bb.png",
     "static/media/forum.jpeg": "/mustang-StudyEasy/static/media/forum.4526368e099fd477b424.jpeg",
     "static/media/bootstrap-icons.woff?": "/mustang-StudyEasy/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/teambg.png": "/mustang-StudyEasy/static/media/teambg.55e3dbab3622e367adf4.png",
@@ -26,15 +27,15 @@
     "static/media/bot-overview.svg": "/mustang-StudyEasy/static/media/bot-overview.0764913e696288cdbacc8cadcec12395.svg",
     "static/media/bot.svg": "/mustang-StudyEasy/static/media/bot.968b21718b9bf698cc9fc9f6d3bb4472.svg",
     "index.html": "/mustang-StudyEasy/index.html",
-    "main.1cf07e51.css.map": "/mustang-StudyEasy/static/css/main.1cf07e51.css.map",
-    "main.8fa50caf.js.map": "/mustang-StudyEasy/static/js/main.8fa50caf.js.map",
+    "main.a8ba4d77.css.map": "/mustang-StudyEasy/static/css/main.a8ba4d77.css.map",
+    "main.d11de706.js.map": "/mustang-StudyEasy/static/js/main.d11de706.js.map",
     "690.64bed31f.chunk.css.map": "/mustang-StudyEasy/static/css/690.64bed31f.chunk.css.map",
     "690.2435634d.chunk.js.map": "/mustang-StudyEasy/static/js/690.2435634d.chunk.js.map",
     "758.d1660d47.chunk.js.map": "/mustang-StudyEasy/static/js/758.d1660d47.chunk.js.map",
     "787.c4b9f9eb.chunk.js.map": "/mustang-StudyEasy/static/js/787.c4b9f9eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cf07e51.css",
-    "static/js/main.8fa50caf.js"
+    "static/css/main.a8ba4d77.css",
+    "static/js/main.d11de706.js"
   ]
 }
