@@ -1,5 +1,4 @@
 # mustang-StudyEasy
-
 Please check the code of conduct: <a href="https://github.com/ualbany-software-engineering/mustang-StudyEasy/blob/main/CODE_OF_CONDUCT.md">here</a> <br/>
 Please check the license of the project: <a href="https://github.com/ualbany-software-engineering/mustang-StudyEasy/blob/main/LICENSE.md">here</a><br/>
 project website: <a href="https://ualbany-software-engineering.github.io/mustang-StudyEasy/">HERE</a><br/>
